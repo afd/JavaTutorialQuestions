@@ -49,6 +49,13 @@ To help you decide how you should prioritise working through the questions, I ha
 * [98e3](questions/98e3.md) *... 1 4 2 1 4 2 1 ...* <span style="color:aqua">Recap</span>
 * [f79b](questions/f79b.md) *Perfect palindromic cubes* <span style="color:aqua">Recap</span>
 * [4c70](questions/4c70.md) *Lottery numbers* <span style="color:aqua">Recap</span>
+* [014e](questions/014e.md) *Random numbers* <span style="color:aqua">Recap</span>
+* [2d33](questions/2d33.md) *Reversed order of input* <span style="color:aqua">Recap</span>
+* [f7c3](questions/f7c3.md) *Pig Latin* <span style="color:aqua">Recap</span>
+* [67dd](questions/67dd.md) *Word count* <span style="color:aqua">Recap</span>
+* [7ec8](questions/7ec8.md) *Battling fighters* <span style="color:aqua">Recap</span>
+* [8d24](questions/8d24.md) *Lucky battling fighters* <span style="color:aqua">Recap</span> - depends on: [7ec8](questions/7ec8.md)
+* [bec2](questions/bec2.md) *Music collection* <span style="color:aqua">Recap</span>
 
 
 ## More hex strings
