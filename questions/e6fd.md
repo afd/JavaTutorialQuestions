@@ -26,9 +26,9 @@ set operations are cheap to compute.  Some example operations that are easy to c
 | *Operation*  | *Bit set implementation* | *Java implementation* |
 |--------------|--------------------------|-----------------------|
 | Check whether *x* belongs to *S*    | Check whether bit *x* is 1 | `return ((1 << x) & S) != 0;` |
-| Add *x* to *S*                      | Set bit *x* to 1           | `S = S | (1 << x);` |
+| Add *x* to *S*                      | Set bit *x* to 1           | `S = S \| (1 << x);` |
 | Compute intersection of *S* and *T* | Return set where bit *x* is 1 if and only if bit *x* is 1 in both *S* and *T* | `return S & T;` |
-| Compute union of *S* and *T*        | Return set where bit *x* is 1 if and only if *x* is 1 in at least one of *S* and *T* | `return S | T;` |
+| Compute union of *S* and *T*        | Return set where bit *x* is 1 if and only if *x* is 1 in at least one of *S* and *T* | `return S \| T;` |
 
 This table uses the following Java operators:
 
