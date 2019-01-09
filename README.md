@@ -53,10 +53,27 @@ To help you decide how you should prioritise working through the questions, I ha
 * [2d33](questions/2d33.md) *Reversed order of input* <span style="color:aqua">Recap</span>
 * [f7c3](questions/f7c3.md) *Pig Latin* <span style="color:aqua">Recap</span>
 * [67dd](questions/67dd.md) *Word count* <span style="color:aqua">Recap</span>
-* [7ec8](questions/7ec8.md) *Battling fighters* <span style="color:aqua">Recap</span>
-* [8d24](questions/8d24.md) *Lucky battling fighters* <span style="color:aqua">Recap</span> - depends on: [7ec8](questions/7ec8.md)
-* [bec2](questions/bec2.md) *Music collection* <span style="color:aqua">Recap</span>
+* [7ec8](questions/7ec8.md) *Battling fighters* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span>
+* [8d24](questions/8d24.md) *Lucky battling fighters* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span> - depends on: [7ec8](questions/7ec8.md)
+* [bec2](questions/bec2.md) *Music collection* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span>
+* [c2b8](questions/c2b8.md) *Irresponsible rectangle* <span style="color:orange">Simple objects</span>
+* [d363](questions/d363.md) *Bloated person* <span style="color:orange">Simple objects</span>
+* [7206](questions/7206.md) *Understanding references* <span style="color:orange">Simple objects</span>
+* [937d](questions/937d.md) *Flawed rectangle* <span style="color:orange">Simple objects</span>
+* [bdb4](questions/bdb4.md) *Flawed house* <span style="color:orange">Simple objects</span>
+* [0378](questions/0378.md) *Comparing people* <span style="color:green">Interfaces</span>
+* [6346](questions/6346.md) *Depth of arithmetic expressions* <span style="color:green">Interfaces</span>
+* [e6fd](questions/e6fd.md) *Bit sets* <span style="color:green">Interfaces</span>
 
+I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
+
+## The solutions!
+
+Solutions will be provided for all questions.  It is totally up to you when to look at these.  I suggest you attempt each question without reference to its solution, and start to peek at the solutions when you get stuck, or when you believe you have made good progress on a question.
+
+Code solutions for all questions are available at ```solutions/code```.
+
+I will add written solutions to the tutorial questions soon.
 
 ## More hex strings
 
