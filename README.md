@@ -41,29 +41,32 @@ Some of the questions depend on other questions; I have indicated wherever this 
 
 To help you decide how you should prioritise working through the questions, I have attached one or more tags to each question in the list below.  The tags are as follows:
 
-* <span style="color:aqua">Recap</span>: the question serves to recap basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations, or basic use of objects.
-
+* Recap: focuses on recapping basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations.
+* SimpleObjects: covers basic use of objects (with little or no use of interfaces, inheritance, etc.).
+* Interfaces: covers concepts relating to Java interfaces.
 
 ## The questions!
 
-* [98e3](questions/98e3.md) *... 1 4 2 1 4 2 1 ...* <span style="color:aqua">Recap</span>
-* [f79b](questions/f79b.md) *Perfect palindromic cubes* <span style="color:aqua">Recap</span>
-* [4c70](questions/4c70.md) *Lottery numbers* <span style="color:aqua">Recap</span>
-* [014e](questions/014e.md) *Random numbers* <span style="color:aqua">Recap</span>
-* [2d33](questions/2d33.md) *Reversed order of input* <span style="color:aqua">Recap</span>
-* [f7c3](questions/f7c3.md) *Pig Latin* <span style="color:aqua">Recap</span>
-* [67dd](questions/67dd.md) *Word count* <span style="color:aqua">Recap</span>
-* [7ec8](questions/7ec8.md) *Battling fighters* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span>
-* [8d24](questions/8d24.md) *Lucky battling fighters* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span> - depends on: [7ec8](questions/7ec8.md)
-* [bec2](questions/bec2.md) *Music collection* <span style="color:aqua">Recap</span> <span style="color:orange">Simple objects</span>
-* [c2b8](questions/c2b8.md) *Irresponsible rectangle* <span style="color:orange">Simple objects</span>
-* [d363](questions/d363.md) *Bloated person* <span style="color:orange">Simple objects</span>
-* [7206](questions/7206.md) *Understanding references* <span style="color:orange">Simple objects</span>
-* [937d](questions/937d.md) *Flawed rectangle* <span style="color:orange">Simple objects</span>
-* [bdb4](questions/bdb4.md) *Flawed house* <span style="color:orange">Simple objects</span>
-* [0378](questions/0378.md) *Comparing people* <span style="color:green">Interfaces</span>
-* [6346](questions/6346.md) *Depth of arithmetic expressions* <span style="color:green">Interfaces</span>
-* [e6fd](questions/e6fd.md) *Bit sets* <span style="color:green">Interfaces</span>
+| Label                     | Name                              | Topic tag(s)            | Depends on  |
+|---------------------------|-----------------------------------|-------------------------|-------------|
+| [98e3](questions/98e3.md) | *... 1 4 2 1 4 2 1 ...*           | Recap                   |             |
+| [f79b](questions/f79b.md) | *Perfect palindromic cubes*       | Recap                   |             |
+| [4c70](questions/4c70.md) | *Lottery numbers*                 | Recap                   |             |
+| [014e](questions/014e.md) | *Random numbers*                  | Recap                   |             |
+| [2d33](questions/2d33.md) | *Reversed order of input*         | Recap                   |             |
+| [f7c3](questions/f7c3.md) | *Pig Latin*                       | Recap                   |             |
+| [67dd](questions/67dd.md) | *Word count*                      | Recap                   |             |
+| [7ec8](questions/7ec8.md) | *Battling fighters*               | Recap, SimpleObjects    |             |
+| [8d24](questions/8d24.md) | *Lucky battling fighters*         | Recap, SimpleObjects    | [7ec8](questions/7ec8.md) |
+| [bec2](questions/bec2.md) | *Music collection*                | Recap, SimpleObjects    |             |
+| [c2b8](questions/c2b8.md) | *Irresponsible rectangle*         | SimpleObjects           |             |
+| [d363](questions/d363.md) | *Bloated person*                  | SimpleObjects           |             |
+| [7206](questions/7206.md) | *Understanding references*        | SimpleObjects           |             |
+| [937d](questions/937d.md) | *Flawed rectangle*                | SimpleObjects           |             |
+| [bdb4](questions/bdb4.md) | *Flawed house*                    | SimpleObjects           |             |
+| [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             |
+| [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             |
+| [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             |
 
 I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
 
