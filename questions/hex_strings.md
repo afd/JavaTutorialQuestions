@@ -2,7 +2,6 @@
 
 There were originally 500 hex strings.  Inflicting more than 500 questions on the first year students would not be nice!
 
-4c70
 014e
 2d33
 f7c3

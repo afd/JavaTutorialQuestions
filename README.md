@@ -48,6 +48,7 @@ To help you decide how you should prioritise working through the questions, I ha
 
 * [98e3](questions/98e3.md) *... 1 4 2 1 4 2 1 ...* <span style="color:aqua">Recap</span>
 * [f79b](questions/f79b.md) *Perfect palindromic cubes* <span style="color:aqua">Recap</span>
+* [4c70](questions/4c70.md) *Lottery numbers* <span style="color:aqua">Recap</span>
 
 
 ## More hex strings
