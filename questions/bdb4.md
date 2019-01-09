@@ -10,7 +10,7 @@ Can you find a design flaw in the following two classes?
 Explain what the flaw is, and improve the classes to eliminate it.
 
 **Hint:** This question is related to question [937d](questions/937d.md): the class
-```House``` should maintain an invariant that involves the members ```floorSize```
-and ```floorArea```.  There are at least two ways in which this invariant can be invalidated,
+`House` should maintain an invariant that involves the members `floorSize`
+and `floorArea`.  There are at least two ways in which this invariant can be invalidated,
 despite the fact that no member variables are public.  Discuss both of them and propose ways for
 improvement.
