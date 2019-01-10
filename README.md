@@ -1,7 +1,8 @@
 # Programming 2: Ally's Tutorial Questions
 
-The best way to learn a programming language and the concepts that underlie the language's design is to do *lots*
-of programming.
+(You will see a number of TODOs in this README; these will disappear as the term progresses.)
+
+The best way to learn a programming language and the concepts that underlie the language's design is to do *lots* of programming.
 
 The aim of these tutorial questions is to give you the opportunity to write, inspect, debug and play with a bunch of reasonably small programs.  There are quite a lot of questions, they form part of the examinable material for the course, and thus I strongly encourage you to attempt *all* of them.
 
@@ -41,42 +42,48 @@ Some of the questions depend on other questions; I have indicated wherever this 
 
 To help you decide how you should prioritise working through the questions, I have attached one or more tags to each question in the list below.  The tags are as follows:
 
+TODO: There will be more tags once all questions have been added.
+
 * Recap: focuses on recapping basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations.
 * SimpleObjects: covers basic use of objects (with little or no use of interfaces, inheritance, etc.).
 * Interfaces: covers concepts relating to Java interfaces.
 
 ## The questions!
 
-| Label                     | Name                              | Topic tag(s)            | Depends on  |
-|---------------------------|-----------------------------------|-------------------------|-------------|
-| [98e3](questions/98e3.md) | *... 1 4 2 1 4 2 1 ...*           | Recap                   |             |
-| [f79b](questions/f79b.md) | *Perfect palindromic cubes*       | Recap                   |             |
-| [4c70](questions/4c70.md) | *Lottery numbers*                 | Recap                   |             |
-| [014e](questions/014e.md) | *Random numbers*                  | Recap                   |             |
-| [2d33](questions/2d33.md) | *Reversed order of input*         | Recap                   |             |
-| [f7c3](questions/f7c3.md) | *Pig Latin*                       | Recap                   |             |
-| [67dd](questions/67dd.md) | *Word count*                      | Recap                   |             |
-| [7ec8](questions/7ec8.md) | *Battling fighters*               | Recap, SimpleObjects    |             |
-| [8d24](questions/8d24.md) | *Lucky battling fighters*         | Recap, SimpleObjects    | [7ec8](questions/7ec8.md) |
-| [bec2](questions/bec2.md) | *Music collection*                | Recap, SimpleObjects    |             |
-| [c2b8](questions/c2b8.md) | *Irresponsible rectangle*         | SimpleObjects           |             |
-| [d363](questions/d363.md) | *Bloated person*                  | SimpleObjects           |             |
-| [7206](questions/7206.md) | *Understanding references*        | SimpleObjects           |             |
-| [937d](questions/937d.md) | *Flawed rectangle*                | SimpleObjects           |             |
-| [bdb4](questions/bdb4.md) | *Flawed house*                    | SimpleObjects           |             |
-| [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             |
-| [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             |
-| [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             |
+You can access the questions via the table below.  Solutions are provided for all questions (TODO: they will be provided shortly if not already), and code solutions for all questions are available at ```solutions/code```.  
 
-I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
+It is totally up to you when to look at these.  I suggest you attempt each question without reference to its solution, and start to peek at the solutions when you get stuck, or when you believe you have made good progress on a question.
 
-## The solutions!
+Much of Object Oriented Programming is not an exact science: there is a lot of room for creativity, and when designing an application one often has to make a choice between multiple imperfect approaches, each with different pros and cons.
 
-Solutions will be provided for all questions.  It is totally up to you when to look at these.  I suggest you attempt each question without reference to its solution, and start to peek at the solutions when you get stuck, or when you believe you have made good progress on a question.
+As a result, you will likely find that some of your answers differ from the sample solutions.  When this is the case, think hard about whether the sample solution is better than your solution, whether your solution is better than the sample solution, or whether they are both viable alternatives.
 
-Code solutions for all questions are available at ```solutions/code```.
+I'm very happy to discuss alternative solutions.  Also, please get in touch if there are parts of the solutions that you do not understand, of if you spot errors.
 
-I will add written solutions to the tutorial questions soon.
+
+| Label                     | Name                              | Topic tag(s)            | Depends on  | Solution |
+|---------------------------|-----------------------------------|-------------------------|-------------|----------|
+| [98e3](questions/98e3.md) | *... 1 4 2 1 4 2 1 ...*           | Recap                   |             | [Solution](solutions/98e3.md) |
+| [f79b](questions/f79b.md) | *Perfect palindromic cubes*       | Recap                   |             | [Solution](solutions/f79b.md) |
+| [4c70](questions/4c70.md) | *Lottery numbers*                 | Recap                   |             | [Solution](solutions/4c70.md) |
+| [014e](questions/014e.md) | *Random numbers*                  | Recap                   |             | [Solution](solutions/014e.md) |
+| [2d33](questions/2d33.md) | *Reversed order of input*         | Recap                   |             | [Solution](solutions/2d33.md) |
+| [f7c3](questions/f7c3.md) | *Pig Latin*                       | Recap                   |             | [Solution](solutions/f7c3.md) |
+| [67dd](questions/67dd.md) | *Word count*                      | Recap                   |             | [Solution](solutions/67dd.md) |
+| [7ec8](questions/7ec8.md) | *Battling fighters*               | Recap, SimpleObjects    |             | [Solution](solutions/7ec8.md) |
+| [8d24](questions/8d24.md) | *Lucky battling fighters*         | Recap, SimpleObjects    | [7ec8](questions/7ec8.md) | [Solution](solutions/8d24.md) |
+| [bec2](questions/bec2.md) | *Music collection*                | Recap, SimpleObjects    |             | [Solution](solutions/bec2.md) |
+| [c2b8](questions/c2b8.md) | *Irresponsible rectangle*         | SimpleObjects           |             | [Solution](solutions/c2b8.md) |
+| [d363](questions/d363.md) | *Bloated person*                  | SimpleObjects           |             | [Solution](solutions/d363.md) |
+| [7206](questions/7206.md) | *Understanding references*        | SimpleObjects           |             | [Solution](solutions/7206.md) |
+| [937d](questions/937d.md) | *Flawed rectangle*                | SimpleObjects           |             | [Solution](solutions/937d.md) |
+| [bdb4](questions/bdb4.md) | *Flawed house*                    | SimpleObjects           |             | [Solution](solutions/bdb4.md) |
+| [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
+| [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
+| [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
+
+TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
+
 
 ## More hex strings
 
