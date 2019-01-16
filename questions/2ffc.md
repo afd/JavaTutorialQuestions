@@ -2,7 +2,7 @@
 
 ## 2ffc: *Generic stacks*
 
-\begin{question}{.}\label{question:genericstacks} *Note:* even if you did not attempt the \textbf{string stack} question
+\begin{question}{.}\label{question:genericstacks} *Note:* even if you did not attempt the **string stack** question
 of Sheet 3 (Question 13), you should still be able to attempt this question by starting with the Sheet 3 sample solutions.
 
 Replace the `StringStack` interface of Question 13, Sheet 3, with an interface `GenericStack`
@@ -41,7 +41,7 @@ by transferring contents between stacks, and showing the contents of a stack by 
 by one and displaying them.
 
 
-\noindent\textbf{Hint for \questionref{genericstacks}.}  You cannot create a new array with generic element type `E`, but you
+**Hint:**  You cannot create a new array with generic element type `E`, but you
 can create a new array with element type `Object` and cast it to an array with element type `E`.  The compiler will
 complain that this cast is unchecked, and in general such a cast is not safe, but clearly it will work here because the new array is
 empty.  You can shut the compiler up by adding the annotation:

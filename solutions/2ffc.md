@@ -4,7 +4,7 @@
 
 See code at `solutions/code/tutorialquestions/question2ffc`
 
-\begin{question}{Generic stacks.}\label{question:genericstacks} Making the solution to the \textbf{string stack} question
+\begin{question}{Generic stacks.}\label{question:genericstacks} Making the solution to the **string stack** question
 of Sheet 3 (Question 8) generic is pretty straightforward: compare the sample solutions.
 
 Some notes: in `GenericStackArray<T>` you will have a field:

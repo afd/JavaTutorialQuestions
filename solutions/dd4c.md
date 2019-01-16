@@ -15,7 +15,7 @@ The two display modes are represented by an enum, `DisplayMode`.  They could be 
 a boolean.  The advantage of an enum is that it allows us to easily add further display modes.
 
 I decided to use ``seconds since midnight'' as the canonical representation for a `Clock`.
-My `Clock` class has a \textbf{private} constructor that takes a ``seconds since midnight'' value
+My `Clock` class has a **private** constructor that takes a ``seconds since midnight'' value
 and a `DisplayMode`.  There are two public constructors, as required in the question, which
 both delegate to the private constructor:
 
@@ -35,7 +35,7 @@ a ``seconds since midnight value'', and uses `this(...)` to call the private con
 resulting value and the `TwentyFourHour`
 display mode.
 
-The helper method `twentyFourHourToSecondsSinceMidnight` is \textbf{static}.  This makes sense because the
+The helper method `twentyFourHourToSecondsSinceMidnight` is **static**.  This makes sense because the
 method computes a straightforward function of its arguments: it does not depend on the state of any `Clock`
 object.
 
