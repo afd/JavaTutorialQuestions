@@ -42,11 +42,18 @@ Some of the questions depend on other questions; I have indicated wherever this 
 
 To help you decide how you should prioritise working through the questions, I have attached one or more tags to each question in the list below.  The tags are as follows:
 
-TODO: There will be more tags once all questions have been added.
+TODO: Check that these are all the tags.
 
 * Recap: focuses on recapping basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations.
 * SimpleObjects: covers basic use of objects (with little or no use of interfaces, inheritance, etc.).
 * Interfaces: covers concepts relating to Java interfaces.
+* Streams: TODO
+* Inheritance: TODO
+* AbstractClasses: TODO
+* Generics: TODO
+* Exceptions: TODO
+* MemoryManagement: TODO
+* Advanced: Challenging questions that bring together many concepts covered during my part of the course.  If you can solve these questions using only the hints provided then you are doing *very* well!  You might prefer to work through these questions referring to the sample solutions along the way.
 
 ## The questions!
 
@@ -81,27 +88,51 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
 | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
-| [ebc1](questions/ebc1.md) | *Name*                        | Streams              |             | [Solution](solutions/ebc1.md) |
-| [5912](questions/5912.md) | *Name*                        | Streams              |             | [Solution](solutions/5912.md) |
-| [6563](questions/6563.md) | *Name*                        | Streams              |             | [Solution](solutions/6563.md) |
-| [303d](questions/303d.md) | *Name*                        | Streams              |             | [Solution](solutions/303d.md) |
-| [6a57](questions/6a57.md) | *Name*                        | Streams              |             | [Solution](solutions/6a57.md) |
-| [0f05](questions/0f05.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/0f05.md) |
-| [dd4c](questions/dd4c.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/dd4c.md) |
-| [8f65](questions/8f65.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/8f65.md) |
-| [845d](questions/845d.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/845d.md) |
-| [e93f](questions/e93f.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/e93f.md) |
-| [5235](questions/5235.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/5235.md) |
-| [710c](questions/710c.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/710c.md) |
-| [0c21](questions/0c21.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/0c21.md) |
-| [5981](questions/5981.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/5981.md) |
-| [dc38](questions/dc38.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/dc38.md) |
-| [1486](questions/1486.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/1486.md) |
-| [8a61](questions/8a61.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/8a61.md) |
-| [85bb](questions/85bb.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/85bb.md) |
-| [a6e7](questions/a6e7.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/a6e7.md) |
-| [aa68](questions/aa68.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/aa68.md) |
-| [236b](questions/236b.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/236b.md) |
+| [ebc1](questions/ebc1.md) | *String streams*                  | Streams                 |             | [Solution](solutions/ebc1.md) |
+| [5912](questions/5912.md) | *Streams and Random*              | Streams                 |             | [Solution](solutions/5912.md) |
+| [6563](questions/6563.md) | *Streams of arithmetic expressions* | Streams               |             | [Solution](solutions/6563.md) |
+| [303d](questions/303d.md) | *Infinite stream of Fibonacci numbers* | Streams            |             | [Solution](solutions/303d.md) |
+| [6a57](questions/6a57.md) | *Stream ordering*                 | Streams                 |             | [Solution](solutions/6a57.md) |
+| [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
+| [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
+| [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    |             | [Solution](solutions/8f65.md) |
+| [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
+| [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
+| [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          |             | [Solution](solutions/5235.md) |
+| [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  |             | [Solution](solutions/710c.md) |
+| [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         |             | [Solution](solutions/aa68.md) |
+| [0c21](questions/0c21.md) | *Properties*                      | AbstractClasses         |             | [Solution](solutions/0c21.md) |
+| [236b](questions/236b.md) | *Fields for properties*           | AbstractClasses         |             | [Solution](solutions/236b.md) |
+| [5981](questions/5981.md) | *Shapes*                          | AbstractClasses         |             | [Solution](solutions/5981.md) |
+| [dc38](questions/dc38.md) | *Email management system*         | AbstractClasses         |             | [Solution](solutions/dc38.md) |
+| [1486](questions/1486.md) | *String stack*                    | Interfaces              |             | [Solution](solutions/1486.md) |
+| [8a61](questions/8a61.md) | *Int set*                         | Interfaces              |             | [Solution](solutions/8a61.md) |
+| [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces |         | [Solution](solutions/85bb.md) |
+| [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces |         | [Solution](solutions/a6e7.md) |
+| [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                |             | [Solution](solutions/2ffc.md) |
+| [b401](questions/b401.md) | *Generic sets*                    | Generics                |             | [Solution](solutions/b401.md) |
+| [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
+| [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                |             | [Solution](solutions/7041.md) |
+| [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                |             | [Solution](solutions/c822.md) |
+| [735a](questions/735a.md) | *Generic iterators*               | Generics                |             | [Solution](solutions/735a.md) |
+| [876b](questions/876b.md) | *Generics and subclasses*         | Generics, Inheritance   |             | [Solution](solutions/876b.md) |
+| [1aeb](questions/1aeb.md) | *Generic number manipulation*     | Generics                |             | [Solution](solutions/1aeb.md) |
+| [b4a5](questions/b4a5.md) | *Observing the garbage collector* | MemoryManagement        |             | [Solution](solutions/b4a5.md) |
+| [1ae9](questions/1ae9.md) | *Reusing immutable value objects* | MemoryManagement        |             | [Solution](solutions/1ae9.md) |
+| [290b](questions/290b.md) | *Memory leaks in Java*            | MemoryManagement, Advanced |          | [Solution](solutions/290b.md) |
+| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              |             | [Solution](solutions/5566.md) |
+| [a22c](questions/a22c.md) | *No duplicate email addresses*    | Exceptions              |             | [Solution](solutions/a22c.md) |
+| [e093](questions/e093.md) | *Average of numbers*              | Exceptions              |             | [Solution](solutions/e093.md) |
+| [7e2a](questions/7e2a.md) | *Stack overflow*                  | Exceptions              |             | [Solution](solutions/7e2a.md) |
+| [30cd](questions/30cd.md) | *Heap exhaustion*                 | Exceptions              |             | [Solution](solutions/30cd.md) |
+| [74d2](questions/74d2.md) | *Exceptions and inheritance (i)*  | Exceptions, Inheritance |             | [Solution](solutions/74d2.md) |
+| [2862](questions/2862.md) | *Exceptions and inheritance (ii)* | Exceptions, Inheritance |             | [Solution](solutions/2862.md) |
+| [153d](questions/153d.md) | *Exceptions and inheritance (iii)* | Exceptions, Inheritance |            | [Solution](solutions/153d.md) |
+| [5d30](questions/5d30.md) | *Unreliable buffered reader*      | Exceptions              |             | [Solution](solutions/5d30.md) |
+| [1171](questions/1171.md) | *Cloning graphs*                  | Advanced                |             | [Solution](solutions/1171.md) |
+| [f763](questions/f763.md) | *Simulating garbage collection*   | Advanced                |             | [Solution](solutions/f763.md) |
+| [9a9b](questions/9a9b.md) | *Transposing tunes*               | Advanced                |             | [Solution](solutions/9a9b.md) |
+
 
 TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
 
