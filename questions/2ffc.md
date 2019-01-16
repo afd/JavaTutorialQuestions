@@ -24,7 +24,7 @@ You would think (hope!) that the corresponding generic code would be:
 \begin{lstlisting}
 elements = new E[STACK_LIMIT];
 \end{lstlisting}
-%
+
 where `E` is the generic type parameter.  However, this does not work.  Why?
 
 See the end of the sheet for a hint on how to solve this issue.  (Also look at the source code
@@ -49,5 +49,5 @@ empty.  You can shut the compiler up by adding the annotation:
 \begin{lstlisting}
 @SuppressWarnings("unchecked")
 \end{lstlisting}
-%
+
 to the constructor of `GenericStackArray`.

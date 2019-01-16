@@ -22,14 +22,14 @@ both delegate to the private constructor:
 \begin{lstlisting}
 public Clock(int secondsSinceMidnight);
 \end{lstlisting}
-%
+
 simply uses `this(...)` to call the private `Clock` constructor with the given number of seconds since midnight and the
 `SecondsSinceMidnight` display mode.
 
 \begin{lstlisting}
 public Clock(int hh, int mm, int ss);
 \end{lstlisting}
-%
+
 uses method `twentyFourHourToSecondsSinceMidnight` to convert the given hours, minutes and seconds into
 a ``seconds since midnight value'', and uses `this(...)` to call the private constructor with the
 resulting value and the `TwentyFourHour`
@@ -60,7 +60,7 @@ alarm is sounding or not.
 Look at the use of `super` in `toString`, to avoid duplicating code for displaying a
 `Clock` in `AlarmClock`.  Also check you understand the use of the ternary operator in
 `toString`:
-%
+
 \begin{lstlisting}
 (alarmSounding ? " " + beep() : "")
 \end{lstlisting}

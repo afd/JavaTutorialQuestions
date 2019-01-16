@@ -136,7 +136,7 @@ Doubles as ints
 \begin{lstlisting}
 interface NumberParser<T extends Number> { ...
 \end{lstlisting}
-%
+
 to ensure that in instances of `NumberParser`, `T`
 can only be substituted by `Number` or one of its subclasses.
 
