@@ -85,7 +85,7 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [5912](questions/5912.md) | *Name*                        | Streams              |             | [Solution](solutions/5912.md) |
 | [6563](questions/6563.md) | *Name*                        | Streams              |             | [Solution](solutions/6563.md) |
 | [303d](questions/303d.md) | *Name*                        | Streams              |             | [Solution](solutions/303d.md) |
-| [6a57](questions/6a57.md) | *Name*                        | Streams              |             | [Solution](solutions/xxx.md) |
+| [6a57](questions/6a57.md) | *Name*                        | Streams              |             | [Solution](solutions/6a57.md) |
 | [0f05](questions/0f05.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/0f05.md) |
 | [dd4c](questions/dd4c.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/dd4c.md) |
 | [8f65](questions/8f65.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/8f65.md) |
