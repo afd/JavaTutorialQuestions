@@ -94,7 +94,7 @@ the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 An interactive session with your final program might look like this:
 
 \begin{scriptsize}
-\begin{verbatim}
+```
 Please enter five doubles, one line at a time
 Please enter number of type double:
 1.2
@@ -123,7 +123,7 @@ Ints as doubles:
 [ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 Doubles as ints
 [ 2, 1, 1, 1, 1 ]
-\end{verbatim}
+```
 \end{scriptsize}
 
 

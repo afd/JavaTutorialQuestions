@@ -31,7 +31,7 @@ to specify that your `main` method `throws` this exception.  The output of your 
 look something like this:
 
 \begin{scriptsize}
-\begin{verbatim}
+```
 Clock 1 shows: 0 seconds since midnight.  Clock 2 shows: 23:59:53
 Clock 1 shows: 1 seconds since midnight.  Clock 2 shows: 23:59:54
 Clock 1 shows: 2 seconds since midnight.  Clock 2 shows: 23:59:55
@@ -42,7 +42,7 @@ Clock 1 shows: 6 seconds since midnight.  Clock 2 shows: 23:59:59
 Clock 1 shows: 7 seconds since midnight.  Clock 2 shows: 00:00:00
 Clock 1 shows: 8 seconds since midnight.  Clock 2 shows: 00:00:01
 Clock 1 shows: 9 seconds since midnight.  Clock 2 shows: 00:00:02
-\end{verbatim}
+```
 \end{scriptsize}
 
 Now design a class, `AlarmClock`, which extends `Clock` by storing a specific time
@@ -61,7 +61,7 @@ to `Clock.java` above.  For a single clock, initialised to 23:59:50 with the ala
 go off at 23:59:58, the output of your program should be something like:
 
 \begin{scriptsize}
-\begin{verbatim}
+```
 Clock says: 23:59:50
 Clock says: 23:59:51
 Clock says: 23:59:52
@@ -82,7 +82,7 @@ Clock says: 00:00:59
 Clock says: 00:01:00
 Clock says: 00:01:01
 Clock says: 00:01:02
-\end{verbatim}
+```
 \end{scriptsize}
 
 Finally, write a class called `RadioAlarmClock` which extends `AlarmClock`.
@@ -97,7 +97,7 @@ alarm clocks, each initialised to 23:59:50 with the alarm set to go off at 23:59
 *Radio 4* and *Five Live*, respectively, your program should display something like:
 
 \begin{scriptsize}
-\begin{verbatim}
+```
 Clocks say: 23:59:50 - 23:59:50 - 23:59:50
 Clocks say: 23:59:51 - 23:59:51 - 23:59:51
 Clocks say: 23:59:52 - 23:59:52 - 23:59:52
@@ -118,5 +118,5 @@ Clocks say: 00:00:59 - 00:00:59 - 00:00:59
 Clocks say: 00:01:00 - 00:01:00 - 00:01:00
 Clocks say: 00:01:01 - 00:01:01 - 00:01:01
 Clocks say: 00:01:02 - 00:01:02 - 00:01:02
-\end{verbatim}
+```
 \end{scriptsize}
