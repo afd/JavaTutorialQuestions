@@ -6,8 +6,8 @@ for hex in hexstrings:
   question = "questions" + os.sep + hex + ".md"
   solution = "solutions" + os.sep + hex + ".md"
 
-  question_string = "[Back to questions](../README.md)\n\n## " + hex + ": *TODO-name*\n\n"
-  solution_string = "[Back to questions](../README.md)\n\n## Solution to [" + hex + "](../questions/" + hex + "): *TODO-name*\n\nSee code at `solutions/code/tutorialquestions/question" + hex + "`\n\n"
+  question_string = "[Back to questions](../README.md)\n\n## " + hex + ": *TODO-name*\n\nTODO: add content\n"
+  solution_string = "[Back to questions](../README.md)\n\n## Solution to [" + hex + "](../questions/" + hex + "): *TODO-name*\n\nSee code at `solutions/code/tutorialquestions/question" + hex + "`\n\nTODO: add content\n"
 
   with open(question, "w") as outfile:
     outfile.write(question_string)
