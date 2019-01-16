@@ -39,7 +39,6 @@ Write a `main` method that creates several stacks using different types (e.g., `
 (`GenericStackArray` and `GenericStackList`).  Dem-onstrate that your stacks are working
 by transferring contents between stacks, and showing the contents of a stack by popping its elements one
 by one and displaying them.
-\end{question}
 
 
 \noindent\textbf{Hint for \questionref{genericstacks}.}  You cannot create a new array with generic element type `E`, but you

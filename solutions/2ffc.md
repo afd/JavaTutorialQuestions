@@ -39,4 +39,3 @@ do not miss other important warnings that are mixed up in a sea of spurious warn
 
 The need to cast arrays of objects in this way is the least elegant feature of Java's generics.
 
-\end{question}

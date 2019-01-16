@@ -87,4 +87,3 @@ in `AlarmClock`.  Otherwise the `getNoise()` method is called on the radio alarm
 field.  This illustrates the fact that enum classes can have instance methods.  Look at the implementation of `getNoise()`
 in `RadioStation`.
 
-\end{question}

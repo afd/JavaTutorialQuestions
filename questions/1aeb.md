@@ -126,7 +126,6 @@ Doubles as ints
 \end{verbatim}
 \end{scriptsize}
 
-\end{question}
 
 
 \noindent\textbf{Hints for \questionref{boundedgenerics}.}
