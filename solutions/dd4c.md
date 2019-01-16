@@ -19,16 +19,16 @@ My `Clock` class has a **private** constructor that takes a ``seconds since midn
 and a `DisplayMode`.  There are two public constructors, as required in the question, which
 both delegate to the private constructor:
 
-\begin{lstlisting}
+```
 public Clock(int secondsSinceMidnight);
-\end{lstlisting}
+```
 
 simply uses `this(...)` to call the private `Clock` constructor with the given number of seconds since midnight and the
 `SecondsSinceMidnight` display mode.
 
-\begin{lstlisting}
+```
 public Clock(int hh, int mm, int ss);
-\end{lstlisting}
+```
 
 uses method `twentyFourHourToSecondsSinceMidnight` to convert the given hours, minutes and seconds into
 a ``seconds since midnight value'', and uses `this(...)` to call the private constructor with the
@@ -61,9 +61,9 @@ Look at the use of `super` in `toString`, to avoid duplicating code for displayi
 `Clock` in `AlarmClock`.  Also check you understand the use of the ternary operator in
 `toString`:
 
-\begin{lstlisting}
+```
 (alarmSounding ? " " + beep() : "")
-\end{lstlisting}
+```
 If `alarmSounding` is *true*, this operator returns a space followed by the result of method
 `beep()`.  Otherwise, the operator returns the empty string.
 

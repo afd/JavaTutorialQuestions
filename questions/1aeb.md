@@ -20,14 +20,14 @@ and there are hints for each step at the end of the sheet.
 type parameter for this interface so that it can only be substituted by the `Number` class,
 or a subclass of `Number`.  `NumberParser` should specify two methods:
 
-\begin{lstlisting}
+```
 // Convert String s into a Number of type E
 public E parseNumber(String s);
 
 // Return the name of the type to which E corresponds.  E.g., if E is Integer,
 // the method should return "int"
 public String typeParsed();
-\end{lstlisting}
+```
 
 \vspace{1mm}\noindent**Step 2.** Write classes `IntegerParser` and `DoubleParser`
 which implement the `NumberParser` interface.  These classes should *not* be generic: they
@@ -57,13 +57,13 @@ Test that this is working by printing to standard output the sets constructed by
 type parameter for this interface so that it can only be instantiated by the `Number` class,
 or a subclass of `Number`.  `NumberAdder` should specify two methods:
 
-\begin{lstlisting}
+```
 // Return a number of type T that represents zero
 T zero();
 
 // Return the sum of x and y
 public T add(T x, T y);
-\end{lstlisting}
+```
 
 \vspace{1mm}\noindent**Step 6.** Write classes `IntegerAdder` and `DoubleAdder`
 which implement the `NumberAdder` interface.  Like `IntegerParser` and `DoubleParser`,
@@ -133,9 +133,9 @@ Doubles as ints
 \vspace{1mm}
 \noindent**Step 1.** You can write:
 
-\begin{lstlisting}
+```
 interface NumberParser<T extends Number> { ...
-\end{lstlisting}
+```
 
 to ensure that in instances of `NumberParser`, `T`
 can only be substituted by `Number` or one of its subclasses.
@@ -144,9 +144,9 @@ can only be substituted by `Number` or one of its subclasses.
 \noindent**Step 2.** To implement `NumberParser` with
 respect to the *specific* type `Double`, you can write:
 
-\begin{lstlisting}
+```
 public class DoubleParser implements NumberParser<Double> { ...
-\end{lstlisting}
+```
 
 Having done this, in the class body you should use `Double`
 wherever the interface uses the type parameter `T`.
@@ -155,33 +155,33 @@ wherever the interface uses the type parameter `T`.
 \noindent**Step 3.** The declaration for `readNumbers` should
 be as follows:
 
-\begin{lstlisting}
+```
 public static <T extends Number> Set<T> readNumbers(int n, NumberParser<T> parser) throws IOException;
-\end{lstlisting}
+```
 
 We write `<T extends Number>` to say ``in the rest of the method declaration and body,
 `T` denotes some type that is either `Number` or one of its subclasses''.
 
 Why would the following declaration not be suitable?
 
-\begin{lstlisting}
+```
 public static Set<Number> readNumbers(int n, NumberParser<Number> parser) throws IOException;
-\end{lstlisting}
+```
 
 The method throws `IOException` because it will use a buffered reader.
 
 In the body of `readNumbers`, you can create an instance of `Set<T>` by writing:
 
-\begin{lstlisting}
+```
 Set<T> result = new HashSet<T>();
-\end{lstlisting}
+```
 
 \vspace{1mm}
 \noindent**Step 4.** To read five doubles from standard input, you should simply be able to write:
 
-\begin{lstlisting}
+```
 Set<Double> doubles = readNumbers(5, new DoubleParser());
-\end{lstlisting}
+```
 
 \vspace{1mm}
 \noindent**Step 5.** See hint for Step 1.
@@ -192,15 +192,15 @@ Set<Double> doubles = readNumbers(5, new DoubleParser());
 \vspace{1mm}
 \noindent**Step 7.** The signature for `addNumbers` should be:
 
-\begin{lstlisting}
+```
 public static <T extends Number> T addNumbers(Set<T> numbers, NumberAdder<T> adder);
-\end{lstlisting}
+```
 
 In the body of `addNumbers`, you should declare a `result` variable that is initially set to zero:
 
-\begin{lstlisting}
+```
 T result = adder.zero();
-\end{lstlisting}
+```
 
 This should be followed by a loop over all elements of `numbers`, using `adder` to add each number
 to `result`.
@@ -208,16 +208,16 @@ to `result`.
 \vspace{1mm}
 \noindent**Step 8.** Given a set of doubles, you should be able to compute its sum by simply writing:
 
-\begin{lstlisting}
+```
 double sumOfDoubles = addNumbers(doubles, new DoubleAdder());
-\end{lstlisting}
+```
 
 \vspace{1mm}
 \noindent**Step 9.** You might think that `displayAsDoubles` should have the signature:
 
-\begin{lstlisting}
+```
 public static void displayAsDoubles(Set<Number> numbers); // (*)
-\end{lstlisting}
+```
 
 However, this is wrong: if `doubles` has type `Set<Double>`, then `doubles`
 cannot be passed as an argument to `displayAsDoubles`, because `Set<Double>` is not
@@ -225,9 +225,9 @@ a subtype of `Set<Number>` (see \questionref{subtyping}).
 
 The correct signature uses a *wildcard*:
 
-\begin{lstlisting}
+```
 public static void displayAsDoubles(Set<? extends Number> numbers); // (**)
-\end{lstlisting}
+```
 
 To understand why this is correct, think of something you could write in the body of a method with signature (*)
 that could cause runtime problems, but which would cause a compiler error if written in the body of a method

@@ -15,15 +15,15 @@ of an *arbitrary* type rather than strings.
 This should be fairly straightforward, with one exception: in the constructor of `StringStackArray` you probably created
 a new array of strings:
 
-\begin{lstlisting}
+```
 elements = new String[STACK_LIMIT];
-\end{lstlisting}
+```
 
 You would think (hope!) that the corresponding generic code would be:
 
-\begin{lstlisting}
+```
 elements = new E[STACK_LIMIT];
-\end{lstlisting}
+```
 
 where `E` is the generic type parameter.  However, this does not work.  Why?
 
@@ -46,8 +46,8 @@ can create a new array with element type `Object` and cast it to an array with e
 complain that this cast is unchecked, and in general such a cast is not safe, but clearly it will work here because the new array is
 empty.  You can shut the compiler up by adding the annotation:
 
-\begin{lstlisting}
+```
 @SuppressWarnings("unchecked")
-\end{lstlisting}
+```
 
 to the constructor of `GenericStackArray`.
