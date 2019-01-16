@@ -28,7 +28,7 @@ elements = (E[])(new Object[STACK_LIMIT]);
 
 i.e., creating a new array that can hold any sort of object, and casting this to the required array type.  The compiler
 does not like this, because in general in the presence of such casts, the type-safety guarantees of generics do not hold.
-The compiler can issue a warning.  You can \emph{suppress} this warning by adding:
+The compiler can issue a warning.  You can *suppress* this warning by adding:
 
 \begin{lstlisting}
 @SuppressWarnings("unchecked")

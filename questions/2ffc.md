@@ -2,15 +2,15 @@
 
 ## 2ffc: *Generic stacks*
 
-\begin{question}{.}\label{question:genericstacks} \emph{Note:} even if you did not attempt the \textbf{string stack} question
+\begin{question}{.}\label{question:genericstacks} *Note:* even if you did not attempt the \textbf{string stack} question
 of Sheet 3 (Question 13), you should still be able to attempt this question by starting with the Sheet 3 sample solutions.
 
 Replace the `StringStack` interface of Question 13, Sheet 3, with an interface `GenericStack`
-that can hold elements of \emph{any} given type, not necessarily `String`.
+that can hold elements of *any* given type, not necessarily `String`.
 
 Replace the implementing classes `StringStackArray` and `StringStackList` with generic classes
 `GenericStackArray` and `GenericStackList` that mimic the original classes, but store elements
-of an \emph{arbitrary} type rather than strings.
+of an *arbitrary* type rather than strings.
 
 This should be fairly straightforward, with one exception: in the constructor of `StringStackArray` you probably created
 a new array of strings:

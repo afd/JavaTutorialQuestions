@@ -2,7 +2,7 @@
 
 ## 1aeb: *Generic number manipulation*
 
-This question provides practice with \emph{bounded} generics and the use of \emph{wildcards}.
+This question provides practice with *bounded* generics and the use of *wildcards*.
 
 Recall that Java provides classes that wrap all the primitive numeric types.  E.g., `Integer` is
  a wrapper for `int`, and `Double` is a wrapper for `double`.  These classes
@@ -30,7 +30,7 @@ public String typeParsed();
 \end{lstlisting}
 
 \vspace{1mm}\noindent\textbf{Step 2.} Write classes `IntegerParser` and `DoubleParser`
-which implement the `NumberParser` interface.  These classes should \emph{not} be generic: they
+which implement the `NumberParser` interface.  These classes should *not* be generic: they
 should implement `NumberParser` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
@@ -46,7 +46,7 @@ have been read.  To tell the user which type of number they should enter, use th
 input, and use the `parseNumber()` method of the `NumberParser` parameter to turn this into number of type
 `T`.
 
-\vspace{0.5mm}\noindent\emph{Note:} It is recommended for this question that you use `Set` from the Java standard library, rather than
+\vspace{0.5mm}\noindent*Note:* It is recommended for this question that you use `Set` from the Java standard library, rather than
 the `GenericSet` interface designed in \questionref{genericsets}.
 
 \vspace{1mm}\noindent\textbf{Step 4.} Write a `main` method in `NumberManipulator`.  This method should obtain
@@ -67,7 +67,7 @@ public T add(T x, T y);
 
 \vspace{1mm}\noindent\textbf{Step 6.} Write classes `IntegerAdder` and `DoubleAdder`
 which implement the `NumberAdder` interface.  Like `IntegerParser` and `DoubleParser`,
-these classes should \emph{not} be generic: they
+these classes should *not* be generic: they
 should implement `NumberAdder` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
@@ -142,7 +142,7 @@ can only be substituted by `Number` or one of its subclasses.
 
 \vspace{1mm}
 \noindent\textbf{Step 2.} To implement `NumberParser` with
-respect to the \emph{specific} type `Double`, you can write:
+respect to the *specific* type `Double`, you can write:
 
 \begin{lstlisting}
 public class DoubleParser implements NumberParser<Double> { ...
@@ -223,7 +223,7 @@ However, this is wrong: if `doubles` has type `Set<Double>`, then `doubles`
 cannot be passed as an argument to `displayAsDoubles`, because `Set<Double>` is not
 a subtype of `Set<Number>` (see \questionref{subtyping}).
 
-The correct signature uses a \emph{wildcard}:
+The correct signature uses a *wildcard*:
 
 \begin{lstlisting}
 public static void displayAsDoubles(Set<? extends Number> numbers); // (**)

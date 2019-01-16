@@ -8,7 +8,7 @@ together with a mode in which the time should be shown.  The mode should be one 
 
 \begin{itemize}
 
-\item 24-hour format, i.e., \emph{hh:mm:ss}
+\item 24-hour format, i.e., *hh:mm:ss*
 
 \item number of seconds since midnight, e.g., 03:24:52 is 12292 seconds since midnight
 
@@ -47,7 +47,7 @@ Clock 1 shows: 9 seconds since midnight.  Clock 2 shows: 00:00:02
 
 Now design a class, `AlarmClock`, which extends `Clock` by storing a specific time
 at which an alarm should sound.  An `AlarmClock` should also include a `boolean` field determining whether the alarm is
-currently sounding; this should initially be \emph{false}.  `AlarmClock` should provide appropriate constructors so that
+currently sounding; this should initially be *false*.  `AlarmClock` should provide appropriate constructors so that
 one can create an `AlarmClock` with a specified 24-hour time and alarm, or a ``seconds since
 midnight'' time and alarm.
 
@@ -94,7 +94,7 @@ alarm is sounding, an appropriate message representative of the given radio stat
 
 Write an `RadioAlarmClockDemo.java` program to demonstrate this.  For example, given three radio
 alarm clocks, each initialised to 23:59:50 with the alarm set to go off at 23:59:58, and tuned to no station,
-\emph{Radio 4} and \emph{Five Live}, respectively, your program should display something like:
+*Radio 4* and *Five Live*, respectively, your program should display something like:
 
 \begin{scriptsize}
 \begin{verbatim}

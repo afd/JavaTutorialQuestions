@@ -10,7 +10,7 @@ TODO: add content
 \begin{question}{Clocks.}
 Some notes on the sample code solution:
 
-\vspace{1mm}\emph{The Clock class.}
+\vspace{1mm}*The Clock class.*
 The two display modes are represented by an enum, `DisplayMode`.  They could be represented using
 a boolean.  The advantage of an enum is that it allows us to easily add further display modes.
 
@@ -48,11 +48,11 @@ Take a look at the `toString` method and check you understand it, in particular 
 `padding` helper method is used to properly format the clock display.
 
 
-\vspace{1mm}\emph{The AlarmClock class.}  Observe that `AlarmClock` has two public constructors,
+\vspace{1mm}*The AlarmClock class.*  Observe that `AlarmClock` has two public constructors,
 corresponding to the public constructors for `Clock`.  Each adds new fields to represent the time
 at which the alarm is set to go off.  Each constructor first uses `super(...)` to call the appropriate
 constructor of `Clock`, then assigns to the new ``alarm'' fields.  Notice also that `AlarmClock`
-uses a boolean flag to decide whether the alarm is currently sounding; this is initialised to \emph{false}.
+uses a boolean flag to decide whether the alarm is currently sounding; this is initialised to *false*.
 
 Check that you understand the (slightly complex) logic used in `tick()` to determine whether the
 alarm is sounding or not.
@@ -64,17 +64,17 @@ Look at the use of `super` in `toString`, to avoid duplicating code for displayi
 \begin{lstlisting}
 (alarmSounding ? " " + beep() : "")
 \end{lstlisting}
-If `alarmSounding` is \emph{true}, this operator returns a space followed by the result of method
+If `alarmSounding` is *true*, this operator returns a space followed by the result of method
 `beep()`.  Otherwise, the operator returns the empty string.
 
-\vspace{1mm}\emph{The RadioAlarmClock class.}  I have modelled radio stations using an enumeration, `RadioStation`.  This class (remember, an enum is a class) represents four different radio stations, and includes
+\vspace{1mm}*The RadioAlarmClock class.*  I have modelled radio stations using an enumeration, `RadioStation`.  This class (remember, an enum is a class) represents four different radio stations, and includes
 a special `None` value to model the case where a `RadioAlarmClock` is not tuned to any station.
 
 The constructors for `RadioAlarmClock` mirror the constructors for `AlarmClock` (which in turn
 mirror the public constructors for `Clock`).  Each constructor takes a time of day, an alarm time, and
 a `RadioStation`.
 
-Notice that I have \emph{not} overridden `toString()` to change the way a `RadioAlarm``Clock` is
+Notice that I have *not* overridden `toString()` to change the way a `RadioAlarm``Clock` is
 displayed.  The `toString` method in `AlarmClock` calls a method, `beep()`, which
 returns the string `BEEP!`.  In `RadioAlarmClock` I have overridden `beep()`.  This means that
 when `toString()` is called on an instance of `RadioAlarmClock`, the `toString()` method
