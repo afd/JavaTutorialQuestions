@@ -130,7 +130,7 @@ Doubles as ints
 
 **Hints for \questionref{boundedgenerics}.**
 
-\vspace{1mm}
+
 **Step 1.** You can write:
 
 ```
@@ -140,7 +140,7 @@ interface NumberParser<T extends Number> { ...
 to ensure that in instances of `NumberParser`, `T`
 can only be substituted by `Number` or one of its subclasses.
 
-\vspace{1mm}
+
 **Step 2.** To implement `NumberParser` with
 respect to the *specific* type `Double`, you can write:
 
@@ -151,7 +151,7 @@ public class DoubleParser implements NumberParser<Double> { ...
 Having done this, in the class body you should use `Double`
 wherever the interface uses the type parameter `T`.
 
-\vspace{1mm}
+
 **Step 3.** The declaration for `readNumbers` should
 be as follows:
 
@@ -176,20 +176,20 @@ In the body of `readNumbers`, you can create an instance of `Set<T>` by writing:
 Set<T> result = new HashSet<T>();
 ```
 
-\vspace{1mm}
+
 **Step 4.** To read five doubles from standard input, you should simply be able to write:
 
 ```
 Set<Double> doubles = readNumbers(5, new DoubleParser());
 ```
 
-\vspace{1mm}
+
 **Step 5.** See hint for Step 1.
 
-\vspace{1mm}
+
 **Step 6.** See hint for Step 2.
 
-\vspace{1mm}
+
 **Step 7.** The signature for `addNumbers` should be:
 
 ```
@@ -205,14 +205,14 @@ T result = adder.zero();
 This should be followed by a loop over all elements of `numbers`, using `adder` to add each number
 to `result`.
 
-\vspace{1mm}
+
 **Step 8.** Given a set of doubles, you should be able to compute its sum by simply writing:
 
 ```
 double sumOfDoubles = addNumbers(doubles, new DoubleAdder());
 ```
 
-\vspace{1mm}
+
 **Step 9.** You might think that `displayAsDoubles` should have the signature:
 
 ```

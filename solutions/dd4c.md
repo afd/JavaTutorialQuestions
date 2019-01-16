@@ -10,7 +10,7 @@ TODO: add content
 \begin{question}{Clocks.}
 Some notes on the sample code solution:
 
-\vspace{1mm}*The Clock class.*
+*The Clock class.*
 The two display modes are represented by an enum, `DisplayMode`.  They could be represented using
 a boolean.  The advantage of an enum is that it allows us to easily add further display modes.
 
@@ -48,7 +48,7 @@ Take a look at the `toString` method and check you understand it, in particular 
 `padding` helper method is used to properly format the clock display.
 
 
-\vspace{1mm}*The AlarmClock class.*  Observe that `AlarmClock` has two public constructors,
+*The AlarmClock class.*  Observe that `AlarmClock` has two public constructors,
 corresponding to the public constructors for `Clock`.  Each adds new fields to represent the time
 at which the alarm is set to go off.  Each constructor first uses `super(...)` to call the appropriate
 constructor of `Clock`, then assigns to the new ``alarm'' fields.  Notice also that `AlarmClock`
@@ -67,7 +67,7 @@ Look at the use of `super` in `toString`, to avoid duplicating code for displayi
 If `alarmSounding` is *true*, this operator returns a space followed by the result of method
 `beep()`.  Otherwise, the operator returns the empty string.
 
-\vspace{1mm}*The RadioAlarmClock class.*  I have modelled radio stations using an enumeration, `RadioStation`.  This class (remember, an enum is a class) represents four different radio stations, and includes
+*The RadioAlarmClock class.*  I have modelled radio stations using an enumeration, `RadioStation`.  This class (remember, an enum is a class) represents four different radio stations, and includes
 a special `None` value to model the case where a `RadioAlarmClock` is not tuned to any station.
 
 The constructors for `RadioAlarmClock` mirror the constructors for `AlarmClock` (which in turn
