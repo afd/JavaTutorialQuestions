@@ -16,7 +16,7 @@ In this question, your task is to write a class with generic methods for reading
 adding numbers, and converting numbers into doubles or ints.  The question is divided into a number of steps,
 and there are hints for each step at the end of the sheet.
 
-\vspace{1mm}\noindent**Step 1.** Write a generic interface, `NumberParser`.  Write the
+**Step 1.** Write a generic interface, `NumberParser`.  Write the
 type parameter for this interface so that it can only be substituted by the `Number` class,
 or a subclass of `Number`.  `NumberParser` should specify two methods:
 
@@ -29,12 +29,12 @@ public E parseNumber(String s);
 public String typeParsed();
 ```
 
-\vspace{1mm}\noindent**Step 2.** Write classes `IntegerParser` and `DoubleParser`
+**Step 2.** Write classes `IntegerParser` and `DoubleParser`
 which implement the `NumberParser` interface.  These classes should *not* be generic: they
 should implement `NumberParser` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-\vspace{1mm}\noindent**Step 3.** Write a class, `NumberManipulation`, with a static method
+**Step 3.** Write a class, `NumberManipulation`, with a static method
 called `readNumbers`.  The `readNumbers` method should be generic: for some type `T` that is
 a subclass of `Number` the method should take as parameters an integer `n` specifying how many numbers should
 be read from the command-line, and a `NumberParser` capable of parsing numbers of type `T`.  The method should
@@ -46,14 +46,14 @@ have been read.  To tell the user which type of number they should enter, use th
 input, and use the `parseNumber()` method of the `NumberParser` parameter to turn this into number of type
 `T`.
 
-\vspace{0.5mm}\noindent*Note:* It is recommended for this question that you use `Set` from the Java standard library, rather than
+*Note:* It is recommended for this question that you use `Set` from the Java standard library, rather than
 the `GenericSet` interface designed in \questionref{genericsets}.
 
-\vspace{1mm}\noindent**Step 4.** Write a `main` method in `NumberManipulator`.  This method should obtain
+**Step 4.** Write a `main` method in `NumberManipulator`.  This method should obtain
 a set of five doubles and a set of five integers from the command-line, by invoking the `readNumbers()` method with appropriate arguments.
 Test that this is working by printing to standard output the sets constructed by your program.
 
-\vspace{1mm}\noindent**Step 5.** Write a generic interface, `NumberAdder`.  Write the
+**Step 5.** Write a generic interface, `NumberAdder`.  Write the
 type parameter for this interface so that it can only be instantiated by the `Number` class,
 or a subclass of `Number`.  `NumberAdder` should specify two methods:
 
@@ -65,29 +65,29 @@ T zero();
 public T add(T x, T y);
 ```
 
-\vspace{1mm}\noindent**Step 6.** Write classes `IntegerAdder` and `DoubleAdder`
+**Step 6.** Write classes `IntegerAdder` and `DoubleAdder`
 which implement the `NumberAdder` interface.  Like `IntegerParser` and `DoubleParser`,
 these classes should *not* be generic: they
 should implement `NumberAdder` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-\vspace{1mm}\noindent**Step 7.** Add to `NumberManipluator` a static method, `addNumbers`.
+**Step 7.** Add to `NumberManipluator` a static method, `addNumbers`.
 The `addNumbers` method should be generic: for some type `T` that is
 a subclass of `Number` the method should take as parameters a `Set` containing elements of
 type `T`, and a `NumberAdder` capable of adding numbers of type `T`.  The method should
 return a number of type `T` which should be the sum of all the numbers in the set.
 
-\vspace{1mm}\noindent**Step 8.** Extend `main` so that, after obtaining a set of ints and a set of
+**Step 8.** Extend `main` so that, after obtaining a set of ints and a set of
 doubles, the sum of each of these sets is computed.  Test that this is working by printing to standard output the sets
 and their sums.
 
-\vspace{1mm}\noindent**Step 9.** Add to `NumberManipulator` a static method, `displayAsDoubles`.
+**Step 9.** Add to `NumberManipulator` a static method, `displayAsDoubles`.
 The method should take one argument: a `Set` whose element type is `Number` or any subclass of
 `Number`.  The method should print the contents of the set to standard output, representing each set element
 as a `double`.  Add a corresponding method, `displayAsInts`.  To implement these methods, why is
 it essential that the set element type is a subtype of `Number`?
 
-\vspace{1mm}\noindent**Step 10.** Finally, extend your main method so that, after printing the sum of each set
+**Step 10.** Finally, extend your main method so that, after printing the sum of each set
 entered by the user, the set of integers is printed as a set of doubles (using `displayAsDoubles`) and
 the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 
@@ -128,10 +128,10 @@ Doubles as ints
 
 
 
-\noindent**Hints for \questionref{boundedgenerics}.**
+**Hints for \questionref{boundedgenerics}.**
 
 \vspace{1mm}
-\noindent**Step 1.** You can write:
+**Step 1.** You can write:
 
 ```
 interface NumberParser<T extends Number> { ...
@@ -141,7 +141,7 @@ to ensure that in instances of `NumberParser`, `T`
 can only be substituted by `Number` or one of its subclasses.
 
 \vspace{1mm}
-\noindent**Step 2.** To implement `NumberParser` with
+**Step 2.** To implement `NumberParser` with
 respect to the *specific* type `Double`, you can write:
 
 ```
@@ -152,7 +152,7 @@ Having done this, in the class body you should use `Double`
 wherever the interface uses the type parameter `T`.
 
 \vspace{1mm}
-\noindent**Step 3.** The declaration for `readNumbers` should
+**Step 3.** The declaration for `readNumbers` should
 be as follows:
 
 ```
@@ -177,20 +177,20 @@ Set<T> result = new HashSet<T>();
 ```
 
 \vspace{1mm}
-\noindent**Step 4.** To read five doubles from standard input, you should simply be able to write:
+**Step 4.** To read five doubles from standard input, you should simply be able to write:
 
 ```
 Set<Double> doubles = readNumbers(5, new DoubleParser());
 ```
 
 \vspace{1mm}
-\noindent**Step 5.** See hint for Step 1.
+**Step 5.** See hint for Step 1.
 
 \vspace{1mm}
-\noindent**Step 6.** See hint for Step 2.
+**Step 6.** See hint for Step 2.
 
 \vspace{1mm}
-\noindent**Step 7.** The signature for `addNumbers` should be:
+**Step 7.** The signature for `addNumbers` should be:
 
 ```
 public static <T extends Number> T addNumbers(Set<T> numbers, NumberAdder<T> adder);
@@ -206,14 +206,14 @@ This should be followed by a loop over all elements of `numbers`, using `adder` 
 to `result`.
 
 \vspace{1mm}
-\noindent**Step 8.** Given a set of doubles, you should be able to compute its sum by simply writing:
+**Step 8.** Given a set of doubles, you should be able to compute its sum by simply writing:
 
 ```
 double sumOfDoubles = addNumbers(doubles, new DoubleAdder());
 ```
 
 \vspace{1mm}
-\noindent**Step 9.** You might think that `displayAsDoubles` should have the signature:
+**Step 9.** You might think that `displayAsDoubles` should have the signature:
 
 ```
 public static void displayAsDoubles(Set<Number> numbers); // (*)
