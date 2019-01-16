@@ -93,7 +93,7 @@ the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 
 An interactive session with your final program might look like this:
 
-\begin{scriptsize}
+
 ```
 Please enter five doubles, one line at a time
 Please enter number of type double:
@@ -124,7 +124,7 @@ Ints as doubles:
 Doubles as ints
 [ 2, 1, 1, 1, 1 ]
 ```
-\end{scriptsize}
+
 
 
 
