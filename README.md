@@ -81,6 +81,27 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
 | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
+| [ebc1](questions/ebc1.md) | *Name*                        | Streams              |             | [Solution](solutions/ebc1.md) |
+| [5912](questions/5912.md) | *Name*                        | Streams              |             | [Solution](solutions/5912.md) |
+| [6563](questions/6563.md) | *Name*                        | Streams              |             | [Solution](solutions/6563.md) |
+| [303d](questions/303d.md) | *Name*                        | Streams              |             | [Solution](solutions/303d.md) |
+| [6a57](questions/6a57.md) | *Name*                        | Streams              |             | [Solution](solutions/xxx.md) |
+| [0f05](questions/0f05.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/0f05.md) |
+| [dd4c](questions/dd4c.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/dd4c.md) |
+| [8f65](questions/8f65.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/8f65.md) |
+| [845d](questions/845d.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/845d.md) |
+| [e93f](questions/e93f.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/e93f.md) |
+| [5235](questions/5235.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/5235.md) |
+| [710c](questions/710c.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/710c.md) |
+| [0c21](questions/0c21.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/0c21.md) |
+| [5981](questions/5981.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/5981.md) |
+| [dc38](questions/dc38.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/dc38.md) |
+| [1486](questions/1486.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/1486.md) |
+| [8a61](questions/8a61.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/8a61.md) |
+| [85bb](questions/85bb.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/85bb.md) |
+| [a6e7](questions/a6e7.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/a6e7.md) |
+| [aa68](questions/aa68.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/aa68.md) |
+| [236b](questions/236b.md) | *Name*                        | Topic(s)              |             | [Solution](solutions/236b.md) |
 
 TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
 
