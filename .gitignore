@@ -1,2 +1,6 @@
+# IntelliJ project files
+solutions/.idea
+
+# Temporary files
 *~
 *.bak
