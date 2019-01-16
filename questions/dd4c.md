@@ -6,13 +6,13 @@
 Write a class, `Clock`, that records a moment in time during a day, in the granularity of seconds,
 together with a mode in which the time should be shown.  The mode should be one of:
 
-\begin{itemize}
+
 
 \item 24-hour format, i.e., *hh:mm:ss*
 
 \item number of seconds since midnight, e.g., 03:24:52 is 12292 seconds since midnight
 
-\end{itemize}
+```
 
 Your class should allow a clock to be constructed either by specifying a single integer, the number of seconds
 since midnight (in which case this is the display mode to be used), or three integers, representing the current
