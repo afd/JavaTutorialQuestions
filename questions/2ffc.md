@@ -2,7 +2,7 @@
 
 ## 2ffc: *Generic stacks*
 
-\begin{question}{.}\label{question:genericstacks} *Note:* even if you did not attempt the **string stack** question
+TODO: fix referencing.  *Note:* even if you did not attempt the **string stack** question
 of Sheet 3 (Question 13), you should still be able to attempt this question by starting with the Sheet 3 sample solutions.
 
 Replace the `StringStack` interface of Question 13, Sheet 3, with an interface `GenericStack`
