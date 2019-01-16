@@ -8,9 +8,9 @@ together with a mode in which the time should be shown.  The mode should be one 
 
 
 
-\item 24-hour format, i.e., *hh:mm:ss*
+* 24-hour format, i.e., *hh:mm:ss*
 
-\item number of seconds since midnight, e.g., 03:24:52 is 12292 seconds since midnight
+* number of seconds since midnight, e.g., 03:24:52 is 12292 seconds since midnight
 
 ```
 
