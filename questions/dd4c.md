@@ -3,7 +3,7 @@
 ## dd4c: *Clocks*
 
 
-Write a class, \lstinline{Clock}, that records a moment in time during a day, in the granularity of seconds,
+Write a class, `Clock`, that records a moment in time during a day, in the granularity of seconds,
 together with a mode in which the time should be shown.  The mode should be one of:
 
 \begin{itemize}
@@ -18,16 +18,16 @@ Your class should allow a clock to be constructed either by specifying a single 
 since midnight (in which case this is the display mode to be used), or three integers, representing the current
 hour, minute and seconds (in which case 24-hour format should be used as the display mode).
 
-Your class should provide a method, \lstinline{tick()}, that advances the time stored by a \lstinline{Clock} object by one second.  In
-addition, you should override \lstinline{toString()} so that a \lstinline{Clock} is represented as a string according
+Your class should provide a method, `tick()`, that advances the time stored by a `Clock` object by one second.  In
+addition, you should override `toString()` so that a `Clock` is represented as a string according
 to the appropriate display mode.
 
-Write a Java program, say in \lstinline{ClockDemo.java}, to demo your \lstinline{Clock} class
+Write a Java program, say in `ClockDemo.java`, to demo your `Clock` class
 by creating a few clocks, then updating their time
-once per second.  You can do this by using Java's \lstinline{Thread.sleep(x)} method, which causes execution
-to pause for \lstinline{x} milliseconds.  This method of timing is not precise, but suffices for
-this exercise.  Because \lstinline{Thread.sleep(x)} can throw an \lstinline{InterruptedException}, you will need
-to specify that your \lstinline{main} method \lstinline{throws} this exception.  The output of your program should
+once per second.  You can do this by using Java's `Thread.sleep(x)` method, which causes execution
+to pause for `x` milliseconds.  This method of timing is not precise, but suffices for
+this exercise.  Because `Thread.sleep(x)` can throw an `InterruptedException`, you will need
+to specify that your `main` method `throws` this exception.  The output of your program should
 look something like this:
 
 \begin{scriptsize}
@@ -45,19 +45,19 @@ Clock 1 shows: 9 seconds since midnight.  Clock 2 shows: 00:00:02
 \end{verbatim}
 \end{scriptsize}
 
-Now design a class, \lstinline{AlarmClock}, which extends \lstinline{Clock} by storing a specific time
-at which an alarm should sound.  An \lstinline{AlarmClock} should also include a \lstinline{boolean} field determining whether the alarm is
-currently sounding; this should initially be \emph{false}.  \lstinline{AlarmClock} should provide appropriate constructors so that
-one can create an \lstinline{AlarmClock} with a specified 24-hour time and alarm, or a ``seconds since
+Now design a class, `AlarmClock`, which extends `Clock` by storing a specific time
+at which an alarm should sound.  An `AlarmClock` should also include a `boolean` field determining whether the alarm is
+currently sounding; this should initially be \emph{false}.  `AlarmClock` should provide appropriate constructors so that
+one can create an `AlarmClock` with a specified 24-hour time and alarm, or a ``seconds since
 midnight'' time and alarm.
 
-Override the \lstinline{tick()} method to behave as for \lstinline{Clock}, but to additionally control the alarm.
+Override the `tick()` method to behave as for `Clock`, but to additionally control the alarm.
 If the alarm time is reached, the alarm should be turned on, and should remain on for 60 seconds.
 
-Also override the \lstinline{toString()} method to indicate whether the alarm is currently sounding.
+Also override the `toString()` method to indicate whether the alarm is currently sounding.
 
-Write a program, \lstinline{AlarmClockDemo.java} to demo your \lstinline{AlarmClock} class, similarly
-to \lstinline{Clock.java} above.  For a single clock, initialised to 23:59:50 with the alarm set to
+Write a program, `AlarmClockDemo.java` to demo your `AlarmClock` class, similarly
+to `Clock.java` above.  For a single clock, initialised to 23:59:50 with the alarm set to
 go off at 23:59:58, the output of your program should be something like:
 
 \begin{scriptsize}
@@ -85,14 +85,14 @@ Clock says: 00:01:02
 \end{verbatim}
 \end{scriptsize}
 
-Finally, write a class called \lstinline{RadioAlarmClock} which extends \lstinline{AlarmClock}.
-A \lstinline{RadioAlarmClock} should have a \lstinline{station} field, which either has a special
-value \lstinline{None}, or the value of a radio station.  You should choose, or make up, a number
-of suitable radio stations.  If the \lstinline{station} field is \lstinline{None}, a \lstinline{RadioAlarmClock}
-should behave exactly as an \lstinline{AlarmClock}.  Otherwise, instead of displaying \lstinline{BEEP!} when the
+Finally, write a class called `RadioAlarmClock` which extends `AlarmClock`.
+A `RadioAlarmClock` should have a `station` field, which either has a special
+value `None`, or the value of a radio station.  You should choose, or make up, a number
+of suitable radio stations.  If the `station` field is `None`, a `RadioAlarmClock`
+should behave exactly as an `AlarmClock`.  Otherwise, instead of displaying `BEEP!` when the
 alarm is sounding, an appropriate message representative of the given radio station should be shown.
 
-Write an \lstinline{RadioAlarmClockDemo.java} program to demonstrate this.  For example, given three radio
+Write an `RadioAlarmClockDemo.java` program to demonstrate this.  For example, given three radio
 alarm clocks, each initialised to 23:59:50 with the alarm set to go off at 23:59:58, and tuned to no station,
 \emph{Radio 4} and \emph{Five Live}, respectively, your program should display something like:
 

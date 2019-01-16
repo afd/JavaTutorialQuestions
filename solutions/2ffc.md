@@ -7,13 +7,13 @@ See code at `solutions/code/tutorialquestions/question2ffc`
 \begin{question}{Generic stacks.}\label{question:genericstacks} Making the solution to the \textbf{string stack} question
 of Sheet 3 (Question 8) generic is pretty straightforward: compare the sample solutions.
 
-Some notes: in \lstinline{GenericStackArray<T>} you will have a field:
+Some notes: in `GenericStackArray<T>` you will have a field:
 
 \begin{lstlisting}
 private T[] elements;
 \end{lstlisting}
 
-In the constructor of \lstinline{GenericStackArray<T>} you cannot write:
+In the constructor of `GenericStackArray<T>` you cannot write:
 
 \begin{lstlisting}
 elements = new E[STACK_LIMIT];

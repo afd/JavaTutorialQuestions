@@ -11,80 +11,80 @@ TODO: add content
 Some notes on the sample code solution:
 
 \vspace{1mm}\emph{The Clock class.}
-The two display modes are represented by an enum, \lstinline{DisplayMode}.  They could be represented using
+The two display modes are represented by an enum, `DisplayMode`.  They could be represented using
 a boolean.  The advantage of an enum is that it allows us to easily add further display modes.
 
-I decided to use ``seconds since midnight'' as the canonical representation for a \lstinline{Clock}.
-My \lstinline{Clock} class has a \textbf{private} constructor that takes a ``seconds since midnight'' value
-and a \lstinline{DisplayMode}.  There are two public constructors, as required in the question, which
+I decided to use ``seconds since midnight'' as the canonical representation for a `Clock`.
+My `Clock` class has a \textbf{private} constructor that takes a ``seconds since midnight'' value
+and a `DisplayMode`.  There are two public constructors, as required in the question, which
 both delegate to the private constructor:
 
 \begin{lstlisting}
 public Clock(int secondsSinceMidnight);
 \end{lstlisting}
 %
-simply uses \lstinline{this(...)} to call the private \lstinline{Clock} constructor with the given number of seconds since midnight and the
-\lstinline{SecondsSinceMidnight} display mode.
+simply uses `this(...)` to call the private `Clock` constructor with the given number of seconds since midnight and the
+`SecondsSinceMidnight` display mode.
 
 \begin{lstlisting}
 public Clock(int hh, int mm, int ss);
 \end{lstlisting}
 %
-uses method \lstinline{twentyFourHourToSecondsSinceMidnight} to convert the given hours, minutes and seconds into
-a ``seconds since midnight value'', and uses \lstinline{this(...)} to call the private constructor with the
-resulting value and the \lstinline{TwentyFourHour}
+uses method `twentyFourHourToSecondsSinceMidnight` to convert the given hours, minutes and seconds into
+a ``seconds since midnight value'', and uses `this(...)` to call the private constructor with the
+resulting value and the `TwentyFourHour`
 display mode.
 
-The helper method \lstinline{twentyFourHourToSecondsSinceMidnight} is \textbf{static}.  This makes sense because the
-method computes a straightforward function of its arguments: it does not depend on the state of any \lstinline{Clock}
+The helper method `twentyFourHourToSecondsSinceMidnight` is \textbf{static}.  This makes sense because the
+method computes a straightforward function of its arguments: it does not depend on the state of any `Clock`
 object.
 
-I have used some constants, such as \lstinline{SECONDS_IN_A_MINUTE} and \lstinline{MINUTES_IN_AN_}\lstinline{HOUR} to make the
+I have used some constants, such as `SECONDS_IN_A_MINUTE` and `MINUTES_IN_AN_``HOUR` to make the
 code easy to read.  You might argue that I have gone overboard here, but I personally approve of using constants
 instead of ``magic numbers'' wherever
 possible, even for very well-known magic numbers.
 
-Take a look at the \lstinline{toString} method and check you understand it, in particular the way the
-\lstinline{padding} helper method is used to properly format the clock display.
+Take a look at the `toString` method and check you understand it, in particular the way the
+`padding` helper method is used to properly format the clock display.
 
 
-\vspace{1mm}\emph{The AlarmClock class.}  Observe that \lstinline{AlarmClock} has two public constructors,
-corresponding to the public constructors for \lstinline{Clock}.  Each adds new fields to represent the time
-at which the alarm is set to go off.  Each constructor first uses \lstinline{super(...)} to call the appropriate
-constructor of \lstinline{Clock}, then assigns to the new ``alarm'' fields.  Notice also that \lstinline{AlarmClock}
+\vspace{1mm}\emph{The AlarmClock class.}  Observe that `AlarmClock` has two public constructors,
+corresponding to the public constructors for `Clock`.  Each adds new fields to represent the time
+at which the alarm is set to go off.  Each constructor first uses `super(...)` to call the appropriate
+constructor of `Clock`, then assigns to the new ``alarm'' fields.  Notice also that `AlarmClock`
 uses a boolean flag to decide whether the alarm is currently sounding; this is initialised to \emph{false}.
 
-Check that you understand the (slightly complex) logic used in \lstinline{tick()} to determine whether the
+Check that you understand the (slightly complex) logic used in `tick()` to determine whether the
 alarm is sounding or not.
 
-Look at the use of \lstinline{super} in \lstinline{toString}, to avoid duplicating code for displaying a
-\lstinline{Clock} in \lstinline{AlarmClock}.  Also check you understand the use of the ternary operator in
-\lstinline{toString}:
+Look at the use of `super` in `toString`, to avoid duplicating code for displaying a
+`Clock` in `AlarmClock`.  Also check you understand the use of the ternary operator in
+`toString`:
 %
 \begin{lstlisting}
 (alarmSounding ? " " + beep() : "")
 \end{lstlisting}
-If \lstinline{alarmSounding} is \emph{true}, this operator returns a space followed by the result of method
-\lstinline{beep()}.  Otherwise, the operator returns the empty string.
+If `alarmSounding` is \emph{true}, this operator returns a space followed by the result of method
+`beep()`.  Otherwise, the operator returns the empty string.
 
-\vspace{1mm}\emph{The RadioAlarmClock class.}  I have modelled radio stations using an enumeration, \lstinline{RadioStation}.  This class (remember, an enum is a class) represents four different radio stations, and includes
-a special \lstinline{None} value to model the case where a \lstinline{RadioAlarmClock} is not tuned to any station.
+\vspace{1mm}\emph{The RadioAlarmClock class.}  I have modelled radio stations using an enumeration, `RadioStation`.  This class (remember, an enum is a class) represents four different radio stations, and includes
+a special `None` value to model the case where a `RadioAlarmClock` is not tuned to any station.
 
-The constructors for \lstinline{RadioAlarmClock} mirror the constructors for \lstinline{AlarmClock} (which in turn
-mirror the public constructors for \lstinline{Clock}).  Each constructor takes a time of day, an alarm time, and
-a \lstinline{RadioStation}.
+The constructors for `RadioAlarmClock` mirror the constructors for `AlarmClock` (which in turn
+mirror the public constructors for `Clock`).  Each constructor takes a time of day, an alarm time, and
+a `RadioStation`.
 
-Notice that I have \emph{not} overridden \lstinline{toString()} to change the way a \lstinline{RadioAlarm}\lstinline{Clock} is
-displayed.  The \lstinline{toString} method in \lstinline{AlarmClock} calls a method, \lstinline{beep()}, which
-returns the string \lstinline{BEEP!}.  In \lstinline{RadioAlarmClock} I have overridden \lstinline{beep()}.  This means that
-when \lstinline{toString()} is called on an instance of \lstinline{RadioAlarmClock}, the \lstinline{toString()} method
-in \lstinline{AlarmClock} will execute.  This method calls \lstinline{beep()}, but because \lstinline{RadioAlarmClock}
-overrides \lstinline{beep()} it is this overridden version of \lstinline{beep()} that will be called.
+Notice that I have \emph{not} overridden `toString()` to change the way a `RadioAlarm``Clock` is
+displayed.  The `toString` method in `AlarmClock` calls a method, `beep()`, which
+returns the string `BEEP!`.  In `RadioAlarmClock` I have overridden `beep()`.  This means that
+when `toString()` is called on an instance of `RadioAlarmClock`, the `toString()` method
+in `AlarmClock` will execute.  This method calls `beep()`, but because `RadioAlarmClock`
+overrides `beep()` it is this overridden version of `beep()` that will be called.
 
-Now consider the implementation of \lstinline{beep()} in \lstinline{RadioAlarmClock}.  If the radio station field
-of the radio alarm clock is \lstinline{None} then \lstinline{beep()} uses \lstinline{super} to invoke \lstinline{beep()}
-in \lstinline{AlarmClock}.  Otherwise the \lstinline{getNoise()} method is called on the radio alarm clock's \lstinline{station}
-field.  This illustrates the fact that enum classes can have instance methods.  Look at the implementation of \lstinline{getNoise()}
-in \lstinline{RadioStation}.
+Now consider the implementation of `beep()` in `RadioAlarmClock`.  If the radio station field
+of the radio alarm clock is `None` then `beep()` uses `super` to invoke `beep()`
+in `AlarmClock`.  Otherwise the `getNoise()` method is called on the radio alarm clock's `station`
+field.  This illustrates the fact that enum classes can have instance methods.  Look at the implementation of `getNoise()`
+in `RadioStation`.
 
 \end{question}

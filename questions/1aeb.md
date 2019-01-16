@@ -4,21 +4,21 @@
 
 This question provides practice with \emph{bounded} generics and the use of \emph{wildcards}.
 
-Recall that Java provides classes that wrap all the primitive numeric types.  E.g., \lstinline{Integer} is
- a wrapper for \lstinline{int}, and \lstinline{Double} is a wrapper for \lstinline{double}.  These classes
- all extend an abstract class, \lstinline{Number}, which provides general methods such as \lstinline{intValue()}
- and \lstinline{doubleValue()}, which convert any instance of \lstinline{Number} into an \lstinline{int}
- or \lstinline{double}, respectively.  (The conversion process may lead to truncation or rounding.
- E.g., converting a \lstinline{Double} to an \lstinline{int} may cause truncation,
- while converting an \lstinline{Integer} to a \lstinline{double} may cause rounding.)
+Recall that Java provides classes that wrap all the primitive numeric types.  E.g., `Integer` is
+ a wrapper for `int`, and `Double` is a wrapper for `double`.  These classes
+ all extend an abstract class, `Number`, which provides general methods such as `intValue()`
+ and `doubleValue()`, which convert any instance of `Number` into an `int`
+ or `double`, respectively.  (The conversion process may lead to truncation or rounding.
+ E.g., converting a `Double` to an `int` may cause truncation,
+ while converting an `Integer` to a `double` may cause rounding.)
 
 In this question, your task is to write a class with generic methods for reading numbers from the command-line,
 adding numbers, and converting numbers into doubles or ints.  The question is divided into a number of steps,
 and there are hints for each step at the end of the sheet.
 
-\vspace{1mm}\noindent\textbf{Step 1.} Write a generic interface, \lstinline{NumberParser}.  Write the
-type parameter for this interface so that it can only be substituted by the \lstinline{Number} class,
-or a subclass of \lstinline{Number}.  \lstinline{NumberParser} should specify two methods:
+\vspace{1mm}\noindent\textbf{Step 1.} Write a generic interface, `NumberParser`.  Write the
+type parameter for this interface so that it can only be substituted by the `Number` class,
+or a subclass of `Number`.  `NumberParser` should specify two methods:
 
 \begin{lstlisting}
 // Convert String s into a Number of type E
@@ -29,33 +29,33 @@ public E parseNumber(String s);
 public String typeParsed();
 \end{lstlisting}
 
-\vspace{1mm}\noindent\textbf{Step 2.} Write classes \lstinline{IntegerParser} and \lstinline{DoubleParser}
-which implement the \lstinline{NumberParser} interface.  These classes should \emph{not} be generic: they
-should implement \lstinline{NumberParser} with respect to specific subclasses of \lstinline{Number}---\lstinline{Integer}
-and \lstinline{Double} respectively.  Write some simple programs to convince yourself that these classes are working.
+\vspace{1mm}\noindent\textbf{Step 2.} Write classes `IntegerParser` and `DoubleParser`
+which implement the `NumberParser` interface.  These classes should \emph{not} be generic: they
+should implement `NumberParser` with respect to specific subclasses of `Number`---`Integer`
+and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-\vspace{1mm}\noindent\textbf{Step 3.} Write a class, \lstinline{NumberManipulation}, with a static method
-called \lstinline{readNumbers}.  The \lstinline{readNumbers} method should be generic: for some type \lstinline{T} that is
-a subclass of \lstinline{Number} the method should take as parameters an integer \lstinline{n} specifying how many numbers should
-be read from the command-line, and a \lstinline{NumberParser} capable of parsing numbers of type \lstinline{T}.  The method should
-return a \lstinline{Set} with element type \lstinline{T}.
+\vspace{1mm}\noindent\textbf{Step 3.} Write a class, `NumberManipulation`, with a static method
+called `readNumbers`.  The `readNumbers` method should be generic: for some type `T` that is
+a subclass of `Number` the method should take as parameters an integer `n` specifying how many numbers should
+be read from the command-line, and a `NumberParser` capable of parsing numbers of type `T`.  The method should
+return a `Set` with element type `T`.
 
-Your implementation of \lstinline{readNumbers} should repeatedly prompt the user to enter a number until \lstinline{n} numbers
-have been read.  To tell the user which type of number they should enter, use the \lstinline{typeParsed()} method of the
-\lstinline{NumberParser} parameter.  To actually parse the number, use a \lstinline{BufferedReader} to read a line from standard
-input, and use the \lstinline{parseNumber()} method of the \lstinline{NumberParser} parameter to turn this into number of type
-\lstinline{T}.
+Your implementation of `readNumbers` should repeatedly prompt the user to enter a number until `n` numbers
+have been read.  To tell the user which type of number they should enter, use the `typeParsed()` method of the
+`NumberParser` parameter.  To actually parse the number, use a `BufferedReader` to read a line from standard
+input, and use the `parseNumber()` method of the `NumberParser` parameter to turn this into number of type
+`T`.
 
-\vspace{0.5mm}\noindent\emph{Note:} It is recommended for this question that you use \lstinline{Set} from the Java standard library, rather than
-the \lstinline{GenericSet} interface designed in \questionref{genericsets}.
+\vspace{0.5mm}\noindent\emph{Note:} It is recommended for this question that you use `Set` from the Java standard library, rather than
+the `GenericSet` interface designed in \questionref{genericsets}.
 
-\vspace{1mm}\noindent\textbf{Step 4.} Write a \lstinline{main} method in \lstinline{NumberManipulator}.  This method should obtain
-a set of five doubles and a set of five integers from the command-line, by invoking the \lstinline{readNumbers()} method with appropriate arguments.
+\vspace{1mm}\noindent\textbf{Step 4.} Write a `main` method in `NumberManipulator`.  This method should obtain
+a set of five doubles and a set of five integers from the command-line, by invoking the `readNumbers()` method with appropriate arguments.
 Test that this is working by printing to standard output the sets constructed by your program.
 
-\vspace{1mm}\noindent\textbf{Step 5.} Write a generic interface, \lstinline{NumberAdder}.  Write the
-type parameter for this interface so that it can only be instantiated by the \lstinline{Number} class,
-or a subclass of \lstinline{Number}.  \lstinline{NumberAdder} should specify two methods:
+\vspace{1mm}\noindent\textbf{Step 5.} Write a generic interface, `NumberAdder`.  Write the
+type parameter for this interface so that it can only be instantiated by the `Number` class,
+or a subclass of `Number`.  `NumberAdder` should specify two methods:
 
 \begin{lstlisting}
 // Return a number of type T that represents zero
@@ -65,31 +65,31 @@ T zero();
 public T add(T x, T y);
 \end{lstlisting}
 
-\vspace{1mm}\noindent\textbf{Step 6.} Write classes \lstinline{IntegerAdder} and \lstinline{DoubleAdder}
-which implement the \lstinline{NumberAdder} interface.  Like \lstinline{IntegerParser} and \lstinline{DoubleParser},
+\vspace{1mm}\noindent\textbf{Step 6.} Write classes `IntegerAdder` and `DoubleAdder`
+which implement the `NumberAdder` interface.  Like `IntegerParser` and `DoubleParser`,
 these classes should \emph{not} be generic: they
-should implement \lstinline{NumberAdder} with respect to specific subclasses of \lstinline{Number}---\lstinline{Integer}
-and \lstinline{Double} respectively.  Write some simple programs to convince yourself that these classes are working.
+should implement `NumberAdder` with respect to specific subclasses of `Number`---`Integer`
+and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-\vspace{1mm}\noindent\textbf{Step 7.} Add to \lstinline{NumberManipluator} a static method, \lstinline{addNumbers}.
-The \lstinline{addNumbers} method should be generic: for some type \lstinline{T} that is
-a subclass of \lstinline{Number} the method should take as parameters a \lstinline{Set} containing elements of
-type \lstinline{T}, and a \lstinline{NumberAdder} capable of adding numbers of type \lstinline{T}.  The method should
-return a number of type \lstinline{T} which should be the sum of all the numbers in the set.
+\vspace{1mm}\noindent\textbf{Step 7.} Add to `NumberManipluator` a static method, `addNumbers`.
+The `addNumbers` method should be generic: for some type `T` that is
+a subclass of `Number` the method should take as parameters a `Set` containing elements of
+type `T`, and a `NumberAdder` capable of adding numbers of type `T`.  The method should
+return a number of type `T` which should be the sum of all the numbers in the set.
 
-\vspace{1mm}\noindent\textbf{Step 8.} Extend \lstinline{main} so that, after obtaining a set of ints and a set of
+\vspace{1mm}\noindent\textbf{Step 8.} Extend `main` so that, after obtaining a set of ints and a set of
 doubles, the sum of each of these sets is computed.  Test that this is working by printing to standard output the sets
 and their sums.
 
-\vspace{1mm}\noindent\textbf{Step 9.} Add to \lstinline{NumberManipulator} a static method, \lstinline{displayAsDoubles}.
-The method should take one argument: a \lstinline{Set} whose element type is \lstinline{Number} or any subclass of
-\lstinline{Number}.  The method should print the contents of the set to standard output, representing each set element
-as a \lstinline{double}.  Add a corresponding method, \lstinline{displayAsInts}.  To implement these methods, why is
-it essential that the set element type is a subtype of \lstinline{Number}?
+\vspace{1mm}\noindent\textbf{Step 9.} Add to `NumberManipulator` a static method, `displayAsDoubles`.
+The method should take one argument: a `Set` whose element type is `Number` or any subclass of
+`Number`.  The method should print the contents of the set to standard output, representing each set element
+as a `double`.  Add a corresponding method, `displayAsInts`.  To implement these methods, why is
+it essential that the set element type is a subtype of `Number`?
 
 \vspace{1mm}\noindent\textbf{Step 10.} Finally, extend your main method so that, after printing the sum of each set
-entered by the user, the set of integers is printed as a set of doubles (using \lstinline{displayAsDoubles}) and
-the set of \lstinline{doubles} is printed as a set of integers (using \lstinline{displayAsInts}).
+entered by the user, the set of integers is printed as a set of doubles (using `displayAsDoubles`) and
+the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 
 An interactive session with your final program might look like this:
 
@@ -138,30 +138,30 @@ Doubles as ints
 interface NumberParser<T extends Number> { ...
 \end{lstlisting}
 %
-to ensure that in instances of \lstinline{NumberParser}, \lstinline{T}
-can only be substituted by \lstinline{Number} or one of its subclasses.
+to ensure that in instances of `NumberParser`, `T`
+can only be substituted by `Number` or one of its subclasses.
 
 \vspace{1mm}
-\noindent\textbf{Step 2.} To implement \lstinline{NumberParser} with
-respect to the \emph{specific} type \lstinline{Double}, you can write:
+\noindent\textbf{Step 2.} To implement `NumberParser` with
+respect to the \emph{specific} type `Double`, you can write:
 
 \begin{lstlisting}
 public class DoubleParser implements NumberParser<Double> { ...
 \end{lstlisting}
 
-Having done this, in the class body you should use \lstinline{Double}
-wherever the interface uses the type parameter \lstinline{T}.
+Having done this, in the class body you should use `Double`
+wherever the interface uses the type parameter `T`.
 
 \vspace{1mm}
-\noindent\textbf{Step 3.} The declaration for \lstinline{readNumbers} should
+\noindent\textbf{Step 3.} The declaration for `readNumbers` should
 be as follows:
 
 \begin{lstlisting}
 public static <T extends Number> Set<T> readNumbers(int n, NumberParser<T> parser) throws IOException;
 \end{lstlisting}
 
-We write \lstinline{<T extends Number>} to say ``in the rest of the method declaration and body,
-\lstinline{T} denotes some type that is either \lstinline{Number} or one of its subclasses''.
+We write `<T extends Number>` to say ``in the rest of the method declaration and body,
+`T` denotes some type that is either `Number` or one of its subclasses''.
 
 Why would the following declaration not be suitable?
 
@@ -169,9 +169,9 @@ Why would the following declaration not be suitable?
 public static Set<Number> readNumbers(int n, NumberParser<Number> parser) throws IOException;
 \end{lstlisting}
 
-The method throws \lstinline{IOException} because it will use a buffered reader.
+The method throws `IOException` because it will use a buffered reader.
 
-In the body of \lstinline{readNumbers}, you can create an instance of \lstinline{Set<T>} by writing:
+In the body of `readNumbers`, you can create an instance of `Set<T>` by writing:
 
 \begin{lstlisting}
 Set<T> result = new HashSet<T>();
@@ -191,20 +191,20 @@ Set<Double> doubles = readNumbers(5, new DoubleParser());
 \noindent\textbf{Step 6.} See hint for Step 2.
 
 \vspace{1mm}
-\noindent\textbf{Step 7.} The signature for \lstinline{addNumbers} should be:
+\noindent\textbf{Step 7.} The signature for `addNumbers` should be:
 
 \begin{lstlisting}
 public static <T extends Number> T addNumbers(Set<T> numbers, NumberAdder<T> adder);
 \end{lstlisting}
 
-In the body of \lstinline{addNumbers}, you should declare a \lstinline{result} variable that is initially set to zero:
+In the body of `addNumbers`, you should declare a `result` variable that is initially set to zero:
 
 \begin{lstlisting}
 T result = adder.zero();
 \end{lstlisting}
 
-This should be followed by a loop over all elements of \lstinline{numbers}, using \lstinline{adder} to add each number
-to \lstinline{result}.
+This should be followed by a loop over all elements of `numbers`, using `adder` to add each number
+to `result`.
 
 \vspace{1mm}
 \noindent\textbf{Step 8.} Given a set of doubles, you should be able to compute its sum by simply writing:
@@ -214,15 +214,15 @@ double sumOfDoubles = addNumbers(doubles, new DoubleAdder());
 \end{lstlisting}
 
 \vspace{1mm}
-\noindent\textbf{Step 9.} You might think that \lstinline{displayAsDoubles} should have the signature:
+\noindent\textbf{Step 9.} You might think that `displayAsDoubles` should have the signature:
 
 \begin{lstlisting}
 public static void displayAsDoubles(Set<Number> numbers); // (*)
 \end{lstlisting}
 
-However, this is wrong: if \lstinline{doubles} has type \lstinline{Set<Double>}, then \lstinline{doubles}
-cannot be passed as an argument to \lstinline{displayAsDoubles}, because \lstinline{Set<Double>} is not
-a subtype of \lstinline{Set<Number>} (see \questionref{subtyping}).
+However, this is wrong: if `doubles` has type `Set<Double>`, then `doubles`
+cannot be passed as an argument to `displayAsDoubles`, because `Set<Double>` is not
+a subtype of `Set<Number>` (see \questionref{subtyping}).
 
 The correct signature uses a \emph{wildcard}:
 
