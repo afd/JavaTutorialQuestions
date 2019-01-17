@@ -4,10 +4,6 @@
 
 See code at `solutions/code/tutorialquestions/questiondd4c`
 
-
-TODO: add content
-
-\begin{question}{Clocks.}
 Some notes on the sample code solution:
 
 *The Clock class.*
