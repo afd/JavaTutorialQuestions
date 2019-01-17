@@ -16,7 +16,8 @@ In this question, your task is to write a class with generic methods for reading
 adding numbers, and converting numbers into doubles or ints.  The question is divided into a number of steps,
 and there are hints for each step at the end of the sheet.
 
-**Step 1.** Write a generic interface, `NumberParser`.  Write the
+### Step 1
+Write a generic interface, `NumberParser`.  Write the
 type parameter for this interface so that it can only be substituted by the `Number` class,
 or a subclass of `Number`.  `NumberParser` should specify two methods:
 
@@ -29,12 +30,14 @@ public E parseNumber(String s);
 public String typeParsed();
 ```
 
-**Step 2.** Write classes `IntegerParser` and `DoubleParser`
+### Step 2
+Write classes `IntegerParser` and `DoubleParser`
 which implement the `NumberParser` interface.  These classes should *not* be generic: they
 should implement `NumberParser` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-**Step 3.** Write a class, `NumberManipulation`, with a static method
+### Step 3
+Write a class, `NumberManipulation`, with a static method
 called `readNumbers`.  The `readNumbers` method should be generic: for some type `T` that is
 a subclass of `Number` the method should take as parameters an integer `n` specifying how many numbers should
 be read from the command-line, and a `NumberParser` capable of parsing numbers of type `T`.  The method should
@@ -49,11 +52,13 @@ input, and use the `parseNumber()` method of the `NumberParser` parameter to tur
 *Note:* It is recommended for this question that you use `Set` from the Java standard library, rather than
 the `GenericSet` interface designed in \questionref{genericsets}.
 
-**Step 4.** Write a `main` method in `NumberManipulator`.  This method should obtain
+### Step 4
+Write a `main` method in `NumberManipulator`.  This method should obtain
 a set of five doubles and a set of five integers from the command-line, by invoking the `readNumbers()` method with appropriate arguments.
 Test that this is working by printing to standard output the sets constructed by your program.
 
-**Step 5.** Write a generic interface, `NumberAdder`.  Write the
+### Step 5
+Write a generic interface, `NumberAdder`.  Write the
 type parameter for this interface so that it can only be instantiated by the `Number` class,
 or a subclass of `Number`.  `NumberAdder` should specify two methods:
 
@@ -65,29 +70,34 @@ T zero();
 public T add(T x, T y);
 ```
 
-**Step 6.** Write classes `IntegerAdder` and `DoubleAdder`
+### Step 6
+Write classes `IntegerAdder` and `DoubleAdder`
 which implement the `NumberAdder` interface.  Like `IntegerParser` and `DoubleParser`,
 these classes should *not* be generic: they
 should implement `NumberAdder` with respect to specific subclasses of `Number`---`Integer`
 and `Double` respectively.  Write some simple programs to convince yourself that these classes are working.
 
-**Step 7.** Add to `NumberManipluator` a static method, `addNumbers`.
+### Step 7
+Add to `NumberManipluator` a static method, `addNumbers`.
 The `addNumbers` method should be generic: for some type `T` that is
 a subclass of `Number` the method should take as parameters a `Set` containing elements of
 type `T`, and a `NumberAdder` capable of adding numbers of type `T`.  The method should
 return a number of type `T` which should be the sum of all the numbers in the set.
 
-**Step 8.** Extend `main` so that, after obtaining a set of ints and a set of
+### Step 8
+Extend `main` so that, after obtaining a set of ints and a set of
 doubles, the sum of each of these sets is computed.  Test that this is working by printing to standard output the sets
 and their sums.
 
-**Step 9.** Add to `NumberManipulator` a static method, `displayAsDoubles`.
+### Step 9
+Add to `NumberManipulator` a static method, `displayAsDoubles`.
 The method should take one argument: a `Set` whose element type is `Number` or any subclass of
 `Number`.  The method should print the contents of the set to standard output, representing each set element
 as a `double`.  Add a corresponding method, `displayAsInts`.  To implement these methods, why is
 it essential that the set element type is a subtype of `Number`?
 
-**Step 10.** Finally, extend your main method so that, after printing the sum of each set
+### Step 10
+Finally, extend your main method so that, after printing the sum of each set
 entered by the user, the set of integers is printed as a set of doubles (using `displayAsDoubles`) and
 the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 
@@ -159,8 +169,8 @@ be as follows:
 public static <T extends Number> Set<T> readNumbers(int n, NumberParser<T> parser) throws IOException;
 ```
 
-We write `<T extends Number>` to say ``in the rest of the method declaration and body,
-`T` denotes some type that is either `Number` or one of its subclasses''.
+We write `<T extends Number>` to say "in the rest of the method declaration and body,
+`T` denotes some type that is either `Number` or one of its subclasses".
 
 Why would the following declaration not be suitable?
 
