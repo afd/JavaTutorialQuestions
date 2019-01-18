@@ -2,10 +2,9 @@
 
 ## 2ffc: *Generic stacks*
 
-TODO: fix referencing.  *Note:* even if you did not attempt the **string stack** question
-of Sheet 3 (Question 13), you should still be able to attempt this question by starting with the Sheet 3 sample solutions.
+TODO: fix referencing.  *Note:* even if you had trouble completing [question 1486](1486.md) on **string stacks**, you could still attempt this question by starting with [sample solution for question 1486](../solutions/1486.md).
 
-Replace the `StringStack` interface of Question 13, Sheet 3, with an interface `GenericStack`
+Replace the `StringStack` interface of [question 1486](1486.md), with an interface `GenericStack`
 that can hold elements of *any* given type, not necessarily `String`.
 
 Replace the implementing classes `StringStackArray` and `StringStackList` with generic classes
@@ -27,8 +26,8 @@ elements = new E[STACK_LIMIT];
 
 where `E` is the generic type parameter.  However, this does not work.  Why?
 
-See the end of the sheet for a hint on how to solve this issue.  (Also look at the source code
-given as part of \questionref{treenodes} below.)
+See below for a hint on how to solve this issue.  (Also look at the source code
+given as part of [question 96df](96df.md).)
 
 As in Question 13 of Sheet 3, write a `Demo` class with a static method, `transferStacks`.
 However, this time `transferStacks` should be generic: given two generic stacks with the same type

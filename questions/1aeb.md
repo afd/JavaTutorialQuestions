@@ -50,7 +50,7 @@ input, and use the `parseNumber()` method of the `NumberParser` parameter to tur
 `T`.
 
 *Note:* It is recommended for this question that you use `Set` from the Java standard library, rather than
-the `GenericSet` interface designed in \questionref{genericsets}.
+the `GenericSet` interface designed in [question b401](b401.md).
 
 ### Step 4
 Write a `main` method in `NumberManipulator`.  This method should obtain
@@ -135,11 +135,7 @@ Doubles as ints
 [ 2, 1, 1, 1, 1 ]
 ```
 
-
-
-
-**Hints for \questionref{boundedgenerics}.**
-
+### Hints
 
 **Step 1.** You can write:
 
@@ -150,7 +146,6 @@ interface NumberParser<T extends Number> { ...
 to ensure that in instances of `NumberParser`, `T`
 can only be substituted by `Number` or one of its subclasses.
 
-
 **Step 2.** To implement `NumberParser` with
 respect to the *specific* type `Double`, you can write:
 
@@ -160,7 +155,6 @@ public class DoubleParser implements NumberParser<Double> { ...
 
 Having done this, in the class body you should use `Double`
 wherever the interface uses the type parameter `T`.
-
 
 **Step 3.** The declaration for `readNumbers` should
 be as follows:
@@ -186,19 +180,15 @@ In the body of `readNumbers`, you can create an instance of `Set<T>` by writing:
 Set<T> result = new HashSet<T>();
 ```
 
-
 **Step 4.** To read five doubles from standard input, you should simply be able to write:
 
 ```
 Set<Double> doubles = readNumbers(5, new DoubleParser());
 ```
 
-
 **Step 5.** See hint for Step 1.
 
-
 **Step 6.** See hint for Step 2.
-
 
 **Step 7.** The signature for `addNumbers` should be:
 
@@ -215,13 +205,11 @@ T result = adder.zero();
 This should be followed by a loop over all elements of `numbers`, using `adder` to add each number
 to `result`.
 
-
 **Step 8.** Given a set of doubles, you should be able to compute its sum by simply writing:
 
 ```
 double sumOfDoubles = addNumbers(doubles, new DoubleAdder());
 ```
-
 
 **Step 9.** You might think that `displayAsDoubles` should have the signature:
 
@@ -231,7 +219,7 @@ public static void displayAsDoubles(Set<Number> numbers); // (*)
 
 However, this is wrong: if `doubles` has type `Set<Double>`, then `doubles`
 cannot be passed as an argument to `displayAsDoubles`, because `Set<Double>` is not
-a subtype of `Set<Number>` (see \questionref{subtyping}).
+a subtype of `Set<Number>` (see [question 876b](876b.md)).
 
 The correct signature uses a *wildcard*:
 

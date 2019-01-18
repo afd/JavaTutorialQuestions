@@ -98,23 +98,23 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    |             | [Solution](solutions/8f65.md) |
 | [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
 | [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
-| [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          |             | [Solution](solutions/5235.md) |
-| [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  |             | [Solution](solutions/710c.md) |
-| [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         |             | [Solution](solutions/aa68.md) |
+| [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          | [0f05](questions/0f05.md) | [Solution](solutions/5235.md) |
+| [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  | [5235](questions/5235.md) | [Solution](solutions/710c.md) |
+| [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         | [5235](questions/5235.md) | [Solution](solutions/aa68.md) |
 | [0c21](questions/0c21.md) | *Properties*                      | AbstractClasses         |             | [Solution](solutions/0c21.md) |
-| [236b](questions/236b.md) | *Fields for properties*           | AbstractClasses         |             | [Solution](solutions/236b.md) |
+| [236b](questions/236b.md) | *Fields for properties*           | AbstractClasses         | [0c21](questions/0c21.md) | [Solution](solutions/236b.md) |
 | [5981](questions/5981.md) | *Shapes*                          | AbstractClasses         |             | [Solution](solutions/5981.md) |
 | [dc38](questions/dc38.md) | *Email management system*         | AbstractClasses         |             | [Solution](solutions/dc38.md) |
 | [1486](questions/1486.md) | *String stack*                    | Interfaces              |             | [Solution](solutions/1486.md) |
 | [8a61](questions/8a61.md) | *Int set*                         | Interfaces              |             | [Solution](solutions/8a61.md) |
-| [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces |         | [Solution](solutions/85bb.md) |
-| [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces |         | [Solution](solutions/a6e7.md) |
+| [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces | [1486](questions/1486.md) | [Solution](solutions/85bb.md) |
+| [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces | [8a61](questions/8a61.md) [85bb](questions/85bb.md) | [Solution](solutions/a6e7.md) |
 | [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                |             | [Solution](solutions/2ffc.md) |
 | [b401](questions/b401.md) | *Generic sets*                    | Generics                |             | [Solution](solutions/b401.md) |
 | [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
-| [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                |             | [Solution](solutions/7041.md) |
-| [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                |             | [Solution](solutions/c822.md) |
-| [735a](questions/735a.md) | *Generic iterators*               | Generics                |             | [Solution](solutions/735a.md) |
+| [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                | [96df](questions/96df.md) | [Solution](solutions/7041.md) |
+| [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                | [7041](questions/7041.md) | [Solution](solutions/c822.md) |
+| [735a](questions/735a.md) | *Generic iterators*               | Generics                | [85bb](questions/85bb.md) [a6e7](questions/a6e7.md) [b401](questions/b401.md) | [Solution](solutions/735a.md) |
 | [876b](questions/876b.md) | *Generics and subclasses*         | Generics, Inheritance   |             | [Solution](solutions/876b.md) |
 | [1aeb](questions/1aeb.md) | *Generic number manipulation*     | Generics                |             | [Solution](solutions/1aeb.md) |
 | [b4a5](questions/b4a5.md) | *Observing the garbage collector* | MemoryManagement        |             | [Solution](solutions/b4a5.md) |
