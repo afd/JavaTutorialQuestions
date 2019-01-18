@@ -106,7 +106,7 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [5981](questions/5981.md) | *Shapes*                          | AbstractClasses         |             | [Solution](solutions/5981.md) |
 | [dc38](questions/dc38.md) | *Email management system*         | AbstractClasses         |             | [Solution](solutions/dc38.md) |
 | [1486](questions/1486.md) | *String stack*                    | Interfaces              |             | [Solution](solutions/1486.md) |
-| [8a61](questions/8a61.md) | *Int set*                         | Interfaces              |             | [Solution](solutions/8a61.md) |
+| [8a61](questions/8a61.md) | *Int set*                         | Interfaces              | [1486](questions/1486.md) | [Solution](solutions/8a61.md) |
 | [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces | [1486](questions/1486.md) | [Solution](solutions/85bb.md) |
 | [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces | [8a61](questions/8a61.md) [85bb](questions/85bb.md) | [Solution](solutions/a6e7.md) |
 | [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                |             | [Solution](solutions/2ffc.md) |
