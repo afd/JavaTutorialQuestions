@@ -10,8 +10,8 @@ Some notes on the sample code solution:
 The two display modes are represented by an enum, `DisplayMode`.  They could be represented using
 a boolean.  The advantage of an enum is that it allows us to easily add further display modes.
 
-I decided to use ``seconds since midnight'' as the canonical representation for a `Clock`.
-My `Clock` class has a **private** constructor that takes a ``seconds since midnight'' value
+I decided to use "seconds since midnight" as the canonical representation for a `Clock`.
+My `Clock` class has a **private** constructor that takes a "seconds since midnight" value
 and a `DisplayMode`.  There are two public constructors, as required in the question, which
 both delegate to the private constructor:
 
@@ -27,7 +27,7 @@ public Clock(int hh, int mm, int ss);
 ```
 
 uses method `twentyFourHourToSecondsSinceMidnight` to convert the given hours, minutes and seconds into
-a ``seconds since midnight value'', and uses `this(...)` to call the private constructor with the
+a "seconds since midnight value", and uses `this(...)` to call the private constructor with the
 resulting value and the `TwentyFourHour`
 display mode.
 
@@ -37,7 +37,7 @@ object.
 
 I have used some constants, such as `SECONDS_IN_A_MINUTE` and `MINUTES_IN_AN_``HOUR` to make the
 code easy to read.  You might argue that I have gone overboard here, but I personally approve of using constants
-instead of ``magic numbers'' wherever
+instead of "magic numbers" wherever
 possible, even for very well-known magic numbers.
 
 Take a look at the `toString` method and check you understand it, in particular the way the
@@ -47,7 +47,7 @@ Take a look at the `toString` method and check you understand it, in particular 
 *The AlarmClock class.*  Observe that `AlarmClock` has two public constructors,
 corresponding to the public constructors for `Clock`.  Each adds new fields to represent the time
 at which the alarm is set to go off.  Each constructor first uses `super(...)` to call the appropriate
-constructor of `Clock`, then assigns to the new ``alarm'' fields.  Notice also that `AlarmClock`
+constructor of `Clock`, then assigns to the new "alarm" fields.  Notice also that `AlarmClock`
 uses a boolean flag to decide whether the alarm is currently sounding; this is initialised to *false*.
 
 Check that you understand the (slightly complex) logic used in `tick()` to determine whether the

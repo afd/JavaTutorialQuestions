@@ -2,17 +2,11 @@
 
 ## dd4c: *Clocks*
 
-
 Write a class, `Clock`, that records a moment in time during a day, in the granularity of seconds,
 together with a mode in which the time should be shown.  The mode should be one of:
 
-
-
 * 24-hour format, i.e., *hh:mm:ss*
-
 * number of seconds since midnight, e.g., 03:24:52 is 12292 seconds since midnight
-
-```
 
 Your class should allow a clock to be constructed either by specifying a single integer, the number of seconds
 since midnight (in which case this is the display mode to be used), or three integers, representing the current
@@ -30,7 +24,6 @@ this exercise.  Because `Thread.sleep(x)` can throw an `InterruptedException`, y
 to specify that your `main` method `throws` this exception.  The output of your program should
 look something like this:
 
-
 ```
 Clock 1 shows: 0 seconds since midnight.  Clock 2 shows: 23:59:53
 Clock 1 shows: 1 seconds since midnight.  Clock 2 shows: 23:59:54
@@ -44,12 +37,11 @@ Clock 1 shows: 8 seconds since midnight.  Clock 2 shows: 00:00:01
 Clock 1 shows: 9 seconds since midnight.  Clock 2 shows: 00:00:02
 ```
 
-
 Now design a class, `AlarmClock`, which extends `Clock` by storing a specific time
 at which an alarm should sound.  An `AlarmClock` should also include a `boolean` field determining whether the alarm is
 currently sounding; this should initially be *false*.  `AlarmClock` should provide appropriate constructors so that
-one can create an `AlarmClock` with a specified 24-hour time and alarm, or a ``seconds since
-midnight'' time and alarm.
+one can create an `AlarmClock` with a specified 24-hour time and alarm, or a "seconds since
+midnight" time and alarm.
 
 Override the `tick()` method to behave as for `Clock`, but to additionally control the alarm.
 If the alarm time is reached, the alarm should be turned on, and should remain on for 60 seconds.
@@ -59,7 +51,6 @@ Also override the `toString()` method to indicate whether the alarm is currently
 Write a program, `AlarmClockDemo.java` to demo your `AlarmClock` class, similarly
 to `Clock.java` above.  For a single clock, initialised to 23:59:50 with the alarm set to
 go off at 23:59:58, the output of your program should be something like:
-
 
 ```
 Clock says: 23:59:50
@@ -84,7 +75,6 @@ Clock says: 00:01:01
 Clock says: 00:01:02
 ```
 
-
 Finally, write a class called `RadioAlarmClock` which extends `AlarmClock`.
 A `RadioAlarmClock` should have a `station` field, which either has a special
 value `None`, or the value of a radio station.  You should choose, or make up, a number
@@ -95,7 +85,6 @@ alarm is sounding, an appropriate message representative of the given radio stat
 Write an `RadioAlarmClockDemo.java` program to demonstrate this.  For example, given three radio
 alarm clocks, each initialised to 23:59:50 with the alarm set to go off at 23:59:58, and tuned to no station,
 *Radio 4* and *Five Live*, respectively, your program should display something like:
-
 
 ```
 Clocks say: 23:59:50 - 23:59:50 - 23:59:50
@@ -119,4 +108,3 @@ Clocks say: 00:01:00 - 00:01:00 - 00:01:00
 Clocks say: 00:01:01 - 00:01:01 - 00:01:01
 Clocks say: 00:01:02 - 00:01:02 - 00:01:02
 ```
-
