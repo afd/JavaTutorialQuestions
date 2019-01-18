@@ -95,7 +95,7 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [6a57](questions/6a57.md) | *Stream ordering*                 | Streams                 |             | [Solution](solutions/6a57.md) |
 | [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
 | [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
-| [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    |             | [Solution](solutions/8f65.md) |
+| [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
 | [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
 | [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
 | [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          | [0f05](questions/0f05.md) | [Solution](solutions/5235.md) |
@@ -109,8 +109,8 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [8a61](questions/8a61.md) | *Int set*                         | Interfaces              | [1486](questions/1486.md) | [Solution](solutions/8a61.md) |
 | [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces | [1486](questions/1486.md) | [Solution](solutions/85bb.md) |
 | [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces | [8a61](questions/8a61.md) [85bb](questions/85bb.md) | [Solution](solutions/a6e7.md) |
-| [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                |             | [Solution](solutions/2ffc.md) |
-| [b401](questions/b401.md) | *Generic sets*                    | Generics                |             | [Solution](solutions/b401.md) |
+| [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                | [1486](questions/1486.md) | [Solution](solutions/2ffc.md) |
+| [b401](questions/b401.md) | *Generic sets*                    | Generics                | [8a61](questions/8a61.md) | [Solution](solutions/b401.md) |
 | [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
 | [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                | [96df](questions/96df.md) | [Solution](solutions/7041.md) |
 | [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                | [7041](questions/7041.md) | [Solution](solutions/c822.md) |
@@ -118,10 +118,10 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [876b](questions/876b.md) | *Generics and subclasses*         | Generics, Inheritance   |             | [Solution](solutions/876b.md) |
 | [1aeb](questions/1aeb.md) | *Generic number manipulation*     | Generics                |             | [Solution](solutions/1aeb.md) |
 | [b4a5](questions/b4a5.md) | *Observing the garbage collector* | MemoryManagement        |             | [Solution](solutions/b4a5.md) |
-| [1ae9](questions/1ae9.md) | *Reusing immutable value objects* | MemoryManagement        |             | [Solution](solutions/1ae9.md) |
+| [1ae9](questions/1ae9.md) | *Reusing immutable value objects* | MemoryManagement        | [0f05](questions/0f05.md) | [Solution](solutions/1ae9.md) |
 | [290b](questions/290b.md) | *Memory leaks in Java*            | MemoryManagement, Advanced |          | [Solution](solutions/290b.md) |
-| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              |             | [Solution](solutions/5566.md) |
-| [a22c](questions/a22c.md) | *No duplicate email addresses*    | Exceptions              |             | [Solution](solutions/a22c.md) |
+| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              | [question 1486](1486.md) | [Solution](solutions/5566.md) |
+| [a22c](questions/a22c.md) | *No duplicate email addresses*    | Exceptions              | [dc38](questions/dc38.md) | [Solution](solutions/a22c.md) |
 | [e093](questions/e093.md) | *Average of numbers*              | Exceptions              |             | [Solution](solutions/e093.md) |
 | [7e2a](questions/7e2a.md) | *Stack overflow*                  | Exceptions              |             | [Solution](solutions/7e2a.md) |
 | [30cd](questions/30cd.md) | *Heap exhaustion*                 | Exceptions              |             | [Solution](solutions/30cd.md) |

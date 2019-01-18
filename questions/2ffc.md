@@ -2,7 +2,7 @@
 
 ## 2ffc: *Generic stacks*
 
-TODO: fix referencing.  *Note:* even if you had trouble completing [question 1486](1486.md) on **string stacks**, you could still attempt this question by starting with [sample solution for question 1486](../solutions/1486.md).
+*Note:* even if you had trouble completing [question 1486](1486.md) on **string stacks**, you could still attempt this question by starting with [sample solution for question 1486](../solutions/1486.md).
 
 Replace the `StringStack` interface of [question 1486](1486.md), with an interface `GenericStack`
 that can hold elements of *any* given type, not necessarily `String`.
@@ -29,7 +29,7 @@ where `E` is the generic type parameter.  However, this does not work.  Why?
 See below for a hint on how to solve this issue.  (Also look at the source code
 given as part of [question 96df](96df.md).)
 
-As in Question 13 of Sheet 3, write a `Demo` class with a static method, `transferStacks`.
+Write a `Demo` class with a static method, `transferStacks`.
 However, this time `transferStacks` should be generic: given two generic stacks with the same type
 parameter, it should transfer the contents of one to the other.
 

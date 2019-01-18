@@ -4,8 +4,7 @@
 
 See code at `solutions/code/tutorialquestions/question2ffc`
 
-TODO:revisequestionref Making the solution to the **string stack** question
-of Sheet 3 (Question 8) generic is pretty straightforward: compare the sample solutions.
+Making [the solution to question 1486](1486.md) generic is pretty straightforward: compare the sample solutions.
 
 Some notes: in `GenericStackArray<T>` you will have a field:
 
