@@ -1,7 +1,5 @@
 # Programming 2: Ally's Tutorial Questions
 
-(You will see a number of TODOs in this README; these will disappear as the term progresses.)
-
 The best way to learn a programming language and the concepts that underlie the language's design is to do *lots* of programming.
 
 The aim of these tutorial questions is to give you the opportunity to write, inspect, debug and play with a bunch of reasonably small programs.  There are quite a lot of questions, they form part of the examinable material for the course, and thus I strongly encourage you to attempt *all* of them.
@@ -42,15 +40,20 @@ Some of the questions depend on other questions; I have indicated wherever this 
 
 To help you decide how you should prioritise working through the questions, I have attached one or more tags to each question in the list below.  The tags are as follows:
 
-TODO: There will be more tags once all questions have been added.
-
 * Recap: focuses on recapping basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations.
 * SimpleObjects: covers basic use of objects (with little or no use of interfaces, inheritance, etc.).
 * Interfaces: covers concepts relating to Java interfaces.
+* Streams: focuses on functional programming features of Java: streams, lambdas and method references.
+* Inheritance: covers the design and implementation of subclasses.
+* AbstractClasses: focuses on using abstract superclasses to share common state and methods among subclasses.
+* Generics: focuses on building generic containers, and on technical aspects of Java generics.
+* Exceptions: covers handling unexpected program behaviours using Java's exception mechanisms.
+* MemoryManagement: explores the stack, heap and garbage collector.
+* Advanced: Challenging questions that bring together many concepts covered during my part of the course.  If you can solve these questions using only the hints provided then you are doing *very* well!  You might prefer to work through these questions referring to the sample solutions along the way.
 
 ## The questions!
 
-You can access the questions via the table below.  Solutions are provided for all questions (TODO: they will be provided shortly if not already), and code solutions for all questions are available at ```solutions/code```.  
+You can access the questions via the table below.  Solutions are provided for all questions, and code solutions for all questions are available at ```solutions/code```.  
 
 It is totally up to you when to look at these.  I suggest you attempt each question without reference to its solution, and start to peek at the solutions when you get stuck, or when you believe you have made good progress on a question.
 
@@ -60,6 +63,7 @@ As a result, you will likely find that some of your answers differ from the samp
 
 I'm very happy to discuss alternative solutions.  Also, please get in touch if there are parts of the solutions that you do not understand, of if you spot errors.
 
+TODO: some additional questions on streams are coming soon!
 
 | Label                     | Name                              | Topic tag(s)            | Depends on  | Solution |
 |---------------------------|-----------------------------------|-------------------------|-------------|----------|
@@ -81,9 +85,45 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
 | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
-
-TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
-
+| [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
+| [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
+| [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
+| [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
+| [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
+| [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          | [0f05](questions/0f05.md) | [Solution](solutions/5235.md) |
+| [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  | [5235](questions/5235.md) | [Solution](solutions/710c.md) |
+| [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         | [5235](questions/5235.md) | [Solution](solutions/aa68.md) |
+| [0c21](questions/0c21.md) | *Properties*                      | AbstractClasses         |             | [Solution](solutions/0c21.md) |
+| [236b](questions/236b.md) | *Fields for properties*           | AbstractClasses         | [0c21](questions/0c21.md) | [Solution](solutions/236b.md) |
+| [5981](questions/5981.md) | *Shapes*                          | AbstractClasses         |             | [Solution](solutions/5981.md) |
+| [dc38](questions/dc38.md) | *Email management system*         | AbstractClasses         |             | [Solution](solutions/dc38.md) |
+| [1486](questions/1486.md) | *String stack*                    | Interfaces              |             | [Solution](solutions/1486.md) |
+| [8a61](questions/8a61.md) | *Int set*                         | Interfaces              | [1486](questions/1486.md) | [Solution](solutions/8a61.md) |
+| [85bb](questions/85bb.md) | *String stack iterators*          | AbstractClasses, Interfaces | [1486](questions/1486.md) | [Solution](solutions/85bb.md) |
+| [a6e7](questions/a6e7.md) | *Int set iterators*               | AbstractClasses, Interfaces | [8a61](questions/8a61.md) [85bb](questions/85bb.md) | [Solution](solutions/a6e7.md) |
+| [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                | [1486](questions/1486.md) | [Solution](solutions/2ffc.md) |
+| [b401](questions/b401.md) | *Generic sets*                    | Generics                | [8a61](questions/8a61.md) | [Solution](solutions/b401.md) |
+| [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
+| [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                | [96df](questions/96df.md) | [Solution](solutions/7041.md) |
+| [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                | [7041](questions/7041.md) | [Solution](solutions/c822.md) |
+| [735a](questions/735a.md) | *Generic iterators*               | Generics                | [85bb](questions/85bb.md) [a6e7](questions/a6e7.md) [b401](questions/b401.md) | [Solution](solutions/735a.md) |
+| [876b](questions/876b.md) | *Generics and subclasses*         | Generics, Inheritance   |             | [Solution](solutions/876b.md) |
+| [1aeb](questions/1aeb.md) | *Generic number manipulation*     | Generics                |             | [Solution](solutions/1aeb.md) |
+| [b4a5](questions/b4a5.md) | *Observing the garbage collector* | MemoryManagement        |             | [Solution](solutions/b4a5.md) |
+| [1ae9](questions/1ae9.md) | *Reusing immutable value objects* | MemoryManagement        | [0f05](questions/0f05.md) | [Solution](solutions/1ae9.md) |
+| [290b](questions/290b.md) | *Memory leaks in Java*            | MemoryManagement, Advanced |          | [Solution](solutions/290b.md) |
+| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              | [question 1486](1486.md) | [Solution](solutions/5566.md) |
+| [a22c](questions/a22c.md) | *No duplicate email addresses*    | Exceptions              | [dc38](questions/dc38.md) | [Solution](solutions/a22c.md) |
+| [e093](questions/e093.md) | *Average of numbers*              | Exceptions              |             | [Solution](solutions/e093.md) |
+| [7e2a](questions/7e2a.md) | *Stack overflow*                  | Exceptions              |             | [Solution](solutions/7e2a.md) |
+| [30cd](questions/30cd.md) | *Heap exhaustion*                 | Exceptions              |             | [Solution](solutions/30cd.md) |
+| [74d2](questions/74d2.md) | *Exceptions and inheritance (i)*  | Exceptions, Inheritance |             | [Solution](solutions/74d2.md) |
+| [2862](questions/2862.md) | *Exceptions and inheritance (ii)* | Exceptions, Inheritance |             | [Solution](solutions/2862.md) |
+| [153d](questions/153d.md) | *Exceptions and inheritance (iii)* | Exceptions, Inheritance |            | [Solution](solutions/153d.md) |
+| [5d30](questions/5d30.md) | *Unreliable buffered reader*      | Exceptions              |             | [Solution](solutions/5d30.md) |
+| [1171](questions/1171.md) | *Cloning graphs*                  | Advanced                |             | [Solution](solutions/1171.md) |
+| [f763](questions/f763.md) | *Simulating garbage collection*   | Advanced                |             | [Solution](solutions/f763.md) |
+| [9a9b](questions/9a9b.md) | *Transposing tunes*               | Advanced                |             | [Solution](solutions/9a9b.md) |
 
 ## More hex strings
 

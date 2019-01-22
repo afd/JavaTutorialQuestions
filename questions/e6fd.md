@@ -49,14 +49,14 @@ public interface BitSet {
 
   // If x belongs to the bit set, remove it
   void remove(int x);
-	
+
   // Return true iff x belongs to the bit set
   boolean contains(int x);
 
   // Update the bit set to contain only those values
   // also present in s
   void intersectWith(BitSet s);
-	
+
   // Return the maximum value that the bit set
   // can represent
   int maxStorableValue();
