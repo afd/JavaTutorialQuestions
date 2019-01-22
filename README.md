@@ -1,7 +1,5 @@
 # Programming 2: Ally's Tutorial Questions
 
-(You will see a number of TODOs in this README; these will disappear as the term progresses.)
-
 The best way to learn a programming language and the concepts that underlie the language's design is to do *lots* of programming.
 
 The aim of these tutorial questions is to give you the opportunity to write, inspect, debug and play with a bunch of reasonably small programs.  There are quite a lot of questions, they form part of the examinable material for the course, and thus I strongly encourage you to attempt *all* of them.
@@ -42,22 +40,20 @@ Some of the questions depend on other questions; I have indicated wherever this 
 
 To help you decide how you should prioritise working through the questions, I have attached one or more tags to each question in the list below.  The tags are as follows:
 
-TODO: Check that these are all the tags.
-
 * Recap: focuses on recapping basic imperative concepts of Java: loops, recursion, variables, arrays and enumerations.
 * SimpleObjects: covers basic use of objects (with little or no use of interfaces, inheritance, etc.).
 * Interfaces: covers concepts relating to Java interfaces.
-* Streams: TODO
-* Inheritance: TODO
-* AbstractClasses: TODO
-* Generics: TODO
-* Exceptions: TODO
-* MemoryManagement: TODO
+* Streams: focuses on functional programming features of Java: streams, lambdas and method references.
+* Inheritance: covers the design and implementation of subclasses.
+* AbstractClasses: focuses on using abstract superclasses to share common state and methods among subclasses.
+* Generics: focuses on building generic containers, and on technical aspects of Java generics.
+* Exceptions: covers handling unexpected program behaviours using Java's exception mechanisms.
+* MemoryManagement: explores the stack, heap and garbage collector.
 * Advanced: Challenging questions that bring together many concepts covered during my part of the course.  If you can solve these questions using only the hints provided then you are doing *very* well!  You might prefer to work through these questions referring to the sample solutions along the way.
 
 ## The questions!
 
-You can access the questions via the table below.  Solutions are provided for all questions (TODO: they will be provided shortly if not already), and code solutions for all questions are available at ```solutions/code```.  
+You can access the questions via the table below.  Solutions are provided for all questions, and code solutions for all questions are available at ```solutions/code```.  
 
 It is totally up to you when to look at these.  I suggest you attempt each question without reference to its solution, and start to peek at the solutions when you get stuck, or when you believe you have made good progress on a question.
 
@@ -67,6 +63,7 @@ As a result, you will likely find that some of your answers differ from the samp
 
 I'm very happy to discuss alternative solutions.  Also, please get in touch if there are parts of the solutions that you do not understand, of if you spot errors.
 
+TODO: some additional questions on streams are coming soon!
 
 | Label                     | Name                              | Topic tag(s)            | Depends on  | Solution |
 |---------------------------|-----------------------------------|-------------------------|-------------|----------|
@@ -88,11 +85,6 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
 | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
-| [ebc1](questions/ebc1.md) | *String streams*                  | Streams                 |             | [Solution](solutions/ebc1.md) |
-| [5912](questions/5912.md) | *Streams and Random*              | Streams                 |             | [Solution](solutions/5912.md) |
-| [6563](questions/6563.md) | *Streams of arithmetic expressions* | Streams               |             | [Solution](solutions/6563.md) |
-| [303d](questions/303d.md) | *Infinite stream of Fibonacci numbers* | Streams            |             | [Solution](solutions/303d.md) |
-| [6a57](questions/6a57.md) | *Stream ordering*                 | Streams                 |             | [Solution](solutions/6a57.md) |
 | [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
 | [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
 | [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
@@ -132,8 +124,6 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [1171](questions/1171.md) | *Cloning graphs*                  | Advanced                |             | [Solution](solutions/1171.md) |
 | [f763](questions/f763.md) | *Simulating garbage collection*   | Advanced                |             | [Solution](solutions/f763.md) |
 | [9a9b](questions/9a9b.md) | *Transposing tunes*               | Advanced                |             | [Solution](solutions/9a9b.md) |
-
-TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
 
 ## More hex strings
 
