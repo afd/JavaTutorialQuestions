@@ -133,9 +133,7 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [f763](questions/f763.md) | *Simulating garbage collection*   | Advanced                |             | [Solution](solutions/f763.md) |
 | [9a9b](questions/9a9b.md) | *Transposing tunes*               | Advanced                |             | [Solution](solutions/9a9b.md) |
 
-
 TODO: I am in the process of migrating tutorial questions from a different format.  More questions will be added soon!
-
 
 ## More hex strings
 

@@ -43,7 +43,6 @@ possible, even for very well-known magic numbers.
 Take a look at the `toString` method and check you understand it, in particular the way the
 `padding` helper method is used to properly format the clock display.
 
-
 *The AlarmClock class.*  Observe that `AlarmClock` has two public constructors,
 corresponding to the public constructors for `Clock`.  Each adds new fields to represent the time
 at which the alarm is set to go off.  Each constructor first uses `super(...)` to call the appropriate
@@ -60,6 +59,7 @@ Look at the use of `super` in `toString`, to avoid duplicating code for displayi
 ```
 (alarmSounding ? " " + beep() : "")
 ```
+
 If `alarmSounding` is *true*, this operator returns a space followed by the result of method
 `beep()`.  Otherwise, the operator returns the empty string.
 
@@ -82,4 +82,3 @@ of the radio alarm clock is `None` then `beep()` uses `super` to invoke `beep()`
 in `AlarmClock`.  Otherwise the `getNoise()` method is called on the radio alarm clock's `station`
 field.  This illustrates the fact that enum classes can have instance methods.  Look at the implementation of `getNoise()`
 in `RadioStation`.
-

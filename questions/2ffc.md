@@ -39,7 +39,6 @@ Write a `main` method that creates several stacks using different types (e.g., `
 by transferring contents between stacks, and showing the contents of a stack by popping its elements one
 by one and displaying them.
 
-
 **Hint:**  You cannot create a new array with generic element type `E`, but you
 can create a new array with element type `Object` and cast it to an array with element type `E`.  The compiler will
 complain that this cast is unchecked, and in general such a cast is not safe, but clearly it will work here because the new array is

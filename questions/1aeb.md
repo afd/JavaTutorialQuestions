@@ -14,7 +14,7 @@ Recall that Java provides classes that wrap all the primitive numeric types.  E.
 
 In this question, your task is to write a class with generic methods for reading numbers from the command-line,
 adding numbers, and converting numbers into doubles or ints.  The question is divided into a number of steps,
-and there are hints for each step at the end of the sheet.
+and there are hints for each step at the end.
 
 ### Step 1
 Write a generic interface, `NumberParser`.  Write the
@@ -102,7 +102,6 @@ entered by the user, the set of integers is printed as a set of doubles (using `
 the set of `doubles` is printed as a set of integers (using `displayAsInts`).
 
 An interactive session with your final program might look like this:
-
 
 ```
 Please enter five doubles, one line at a time
