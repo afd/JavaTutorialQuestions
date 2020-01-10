@@ -16,7 +16,7 @@ public class PerfectPalindromicCubes {
    */
   public static void main(String[] args) {
 
-    for (int nextCubeRoot = 0; nextCubeRoot < 2000; nextCubeRoot++) {
+    for (long nextCubeRoot = 0; nextCubeRoot < 2000; nextCubeRoot++) {
       String cubeAsString = String.valueOf(nextCubeRoot * nextCubeRoot * nextCubeRoot);
       if (isPalindrome(cubeAsString)) {
         System.out.println(nextCubeRoot + " cubed is " + cubeAsString);
