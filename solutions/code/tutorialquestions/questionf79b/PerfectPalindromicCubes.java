@@ -2,13 +2,13 @@ package tutorialquestions.questionf79b;
 
 public class PerfectPalindromicCubes {
 
-  private static boolean isPalindrome(String s) {
-    if (s.length() == 0 || s.length() == 1) {
+  private static boolean isPalindrome(String number) {
+    if (number.length() == 0 || number.length() == 1) {
       return true;
     }
 
-    return s.charAt(0) == s.charAt(s.length() - 1)
-        && isPalindrome(s.substring(1, s.length() - 1));
+    return number.charAt(0) == number.charAt(number.length() - 1)
+        && isPalindrome(number.substring(1, number.length() - 1));
   }
 
   /**
