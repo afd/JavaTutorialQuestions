@@ -1,12 +1,9 @@
-/***************************************************/
-/* This class illustrates a POOR DESIGN
- * for the shapes question
- * 
- * DO NOT CONFUSE THIS WITH THE SAMPLE SOLUTION!!!
- ***************************************************/
-
 package tutorialquestions.question5981.baddesign1;
 
+/**
+ * This class illustrates a POOR DESIGN for the shapes question.
+ * DO NOT CONFUSE THIS WITH THE SAMPLE SOLUTION!!!
+ */
 public class Shape {
 
   // Represents semi-major axis if shape is an Ellipse,
