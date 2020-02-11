@@ -35,6 +35,7 @@ Clock 1 shows: 6 seconds since midnight.  Clock 2 shows: 23:59:59
 Clock 1 shows: 7 seconds since midnight.  Clock 2 shows: 00:00:00
 Clock 1 shows: 8 seconds since midnight.  Clock 2 shows: 00:00:01
 Clock 1 shows: 9 seconds since midnight.  Clock 2 shows: 00:00:02
+...
 ```
 
 Now design a class, `AlarmClock`, which extends `Clock` by storing a specific time
