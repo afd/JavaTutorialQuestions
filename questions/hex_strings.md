@@ -4,8 +4,6 @@ There were originally 500 hex strings.  Inflicting more than 500 questions on th
 
 336b
 17b1
-11e2
-b33f
 fe94
 d046
 68e6

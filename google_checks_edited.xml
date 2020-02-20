@@ -47,6 +47,9 @@
     </module>
 
     <module name="TreeWalker">
+
+        <module name="SuppressWarningsHolder"/>
+
         <module name="OuterTypeFilename"/>
         <module name="IllegalTokenText">
             <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
@@ -204,7 +207,9 @@
             <message key="name.invalidPattern"
              value="Interface type name ''{0}'' must match pattern ''{1}''."/>
         </module>
-        <module name="NoFinalizer"/>
+        <module name="NoFinalizer">
+            <property name="id" value="checkstyle:nofinalizer"/>
+        </module>
         <module name="GenericWhitespace">
             <message key="ws.followed"
              value="GenericWhitespace ''{0}'' is followed by whitespace."/>
@@ -318,5 +323,13 @@
                       default="checkstyle-xpath-suppressions.xml" />
             <property name="optional" value="true"/>
         </module>
+
+        <module name="SuppressWarnings">
+            <property name="id" value="checkstyle:suppresswarnings"/>
+        </module>
+
     </module>
+
+    <module name="SuppressWarningsFilter"/>
+
 </module>
