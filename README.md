@@ -90,6 +90,7 @@ TODO: some additional questions on streams are coming soon!
 | [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
 | [845d](questions/845d.md) | *Books and dictionaries*          | Inheritance             |             | [Solution](solutions/845d.md) |
 | [e93f](questions/e93f.md) | *Apparent and actual types*       | Inheritance             |             | [Solution](solutions/e93f.md) |
+| [d3f5](questions/d3f5.md) | *Streams and downcasting*         | Functional, Inheritance, Generics |             | [Solution](solutions/d3f5.md) |
 | [5235](questions/5235.md) | *Equality between points*         | ObjectEquality          | [0f05](questions/0f05.md) | [Solution](solutions/5235.md) |
 | [710c](questions/710c.md) | *The consequences of overriding `equals`* | ObjectEquality  | [5235](questions/5235.md) | [Solution](solutions/710c.md) |
 | [aa68](questions/aa68.md) | *Symmetric equality testing*      | ObjectEqualilty         | [5235](questions/5235.md) | [Solution](solutions/aa68.md) |
@@ -113,7 +114,7 @@ TODO: some additional questions on streams are coming soon!
 | [b4a5](questions/b4a5.md) | *Observing the garbage collector* | MemoryManagement        |             | [Solution](solutions/b4a5.md) |
 | [1ae9](questions/1ae9.md) | *Reusing immutable value objects* | MemoryManagement        | [0f05](questions/0f05.md) | [Solution](solutions/1ae9.md) |
 | [290b](questions/290b.md) | *Memory leaks in Java*            | MemoryManagement, Advanced |          | [Solution](solutions/290b.md) |
-| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              | [question 1486](1486.md) | [Solution](solutions/5566.md) |
+| [5566](questions/5566.md) | *Exception-throwing stacks*       | Exceptions              | [1486](1486.md) | [Solution](solutions/5566.md) |
 | [a22c](questions/a22c.md) | *No duplicate email addresses*    | Exceptions              | [dc38](questions/dc38.md) | [Solution](solutions/a22c.md) |
 | [e093](questions/e093.md) | *Average of numbers*              | Exceptions              |             | [Solution](solutions/e093.md) |
 | [7e2a](questions/7e2a.md) | *Stack overflow*                  | Exceptions              |             | [Solution](solutions/7e2a.md) |
