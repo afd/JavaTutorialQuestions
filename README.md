@@ -85,6 +85,7 @@ TODO: some additional questions on streams are coming soon!
 | [0378](questions/0378.md) | *Comparing people*                | Interfaces              |             | [Solution](solutions/0378.md) |
 | [6346](questions/6346.md) | *Depth of arithmetic expressions* | Interfaces              |             | [Solution](solutions/6346.md) |
 | [e6fd](questions/e6fd.md) | *Bit sets*                        | Interfaces              |             | [Solution](solutions/e6fd.md) |
+| [fe94](questions/fe94.md) | *Using Stream.map and Stream.filter* | Functional              |             | [Solution](solutions/fe94.md) |
 | [0f05](questions/0f05.md) | *Coloured points*                 | Inheritance             |             | [Solution](solutions/0f05.md) |
 | [dd4c](questions/dd4c.md) | *Clocks*                          | Inheritance             |             | [Solution](solutions/dd4c.md) |
 | [8f65](questions/8f65.md) | *Lucky battling fighters with inheritance* | Inheritance    | [8d24](questions/8d24.md) | [Solution](solutions/8f65.md) |
