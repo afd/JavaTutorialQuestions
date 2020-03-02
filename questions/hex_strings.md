@@ -7,7 +7,6 @@ There were originally 500 hex strings.  Inflicting more than 500 questions on th
 d046
 c42e
 0785
-888a
 3499
 e900
 359f

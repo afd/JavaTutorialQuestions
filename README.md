@@ -63,8 +63,6 @@ As a result, you will likely find that some of your answers differ from the samp
 
 I'm very happy to discuss alternative solutions.  Also, please get in touch if there are parts of the solutions that you do not understand, of if you spot errors.
 
-TODO: some additional questions on streams are coming soon!
-
 | Label                     | Name                              | Topic tag(s)            | Depends on  | Solution |
 |---------------------------|-----------------------------------|-------------------------|-------------|----------|
 | [98e3](questions/98e3.md) | *... 1 4 2 1 4 2 1 ...*           | Recap                   |             | [Solution](solutions/98e3.md) |
@@ -108,7 +106,8 @@ TODO: some additional questions on streams are coming soon!
 | [b401](questions/b401.md) | *Generic sets*                    | Generics                | [8a61](questions/8a61.md) | [Solution](solutions/b401.md) |
 | [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
 | [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                | [96df](questions/96df.md) | [Solution](solutions/7041.md) |
-| [11e2](questions/11e2.md) | *Bounded generic methods with streams* | Generics, Functional    |             | [Solution](solutions/11e2.md) |
+| [888a](questions/888a.md) | *Generic methods with streams*    | Generics, Functional    | [68e6](questions/68e6.md) | [Solution](solutions/888a.md) |
+| [11e2](questions/11e2.md) | *Bounded generic methods with streams* | Generics, Functional |             | [Solution](solutions/11e2.md) |
 | [c822](questions/c822.md) | *Problems cloning tree nodes*     | Advanced                | [7041](questions/7041.md) | [Solution](solutions/c822.md) |
 | [735a](questions/735a.md) | *Generic iterators*               | Generics                | [85bb](questions/85bb.md) [a6e7](questions/a6e7.md) [b401](questions/b401.md) | [Solution](solutions/735a.md) |
 | [876b](questions/876b.md) | *Generics and subclasses*         | Generics, Inheritance   |             | [Solution](solutions/876b.md) |
@@ -128,8 +127,8 @@ TODO: some additional questions on streams are coming soon!
 | [1171](questions/1171.md) | *Cloning graphs*                  | Advanced                |             | [Solution](solutions/1171.md) |
 | [f763](questions/f763.md) | *Simulating garbage collection*   | Advanced                |             | [Solution](solutions/f763.md) |
 | [9a9b](questions/9a9b.md) | *Transposing tunes*               | Advanced                |             | [Solution](solutions/9a9b.md) |
-| [b33f](questions/b33f.md) | *Logging using a functional interface* | Advanced           |             | [Solution](solutions/b33f.md) |
+| [b33f](questions/b33f.md) | *Logging using a functional interface* | Advanced           | [888a](questions/888a.md) | [Solution](solutions/b33f.md) |
 
 ## More hex strings
 
-When I am gone, if someone wants to add more questions then please consume the remaining [hex strings here](questions/hex_strings.md). 
+When I am gone, if someone wants to add more questions then please consume the remaining [hex strings here](questions/hex_strings.md).
