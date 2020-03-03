@@ -105,6 +105,7 @@ I'm very happy to discuss alternative solutions.  Also, please get in touch if t
 | [2ffc](questions/2ffc.md) | *Generic stacks*                  | Generics                | [1486](questions/1486.md) | [Solution](solutions/2ffc.md) |
 | [b401](questions/b401.md) | *Generic sets*                    | Generics                | [8a61](questions/8a61.md) | [Solution](solutions/b401.md) |
 | [336b](questions/336b.md) | *Evolving the Set interface*      | Interfaces, Advanced    | [b401](questions/b401.md) | [Solution](solutions/336b.md) |
+| [17b1](questions/17b1.md) | *Default methods*                 | Interfaces, Advanced    |             | [Solution](solutions/17b1.md) |
 | [96df](questions/96df.md) | *Tree nodes*                      | Generics                |             | [Solution](solutions/96df.md) |
 | [7041](questions/7041.md) | *Cloning tree nodes*              | Generics                | [96df](questions/96df.md) | [Solution](solutions/7041.md) |
 | [888a](questions/888a.md) | *Generic methods with streams*    | Generics, Functional    | [68e6](questions/68e6.md) | [Solution](solutions/888a.md) |
