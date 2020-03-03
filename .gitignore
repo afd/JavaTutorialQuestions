@@ -1,5 +1,9 @@
 # IntelliJ project files
-solutions/.idea
+.idea
+solutions/solutions.iml
+
+# Generated files
+out
 
 # Temporary files
 *~
