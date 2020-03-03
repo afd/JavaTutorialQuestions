@@ -10,6 +10,9 @@ public class A {
     this.id = id;
   }
 
+  // This example is used to explore garbage collector behaviour via 'finalize', so we suppress
+  // Checkstyle's generally sound advice to avoid using 'finalize' here.
+  @SuppressWarnings("checkstyle:nofinalizer")
   @Override
   public void finalize() {
     System.out.println("Instance " + id + " collected");
