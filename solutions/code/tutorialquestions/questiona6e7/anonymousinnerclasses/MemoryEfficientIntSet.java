@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MemoryEfficientIntSet extends AbstractIntSet {
 
-  private List<Integer> elements;
+  private final List<Integer> elements;
 
   public MemoryEfficientIntSet() {
     elements = new ArrayList<Integer>();
@@ -35,7 +35,7 @@ public class MemoryEfficientIntSet extends AbstractIntSet {
     // Note that
     //    elements.remove(item);
     // would mean something different!
-    return elements.remove(new Integer(item));
+    return elements.remove(Integer.valueOf(item));
   }
 
   @Override
@@ -43,7 +43,7 @@ public class MemoryEfficientIntSet extends AbstractIntSet {
 
     return new IntSetIterator() {
 
-      private Iterator<Integer> iterator = elements.iterator();
+      private final Iterator<Integer> iterator = elements.iterator();
 
       @Override
       public boolean hasNext() {

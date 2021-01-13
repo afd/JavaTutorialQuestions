@@ -45,7 +45,7 @@ public class RandomIntegers {
       }
     }
 
-    System.out.println("");
+    System.out.println();
     System.out.println("I had to generate " + numbersGenerated
         + " random numbers between 0 and " + (maxNumber - 1)
         + " to have produced all such numbers at least once.");

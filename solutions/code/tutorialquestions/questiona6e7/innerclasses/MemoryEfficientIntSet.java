@@ -33,9 +33,9 @@ public class MemoryEfficientIntSet extends AbstractIntSet {
   @Override
   public boolean remove(int item) {
     // Note that
-    //    elements.remove(x);
+    //    elements.remove(item);
     // would mean something different!
-    return elements.remove(new Integer(item));
+    return elements.remove(Integer.valueOf(item));
   }
 
   @Override

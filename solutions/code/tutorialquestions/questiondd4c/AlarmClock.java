@@ -2,7 +2,7 @@ package tutorialquestions.questiondd4c;
 
 public class AlarmClock extends Clock {
 
-  private int alarmTimeSecondsSinceMidnight;
+  private final int alarmTimeSecondsSinceMidnight;
 
   private boolean alarmSounding = false;
 

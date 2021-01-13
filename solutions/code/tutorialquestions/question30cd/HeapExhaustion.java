@@ -7,11 +7,11 @@ public class HeapExhaustion {
 
   public static void main(String[] args) {
 
-    List<Integer> infiniteList = new ArrayList<Integer>();
+    final List<Integer> infiniteList = new ArrayList<Integer>();
 
     try {
       while (true) {
-        infiniteList.add(new Integer(0));
+        infiniteList.add(0);
       }
     } catch (OutOfMemoryError exception) {
       System.out.println("Length of list before memory exhausted: " + infiniteList.size());

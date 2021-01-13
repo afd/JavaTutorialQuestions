@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class DrawingEngine {
 
-  private Set<Rectangle> rectangles;
+  private final Set<Rectangle> rectangles;
 
   public DrawingEngine() {
     rectangles = new HashSet<Rectangle>();

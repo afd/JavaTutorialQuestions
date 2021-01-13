@@ -2,8 +2,8 @@ package tutorialquestions.questione6fd;
 
 public class BitSetArray implements BitSet {
 
-  private int maxValue;
-  private long[] representation;
+  private final int maxValue;
+  private final long[] representation;
 
   public BitSetArray(int maxValue) {
     if (maxValue < 0) {
@@ -38,7 +38,7 @@ public class BitSetArray implements BitSet {
   public void intersectWith(BitSet other) {
     if (other instanceof BitSetArray) {
       for (int i = 0;
-          i <= Math.min(maxStorableValue(), ((BitSetArray) other).maxStorableValue()) / Long.SIZE;
+          i <= Math.min(maxStorableValue(), other.maxStorableValue()) / Long.SIZE;
           i++) {
         representation[i] &= ((BitSetArray) other).representation[i];
       }

@@ -4,7 +4,7 @@ public class A {
 
   static int numCollected = 0;
 
-  private int id;
+  private final int id;
 
   public A(int id) {
     this.id = id;

@@ -20,7 +20,7 @@ public class Main {
     System.out.println("All records by " + queen.getName() + ":");
     queen.showCatalogue();
 
-    System.out.println("");
+    System.out.println();
 
     System.out.println("All " + Genre.ROCK + " records by " + queen.getName() + ":");
     queen.showGenre(Genre.ROCK);

@@ -2,7 +2,7 @@ package tutorialquestions.question7206;
 
 public class Book {
 
-  private int isbn;
+  private final int isbn;
   private String title;
 
   Book(int isbn, String title) {

@@ -5,7 +5,7 @@ public class GenericStackArray<E> implements GenericStack<E> {
 
   private static final int STACK_LIMIT = 100;
 
-  private E[] elements;
+  private final E[] elements;
   private int stackPointer;
 
   @SuppressWarnings("unchecked")

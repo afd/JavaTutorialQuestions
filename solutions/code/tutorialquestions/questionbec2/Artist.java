@@ -5,18 +5,18 @@ import java.util.List;
 
 public class Artist {
 
-  private String name;
+  private final String name;
 
-  private List<Record> cataloue;
+  private final List<Record> catalogue;
 
-  private Genre mainGenre;
+  private final Genre mainGenre;
 
   /**
    * Create an artist given a name and main genre.
    */
   public Artist(String name, Genre mainGenre) {
     this.name = name;
-    this.cataloue = new ArrayList<Record>();
+    this.catalogue = new ArrayList<>();
     this.mainGenre = mainGenre;
   }
 
@@ -28,14 +28,14 @@ public class Artist {
    * Add a record to the catalogue with the given name and genre.
    */
   public void addRecord(String name, Genre genre) {
-    cataloue.add(new Record(name, genre));
+    catalogue.add(new Record(name, genre));
   }
 
   /**
    * Show details of the catalogue, to standard output.
    */
   public void showCatalogue() {
-    for (Record r : cataloue) {
+    for (Record r : catalogue) {
       System.out.println(r);
     }
   }
@@ -44,7 +44,7 @@ public class Artist {
    * Show details of all records in the catalogue matching the given genre.
    */
   public void showGenre(Genre genre) {
-    for (Record r : cataloue) {
+    for (Record r : catalogue) {
       if (r.getGenre() == genre) {
         System.out.println(r);
       }

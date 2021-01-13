@@ -6,10 +6,10 @@ import java.util.ListIterator;
 
 public class Bookshelf {
 
-  private List<Book> contents;
+  private final List<Book> contents;
 
   public Bookshelf() {
-    contents = new LinkedList<Book>();
+    contents = new LinkedList<>();
   }
 
   public int size() {

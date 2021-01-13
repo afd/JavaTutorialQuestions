@@ -10,7 +10,7 @@ public class Fighter {
 
   protected int stamina;
 
-  private GameEngine theGameEngine;
+  private final GameEngine theGameEngine;
 
   private static final int DAMAGE_VALUE = 2;
 

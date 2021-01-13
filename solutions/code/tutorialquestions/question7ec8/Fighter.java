@@ -2,15 +2,15 @@ package tutorialquestions.question7ec8;
 
 public class Fighter {
 
-  private String name;
+  private final String name;
 
-  private String type;
+  private final String type;
 
-  private int skill;
+  private final int skill;
 
   private int stamina;
 
-  private GameEngine theGameEngine;
+  private final GameEngine theGameEngine;
 
   private static final int DAMAGE_VALUE = 2;
 

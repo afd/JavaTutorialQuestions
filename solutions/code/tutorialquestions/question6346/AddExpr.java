@@ -2,8 +2,8 @@ package tutorialquestions.question6346;
 
 public class AddExpr implements Expr {
 
-  private Expr lhs;
-  private Expr rhs;
+  private final Expr lhs;
+  private final Expr rhs;
 
   public AddExpr(Expr lhs, Expr rhs) {
     this.lhs = lhs;

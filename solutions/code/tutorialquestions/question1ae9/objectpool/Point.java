@@ -9,7 +9,7 @@ public class Point {
   private final int coordY;
   private final int coordZ;
 
-  private static Map<Point, Point> pool = new HashMap<Point, Point>();
+  private static final Map<Point, Point> pool = new HashMap<>();
 
   private Point(int coordX, int coordY, int coordZ) {
     this.coordX = coordX;
@@ -42,9 +42,9 @@ public class Point {
 
   @Override
   public int hashCode() {
-    return new Integer(coordX).hashCode()
-        ^ new Integer(coordY).hashCode()
-        ^ new Integer(coordZ).hashCode();
+    return Integer.valueOf(coordX).hashCode()
+        ^ Integer.valueOf(coordY).hashCode()
+        ^ Integer.valueOf(coordZ).hashCode();
   }
 
 }

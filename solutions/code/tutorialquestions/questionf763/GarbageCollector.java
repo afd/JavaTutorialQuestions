@@ -11,9 +11,9 @@ public class GarbageCollector {
   public <E> void collectGarbage(Set<GraphNode<E>> heapObjects,
       Set<GraphNode<E>> activeObjectRoots) {
 
-    Set<GraphNode<E>> reachable = new HashSet<GraphNode<E>>();
+    Set<GraphNode<E>> reachable = new HashSet<>();
 
-    Deque<GraphNode<E>> stack = new ArrayDeque<GraphNode<E>>();
+    Deque<GraphNode<E>> stack = new ArrayDeque<>();
 
     for (GraphNode<E> node : activeObjectRoots) {
       stack.push(node);

@@ -5,7 +5,7 @@ import java.util.Iterator;
 // Note package level visibility
 class MemoryEfficientIntSetIterator implements IntSetIterator {
 
-  private Iterator<Integer> iterator;
+  private final Iterator<Integer> iterator;
 
   MemoryEfficientIntSetIterator(Iterator<Integer> iterator) {
     this.iterator = iterator;

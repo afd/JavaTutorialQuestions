@@ -2,7 +2,7 @@ package tutorialquestions.question845d;
 
 public class Book {
 
-  private String isbn;
+  private final String isbn;
   private String title = "";
   private int pages = 0;
 

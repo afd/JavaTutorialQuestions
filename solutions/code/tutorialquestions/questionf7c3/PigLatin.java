@@ -67,7 +67,7 @@ public class PigLatin {
 
     return (Character.isUpperCase(word.charAt(0)) ? Character
         .toUpperCase(word.charAt(1)) : word.charAt(1))
-        + word.substring(2, word.length())
+        + word.substring(2)
         + Character.toLowerCase(word.charAt(0)) + "ay";
   }
 

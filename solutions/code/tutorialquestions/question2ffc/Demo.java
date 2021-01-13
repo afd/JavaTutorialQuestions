@@ -10,7 +10,7 @@ public class Demo {
 
   public static void main(String[] args) {
 
-    final GenericStack<String> first = new GenericStackArray<String>();
+    final GenericStack<String> first = new GenericStackArray<>();
 
     final GenericStack<String> second = new GenericStackList<String>();
 

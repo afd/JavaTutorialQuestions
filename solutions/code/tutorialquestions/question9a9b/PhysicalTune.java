@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PhysicalTune extends AbstractTune {
 
-  private List<TuneElement> tuneElements;
+  private final List<TuneElement> tuneElements;
 
   public PhysicalTune() {
     tuneElements = new ArrayList<TuneElement>();

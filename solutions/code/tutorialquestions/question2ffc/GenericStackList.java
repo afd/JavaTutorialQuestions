@@ -5,10 +5,10 @@ import java.util.List;
 
 public class GenericStackList<E> implements GenericStack<E> {
 
-  private List<E> elements;
+  private final List<E> elements;
 
   public GenericStackList() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   @Override

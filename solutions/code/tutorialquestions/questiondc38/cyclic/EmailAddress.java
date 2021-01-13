@@ -5,14 +5,14 @@ import java.util.Set;
 
 public abstract class EmailAddress {
 
-  private String identifier;
+  private final String identifier;
 
   public EmailAddress(String identifier) {
     this.identifier = identifier;
   }
 
   public final Set<EmailAddress> getTargets() {
-    return getTargets(new HashSet<EmailAddress>());
+    return getTargets(new HashSet<>());
   }
 
   protected abstract Set<EmailAddress> getTargets(Set<EmailAddress> alreadySeen);

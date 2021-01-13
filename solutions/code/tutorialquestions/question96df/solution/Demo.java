@@ -4,17 +4,17 @@ public class Demo {
 
   public static void main(String[] args) {
 
-    final TreeNode<String> root = new GeneralTreeNode<String>(4);
-    final TreeNode<String> child0 = new BinaryTreeNode<String>();
-    final TreeNode<String> child1 = new BinaryTreeNode<String>();
-    final TreeNode<String> child2 = new LeafTreeNode<String>();
-    final TreeNode<String> child3 = new LeafTreeNode<String>();
-    final TreeNode<String> child00 = new LeafTreeNode<String>();
-    final TreeNode<String> child01 = new LeafTreeNode<String>();
-    final TreeNode<String> child10 = new LeafTreeNode<String>();
-    final TreeNode<String> child11 = new BinaryTreeNode<String>();
-    final TreeNode<String> child110 = new LeafTreeNode<String>();
-    final TreeNode<String> child111 = new LeafTreeNode<String>();
+    final TreeNode<String> root = new GeneralTreeNode<>(4);
+    final TreeNode<String> child0 = new BinaryTreeNode<>();
+    final TreeNode<String> child1 = new BinaryTreeNode<>();
+    final TreeNode<String> child2 = new LeafTreeNode<>();
+    final TreeNode<String> child3 = new LeafTreeNode<>();
+    final TreeNode<String> child00 = new LeafTreeNode<>();
+    final TreeNode<String> child01 = new LeafTreeNode<>();
+    final TreeNode<String> child10 = new LeafTreeNode<>();
+    final TreeNode<String> child11 = new BinaryTreeNode<>();
+    final TreeNode<String> child110 = new LeafTreeNode<>();
+    final TreeNode<String> child111 = new LeafTreeNode<>();
 
     root.setKey("Animal");
     child0.setKey("Reptile");

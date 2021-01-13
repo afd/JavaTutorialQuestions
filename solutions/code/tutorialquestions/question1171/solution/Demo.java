@@ -20,7 +20,7 @@ public class Demo {
     child2.addSuccessor(original); // Creates a cycle
 
     // Clone original
-    GraphNode<String> clone = (GraphNode<String>) original.clone();
+    GraphNode<String> clone = original.clone();
 
     // Check that the clone uses distinct nodes
     assert original != clone;

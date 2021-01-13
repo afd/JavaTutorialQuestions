@@ -5,9 +5,9 @@ import java.util.Set;
 
 public abstract class EmailAddress {
 
-  private String identifier;
+  private final String identifier;
 
-  private static Set<String> pastIdentifiers = new HashSet<String>();
+  private final static Set<String> pastIdentifiers = new HashSet<>();
 
   public EmailAddress(String identifier) throws DuplicateEmailAddressException {
     if (pastIdentifiers.contains(identifier)) {
