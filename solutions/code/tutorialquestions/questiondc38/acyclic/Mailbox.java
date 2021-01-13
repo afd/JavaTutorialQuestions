@@ -2,7 +2,7 @@ package tutorialquestions.questiondc38.acyclic;
 
 public class Mailbox {
 
-  private String mailboxIdentifier;
+  private final String mailboxIdentifier;
 
   public Mailbox(String mailboxIdentifier) {
     this.mailboxIdentifier = mailboxIdentifier;

@@ -4,7 +4,7 @@ import java.util.ListIterator;
 
 class StringStackListIterator implements StringStackIterator {
 
-  private ListIterator<String> iterator;
+  private final ListIterator<String> iterator;
 
   StringStackListIterator(ListIterator<String> iterator) {
     this.iterator = iterator;

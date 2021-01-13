@@ -5,7 +5,7 @@ class StringStackArrayIterator implements StringStackIterator {
 
   private int current;
 
-  private String[] elements;
+  private final String[] elements;
 
   StringStackArrayIterator(String[] elements, int stackPointer) {
     this.elements = elements;

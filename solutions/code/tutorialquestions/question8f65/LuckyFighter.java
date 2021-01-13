@@ -2,13 +2,13 @@ package tutorialquestions.question8f65;
 
 public class LuckyFighter extends Fighter {
 
-  private int initialStamina;
+  private final int initialStamina;
 
   private int luck;
 
-  private Strategy strategy;
+  private final Strategy strategy;
 
-  private GameEngine theGameEngine;
+  private final GameEngine theGameEngine;
 
   private static final int AGGRESSIVE_RESISTANCE_THRESHOLD = 2;
   private static final int AGGRESSIVE_MULTIPLIER = 2;

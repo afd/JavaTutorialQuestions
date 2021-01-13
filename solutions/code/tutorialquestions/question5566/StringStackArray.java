@@ -4,7 +4,7 @@ public class StringStackArray implements StringStack {
 
   private static final int STACK_LIMIT = 100;
 
-  private String[] elements;
+  private final String[] elements;
   private int stackPointer;
 
   public StringStackArray() {

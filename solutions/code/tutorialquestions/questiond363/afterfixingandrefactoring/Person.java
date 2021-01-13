@@ -3,13 +3,13 @@ package tutorialquestions.questiond363.afterfixingandrefactoring;
 
 public class Person {
 
-  private Name name;
+  private final Name name;
 
-  private Date dateOfBirth;
+  private final Date dateOfBirth;
 
-  private Address address;
+  private final Address address;
 
-  private NiNumber nationalInsuranceNumber;
+  private final NiNumber nationalInsuranceNumber;
 
   public Person(Name name, Date dateOfBirth, Address address, NiNumber nationalInsuranceNumber) {
     this.name = name;

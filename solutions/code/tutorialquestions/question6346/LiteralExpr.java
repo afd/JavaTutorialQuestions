@@ -2,7 +2,7 @@ package tutorialquestions.question6346;
 
 public class LiteralExpr implements Expr {
 
-  private int value;
+  private final int value;
 
   public LiteralExpr(int value) {
     this.value = value;

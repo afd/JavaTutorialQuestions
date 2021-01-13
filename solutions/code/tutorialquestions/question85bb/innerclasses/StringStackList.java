@@ -6,7 +6,7 @@ import java.util.ListIterator;
 
 public class StringStackList extends AbstractStringStack {
 
-  private List<String> elements;
+  private final List<String> elements;
 
   public StringStackList() {
     elements = new ArrayList<String>();
@@ -36,7 +36,7 @@ public class StringStackList extends AbstractStringStack {
 
   private class StringStackListIterator implements StringStackIterator {
 
-    private ListIterator<String> iterator;
+    private final ListIterator<String> iterator;
 
     private StringStackListIterator() {
       iterator = elements.listIterator(elements.size());

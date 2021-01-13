@@ -4,7 +4,7 @@ import java.util.Set;
 
 public abstract class EmailAddress {
 
-  private String identifier;
+  private final String identifier;
 
   public EmailAddress(String identifier) {
     this.identifier = identifier;

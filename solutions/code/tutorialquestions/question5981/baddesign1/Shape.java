@@ -16,7 +16,7 @@ public class Shape {
   // Ignored if shape is a Circle or Square
   private int second;
 
-  private ShapeType type;
+  private final ShapeType type;
 
   public Shape(int first, int second, ShapeType type) {
     this.first = first;

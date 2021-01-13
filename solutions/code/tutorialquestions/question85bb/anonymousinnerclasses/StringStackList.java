@@ -6,7 +6,7 @@ import java.util.ListIterator;
 
 public class StringStackList extends AbstractStringStack {
 
-  private List<String> elements;
+  private final List<String> elements;
 
   public StringStackList() {
     elements = new ArrayList<String>();
@@ -35,7 +35,7 @@ public class StringStackList extends AbstractStringStack {
 
     return new StringStackIterator() {
 
-      private ListIterator<String> iterator = elements.listIterator(elements.size());
+      private final ListIterator<String> iterator = elements.listIterator(elements.size());
 
       @Override
       public boolean hasNext() {

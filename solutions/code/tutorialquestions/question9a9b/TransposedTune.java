@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 public class TransposedTune extends AbstractTune {
 
-  private Tune originalTune;
-  private int interval;
+  private final Tune originalTune;
+  private final int interval;
 
   TransposedTune(Tune originalTune, int interval) {
     this.originalTune = originalTune;
@@ -50,7 +50,7 @@ public class TransposedTune extends AbstractTune {
 
   private class TransposedTuneIterator implements Iterator<TuneElement> {
 
-    private Iterator<TuneElement> originalTuneIterator;
+    private final Iterator<TuneElement> originalTuneIterator;
 
     private TransposedTuneIterator() {
       originalTuneIterator = originalTune.iterator();

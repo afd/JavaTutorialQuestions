@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MemoryEfficientIntSet extends AbstractIntSet {
 
-  private List<Integer> elements;
+  private final List<Integer> elements;
 
   public MemoryEfficientIntSet() {
     elements = new ArrayList<Integer>();
@@ -45,7 +45,7 @@ public class MemoryEfficientIntSet extends AbstractIntSet {
 
   private class MemoryEfficientIntSetIterator implements IntSetIterator {
 
-    private Iterator<Integer> iterator;
+    private final Iterator<Integer> iterator;
 
     private MemoryEfficientIntSetIterator() {
       iterator = elements.iterator();

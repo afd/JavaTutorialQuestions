@@ -7,9 +7,9 @@ import java.util.Random;
 
 public class UnreliableBufferedReader extends BufferedReader {
 
-  private double probabilityOfError;
+  private final double probabilityOfError;
 
-  private Random generator;
+  private final Random generator;
 
   /**
    * Makes an unreliable reader from the given input stream reader with given probability of error.

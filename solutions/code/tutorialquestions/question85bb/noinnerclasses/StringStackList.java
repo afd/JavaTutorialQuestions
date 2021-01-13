@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StringStackList extends AbstractStringStack {
 
-  private List<String> elements;
+  private final List<String> elements;
 
   public StringStackList() {
     elements = new ArrayList<String>();

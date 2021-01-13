@@ -10,7 +10,7 @@ public class Point {
   private final int coordY;
   private final int coordZ;
 
-  private static Map<Point, WeakReference<Point>> pool = new WeakHashMap<>();
+  private static final Map<Point, WeakReference<Point>> pool = new WeakHashMap<>();
 
   private Point(int coordX, int coordY, int coordZ) {
     this.coordX = coordX;

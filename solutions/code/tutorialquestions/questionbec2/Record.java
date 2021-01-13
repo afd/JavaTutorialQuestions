@@ -2,9 +2,9 @@ package tutorialquestions.questionbec2;
 
 public class Record {
 
-  private String name;
+  private final String name;
 
-  private Genre genre;
+  private final Genre genre;
 
   public Record(String name, Genre genre) {
     this.name = name;

@@ -2,11 +2,11 @@ package tutorialquestions.question8d24;
 
 public class LuckyFighter {
 
-  private String name;
+  private final String name;
 
-  private String type;
+  private final String type;
 
-  private int skill;
+  private final int skill;
 
   private int stamina;
 
@@ -14,9 +14,9 @@ public class LuckyFighter {
 
   private int luck;
 
-  private Strategy strategy;
+  private final Strategy strategy;
 
-  private GameEngine theGameEngine;
+  private final GameEngine theGameEngine;
 
   /**
    * Create a LuckyFighter, given a name, type, attributes, and references to a strategy and game

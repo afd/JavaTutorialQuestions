@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class GameEngine {
 
-  private Random generator;
+  private final Random generator;
 
   public GameEngine() {
     generator = new Random();

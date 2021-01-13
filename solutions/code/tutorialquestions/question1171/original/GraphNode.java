@@ -6,7 +6,7 @@ import java.util.List;
 public class GraphNode<E> {
 
   private E key;
-  private List<GraphNode<E>> successors;
+  private final List<GraphNode<E>> successors;
 
   public GraphNode() {
     successors = new ArrayList<GraphNode<E>>();

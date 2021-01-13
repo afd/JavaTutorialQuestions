@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class PropertyCollection {
 
-  private Set<Property> properties;
+  private final Set<Property> properties;
 
   public PropertyCollection() {
     properties = new HashSet<Property>();

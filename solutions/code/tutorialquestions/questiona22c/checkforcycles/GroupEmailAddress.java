@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class GroupEmailAddress extends EmailAddress {
 
-  private Set<EmailAddress> members;
+  private final Set<EmailAddress> members;
 
   public GroupEmailAddress(String identifier) throws DuplicateEmailAddressException {
     super(identifier);

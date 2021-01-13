@@ -2,7 +2,7 @@ package tutorialquestions.question6346;
 
 public class FactExpr implements Expr {
 
-  private Expr operand;
+  private final Expr operand;
 
   public FactExpr(Expr operand) {
     this.operand = operand;

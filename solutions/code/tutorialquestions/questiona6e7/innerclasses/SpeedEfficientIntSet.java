@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class SpeedEfficientIntSet extends AbstractIntSet {
 
-  private Set<Integer> elements;
+  private final Set<Integer> elements;
 
   public SpeedEfficientIntSet() {
     elements = new HashSet<Integer>();
@@ -39,7 +39,7 @@ public class SpeedEfficientIntSet extends AbstractIntSet {
 
   private class SpeedEfficientIntSetIterator implements IntSetIterator {
 
-    private Iterator<Integer> iterator;
+    private final Iterator<Integer> iterator;
 
     private SpeedEfficientIntSetIterator() {
       iterator = elements.iterator();

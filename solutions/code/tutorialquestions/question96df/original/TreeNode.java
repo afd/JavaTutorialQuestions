@@ -3,7 +3,7 @@ package tutorialquestions.question96df.original;
 public class TreeNode<E> {
 
   private E key;
-  private TreeNode<E>[] children;
+  private final TreeNode<E>[] children;
 
   @SuppressWarnings("unchecked")
   public TreeNode(int numberOfChildren) {

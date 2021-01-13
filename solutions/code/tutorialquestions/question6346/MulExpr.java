@@ -2,8 +2,8 @@ package tutorialquestions.question6346;
 
 public class MulExpr implements Expr {
 
-  private Expr lhs;
-  private Expr rhs;
+  private final Expr lhs;
+  private final Expr rhs;
 
   public MulExpr(Expr lhs, Expr rhs) {
     this.lhs = lhs;

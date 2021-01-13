@@ -4,7 +4,7 @@ package tutorialquestions.questionc822.precondition;
 public class TreeNode<E> {
 
   private E key;
-  private TreeNode<E>[] children;
+  private final TreeNode<E>[] children;
   private int numberOfParents;
 
   @SuppressWarnings("unchecked")

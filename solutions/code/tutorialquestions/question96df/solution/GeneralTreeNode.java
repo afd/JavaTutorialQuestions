@@ -2,7 +2,7 @@ package tutorialquestions.question96df.solution;
 
 public class GeneralTreeNode<E> extends AbstractTreeNode<E> {
 
-  private TreeNode<E>[] children;
+  private final TreeNode<E>[] children;
 
   @SuppressWarnings("unchecked")
   public GeneralTreeNode(int numberOfChildren) {

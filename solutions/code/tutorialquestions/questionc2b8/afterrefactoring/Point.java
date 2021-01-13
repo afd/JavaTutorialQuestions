@@ -2,8 +2,8 @@ package tutorialquestions.questionc2b8.afterrefactoring;
 
 public class Point {
 
-  private int coordX;
-  private int coordY;
+  private final int coordX;
+  private final int coordY;
 
   public Point(int coordX, int coordY) {
     this.coordX = coordX;

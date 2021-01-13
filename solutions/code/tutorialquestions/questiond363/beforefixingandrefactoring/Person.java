@@ -4,19 +4,19 @@ import java.util.StringTokenizer;
 
 public class Person {
 
-  private String forenames;
-  private String surname;
+  private final String forenames;
+  private final String surname;
 
-  private int dayOfBirth;
-  private int monthOfBirth;
-  private int yearOfBirth;
+  private final int dayOfBirth;
+  private final int monthOfBirth;
+  private final int yearOfBirth;
 
-  private int houseNumber;
-  private String address1;
-  private String address2;
-  private String postCode;
+  private final int houseNumber;
+  private final String address1;
+  private final String address2;
+  private final String postCode;
 
-  private String nationalInsuranceNumber;
+  private final String nationalInsuranceNumber;
 
   public Person(String forename, String surname,
       int dayOfBirth,

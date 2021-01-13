@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class SpeedEfficientGenericSet<E> implements GenericSet<E> {
 
-  private Set<E> elements;
+  private final Set<E> elements;
 
   public SpeedEfficientGenericSet() {
     elements = new HashSet<E>();
@@ -39,7 +39,7 @@ public class SpeedEfficientGenericSet<E> implements GenericSet<E> {
 
   private class MemoryEfficientGenericSetIterator implements GenericIterator<E> {
 
-    private Iterator<E> iterator;
+    private final Iterator<E> iterator;
 
     private MemoryEfficientGenericSetIterator() {
       iterator = elements.iterator();

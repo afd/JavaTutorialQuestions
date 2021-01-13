@@ -2,7 +2,7 @@ package tutorialquestions.questiondd4c;
 
 public class RadioAlarmClock extends AlarmClock {
 
-  private RadioStation station;
+  private final RadioStation station;
 
   public RadioAlarmClock(int time, int alarm, RadioStation station) {
     super(time, alarm);
