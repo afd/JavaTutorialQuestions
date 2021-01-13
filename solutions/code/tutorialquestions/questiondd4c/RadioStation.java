@@ -5,17 +5,12 @@ public enum RadioStation {
   None, Radio4, PlanetRock, FiveLive, JazzFM;
 
   public String getNoise() {
-    switch (this) {
-      case Radio4:
-        return "Blah, blah, blah";
-      case PlanetRock:
-        return "Rock rock 'til you drop";
-      case FiveLive:
-        return "...and it's a GOAL!!";
-      case JazzFM:
-        return "Ba di bah, ba do bop";
-      default:
-        return "";
-    }
+    return switch (this) {
+      case None -> "";
+      case Radio4 -> "Blah, blah, blah";
+      case PlanetRock -> "Rock rock 'til you drop";
+      case FiveLive -> "...and it's a GOAL!!";
+      case JazzFM -> "Ba di bah, ba do bop";
+    };
   }
 }

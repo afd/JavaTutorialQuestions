@@ -17,14 +17,8 @@ public class Demo {
 
     final Logger stderrLogger = (logLevel, message) -> {
       switch (logLevel) {
-        case FATAL:
-        case ERROR:
-        case WARNING:
-          System.err.print("*** IMPORTANT ***\n");
-          break;
-        default:
-          System.err.print("* NOTE *\n");
-          break;
+        case FATAL, ERROR, WARNING -> System.err.print("*** IMPORTANT ***\n");
+        default -> System.err.print("* NOTE *\n");
       }
       System.err.println(message);
     };

@@ -13,9 +13,9 @@ public class ReversedOrderOfInputStack {
    */
   public static void main(String[] args) throws IOException {
 
-    Deque<String> dq = new ArrayDeque<>();
+    final Deque<String> dq = new ArrayDeque<>();
 
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     String line = br.readLine();
 

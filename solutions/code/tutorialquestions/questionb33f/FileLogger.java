@@ -3,6 +3,7 @@ package tutorialquestions.questionb33f;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Set;
 
 public class FileLogger implements Logger {
 
@@ -14,17 +15,11 @@ public class FileLogger implements Logger {
 
   @Override
   public void log(LogLevel logLevel, String message) {
+    if (Set.of(LogLevel.INFO, LogLevel.VERBOSE).contains(logLevel)) {
+      return;
+    }
     try {
-      switch (logLevel) {
-        case WARNING:
-        case ERROR:
-        case FATAL:
-          writer.write(logLevel.toString());
-          break;
-        default:
-          return;
-      }
-      writer.write(": " + message + "\n");
+      writer.write(logLevel.toString() + ": " + message + "\n");
     } catch (IOException exception) {
       // Ignore the exception.
     }

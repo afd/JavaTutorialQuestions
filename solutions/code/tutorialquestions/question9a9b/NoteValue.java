@@ -6,19 +6,13 @@ public enum NoteValue {
 
   @Override
   public String toString() {
-    switch (this) {
-      case WHOLE:
-        return "1";
-      case HALF:
-        return "1/2";
-      case QUARTER:
-        return "1/4";
-      case EIGHTH:
-        return "1/8";
-      default:
-        assert this == SIXTEENTH;
-        return "1/16";
-    }
+    return switch (this) {
+      case WHOLE -> "1";
+      case HALF -> "1/2";
+      case QUARTER -> "1/4";
+      case EIGHTH -> "1/8";
+      case SIXTEENTH -> "1/16";
+    };
   }
 
 }

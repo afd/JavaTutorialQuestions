@@ -6,33 +6,20 @@ public enum NoteName {
 
   @Override
   public String toString() {
-    switch (this) {
-      case C:
-        return "C";
-      case C_SHARP:
-        return "C#";
-      case D:
-        return "D";
-      case D_SHARP:
-        return "D#";
-      case E:
-        return "E";
-      case F:
-        return "F";
-      case F_SHARP:
-        return "F#";
-      case G:
-        return "G";
-      case G_SHARP:
-        return "G#";
-      case A:
-        return "A";
-      case A_SHARP:
-        return "A#";
-      default:
-        assert this == B;
-        return "B";
-    }
+    return switch (this) {
+      case C -> "C";
+      case C_SHARP -> "C#";
+      case D -> "D";
+      case D_SHARP -> "D#";
+      case E -> "E";
+      case F -> "F";
+      case F_SHARP -> "F#";
+      case G -> "G";
+      case G_SHARP -> "G#";
+      case A -> "A";
+      case A_SHARP -> "A#";
+      case B -> "B";
+    };
   }
 
 }
