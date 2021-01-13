@@ -1,6 +1,7 @@
 package tutorialquestions.question336b;
 
-import java.util.Arrays;
+
+import java.util.List;
 
 public class Demo {
 
@@ -28,7 +29,7 @@ public class Demo {
     set1.addAll(lotsOfDuplicates);
     set2.addAll(lotsOfDuplicates);
 
-    for (GenericSet<Integer> set : Arrays.asList(set1, set2)) {
+    for (GenericSet<Integer> set : List.of(set1, set2)) {
       if (!set.contains(LARGE_NUMBER) || !set.contains(LARGE_NUMBER + 1)) {
         throw new AssertionError("Expected the set to contain " + LARGE_NUMBER);
       }

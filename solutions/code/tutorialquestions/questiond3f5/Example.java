@@ -1,6 +1,5 @@
 package tutorialquestions.questiond3f5;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -22,7 +21,7 @@ public class Example {
 
   public static void main(String[] args) {
 
-    final List<Number> numbers = Arrays.asList(
+    final List<Number> numbers = List.of(
             5,
             2,
             3.0f,
@@ -33,13 +32,13 @@ public class Example {
             200,
             0);
 
-    final List<Double> floats = Arrays.asList(
+    final List<Double> floats = List.of(
             10.0,
             -20.0,
             31.0,
             412.34);
 
-    final List<Integer> integers = Arrays.asList(
+    final List<Integer> integers = List.of(
             1,
             -1,
             2,

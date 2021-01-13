@@ -1,7 +1,6 @@
 package tutorialquestions.question11e2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -19,27 +18,27 @@ public class Example {
   }
 
   public static void main(String[] args) {
-    final Set<Integer> s1 = new HashSet<>(Arrays.asList(1, 2, 3, 4));
-    final Set<Integer> s2 = new HashSet<>(Arrays.asList(1, 2));
-    final Set<Integer> s3 = new HashSet<>(Arrays.asList(1, 2, 3, 4));
-    final Set<Integer> s4 = new HashSet<>(Arrays.asList(3, 4));
+    final Set<Integer> s1 = Set.of(1, 2, 3, 4);
+    final Set<Integer> s2 = Set.of(1, 2);
+    final Set<Integer> s3 = Set.of(1, 2, 3, 4);
+    final Set<Integer> s4 = Set.of(3, 4);
 
-    final List<String> l1 = new ArrayList<>(Arrays.asList("alpha", "beta", "gamma"));
-    final List<String> l2 = new ArrayList<>(Arrays.asList("ay", "bee", "cee"));
-    final List<String> l3 = new ArrayList<>(Arrays.asList("mouse", "fox", "owl", "snake",
+    final List<String> l1 = new ArrayList<>(List.of("alpha", "beta", "gamma"));
+    final List<String> l2 = new ArrayList<>(List.of("ay", "bee", "cee"));
+    final List<String> l3 = new ArrayList<>(List.of("mouse", "fox", "owl", "snake",
             "gruffalo"));
-    final List<String> l4 = new ArrayList<>(Arrays.asList("dog", "cat", "frog", "bird", "witch",
+    final List<String> l4 = new ArrayList<>(List.of("dog", "cat", "frog", "bird", "witch",
             "broomstick"));
-    final List<String> l5 = new ArrayList<>(Arrays.asList("dragon", "pox"));
-    final List<String> l6 = new ArrayList<>(Arrays.asList("dragon", "pox"));
+    final List<String> l5 = new ArrayList<>(List.of("dragon", "pox"));
+    final List<String> l6 = new ArrayList<>(List.of("dragon", "pox"));
 
-    final List<Set<Integer>> listOfSetsOfIntegers = Arrays.asList(s1, s2, s3, s4);
-    final List<List<String>> listOfListsOfStrings = Arrays.asList(l1, l2, l3, l4, l5, l6);
+    final List<Set<Integer>> listOfSetsOfIntegers = List.of(s1, s2, s3, s4);
+    final List<List<String>> listOfListsOfStrings = List.of(l1, l2, l3, l4, l5, l6);
 
     // Think about why the following would not compile:
-    // final List<Collection<Object>> listOfCollections = Arrays.asList(
+    // final List<Collection<Object>> listOfCollections = List.of(
     //     s1, s2, s3, s4, l1, l2, l3, l4, l5);
-    final List<Collection<?>> listOfCollections = Arrays.asList(s1, s2, s3, s4, l1, l2, l3, l4, l5);
+    final List<Collection<?>> listOfCollections = List.of(s1, s2, s3, s4, l1, l2, l3, l4, l5);
 
     final Optional<Set<Integer>> smallestSet = getSmallestCollection(listOfSetsOfIntegers);
     assert smallestSet.isPresent();

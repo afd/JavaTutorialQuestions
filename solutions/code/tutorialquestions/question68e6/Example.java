@@ -1,7 +1,6 @@
 package tutorialquestions.question68e6;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -53,10 +52,10 @@ public class Example {
   }
 
   public static void main(String[] args) {
-    final List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5, 9);
-    final List<Integer> list2 = Arrays.asList(1, 10, 100, 1000, 10000);
-    final List<Integer> list3 = Arrays.asList(6, 7, 8);
-    final List<List<Integer>> listOfLists = Arrays.asList(list1, list2, list3);
+    final List<Integer> list1 = List.of(1, 2, 3, 4, 5, 9);
+    final List<Integer> list2 = List.of(1, 10, 100, 1000, 10000);
+    final List<Integer> list3 = List.of(6, 7, 8);
+    final List<List<Integer>> listOfLists = List.of(list1, list2, list3);
 
     final List<Integer> allIntegers = concatenate(listOfLists);
     final int maxList1 = findMax(list1);
@@ -68,7 +67,7 @@ public class Example {
     final int minOfMaxes = findMinOfMaxes(listOfLists);
     final int minOfMaxesEmpty = findMinOfMaxes(Collections.emptyList());
     final int minOfMaxesListOfEmptyLists = findMinOfMaxes(
-            Arrays.asList(Collections.emptyList(), Collections.emptyList()));
+            List.of(Collections.emptyList(), Collections.emptyList()));
 
     System.out.println("Concatenation of all the integer lists: " + allIntegers);
     System.out.println("Max of list 1: " + maxList1);

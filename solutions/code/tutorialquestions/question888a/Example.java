@@ -1,7 +1,6 @@
 package tutorialquestions.question888a;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -42,19 +41,19 @@ public class Example {
 
   public static void main(String[] args) {
 
-    final List<String> strings1 = Arrays.asList("Then", "again", "he", "said");
-    final List<String> strings2 = Arrays.asList("it", "makes", "me", "wonder", "about", "you");
-    final List<String> strings3 = Arrays.asList("The", "binders", "what", "is", "it", "like");
-    final List<String> strings4 = Arrays.asList("to", "steal", "a", "soul?");
+    final List<String> strings1 = List.of("Then", "again", "he", "said");
+    final List<String> strings2 = List.of("it", "makes", "me", "wonder", "about", "you");
+    final List<String> strings3 = List.of("The", "binders", "what", "is", "it", "like");
+    final List<String> strings4 = List.of("to", "steal", "a", "soul?");
 
-    final List<Float> floats1 = Arrays.asList(1.0f, 2.0f, 3.0f, 4.0f, 5.0f);
-    final List<Float> floats2 = Arrays.asList(20.0f, 19.0f, 18.0f, 17.0f, 16.0f, 15.0f);
+    final List<Float> floats1 = List.of(1.0f, 2.0f, 3.0f, 4.0f, 5.0f);
+    final List<Float> floats2 = List.of(20.0f, 19.0f, 18.0f, 17.0f, 16.0f, 15.0f);
     final List<Float> floats3 = Collections.singletonList(10.0f);
-    final List<Float> floats4 = Arrays.asList(11.0f, 1.0f);
+    final List<Float> floats4 = List.of(11.0f, 1.0f);
 
-    final List<List<String>> listOfListsOfStrings = Arrays.asList(strings1, strings2, strings3,
+    final List<List<String>> listOfListsOfStrings = List.of(strings1, strings2, strings3,
             strings4);
-    final List<List<Float>> listOfListsOfFloats = Arrays.asList(floats1, floats2, floats3,
+    final List<List<Float>> listOfListsOfFloats = List.of(floats1, floats2, floats3,
             floats4);
     System.out.println("Concatenated string lists: " + listOfListsOfStrings);
     System.out.println("Concatenated float lists: " + listOfListsOfFloats);

@@ -1,9 +1,8 @@
 package tutorialquestions.questionb33f;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
 public class Demo {
 
@@ -39,8 +38,8 @@ public class Demo {
     final FileInspector inspector3 = new FileInspector(fileLogger2);
 
     final KnownWordsStringInspector knownWordsInspector = new KnownWordsStringInspector(
-            new HashSet<String>(Arrays.asList("goto", "finalize", "static")),
-            new HashSet<String>(Arrays.asList("continue", "break"))
+            Set.of("goto", "finalize", "static"),
+            Set.of("continue", "break")
     );
 
     System.err.println("Starting inspection 1:");
