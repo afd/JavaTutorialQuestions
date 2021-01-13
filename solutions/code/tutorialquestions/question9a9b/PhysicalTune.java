@@ -9,7 +9,7 @@ public class PhysicalTune extends AbstractTune {
   private final List<TuneElement> tuneElements;
 
   public PhysicalTune() {
-    tuneElements = new ArrayList<TuneElement>();
+    tuneElements = new ArrayList<>();
   }
 
   @Override

@@ -12,7 +12,7 @@ public class Demo {
 
     final GenericStack<String> first = new GenericStackArray<>();
 
-    final GenericStack<String> second = new GenericStackList<String>();
+    final GenericStack<String> second = new GenericStackList<>();
 
     first.push("The");
     first.push("quick");

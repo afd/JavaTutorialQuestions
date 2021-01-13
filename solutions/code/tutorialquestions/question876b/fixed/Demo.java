@@ -9,11 +9,13 @@ public class Demo {
 
   public static void main(String[] args) {
 
-    Set<B> setOfB = new HashSet<B>();
-
-    // Such warnings are generally important - I am suppressing it because
-    // it doesn't matter for this simple demo, and I don't want its presence
+    // Such warnings are generally important - I am suppressing them because
+    // they do not matter for this simple demo, and I don't want their presence
     // to make me miss other warnings!
+
+    @SuppressWarnings("UnnecessaryLocalVariable")
+    Set<B> setOfB = new HashSet<>();
+
     @SuppressWarnings("unused")
     Set<? extends A> setOfA = setOfB;
 

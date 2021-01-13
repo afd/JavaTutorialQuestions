@@ -29,7 +29,7 @@ public interface GenericSet<E> {
     // alternative to using an anonymous class would be to have a generic class called
     // UnmodifiableWrapperSet that implements the GenericSet interface and provides this
     // functionality.
-    return new GenericSet<E>() {
+    return new GenericSet<>() {
       @Override
       public void add(E item) {
         throw new UnsupportedOperationException("Attempt to add to an unmodifiable set.");

@@ -10,7 +10,7 @@ public class MemoryEfficientGenericSet<E> implements GenericSet<E> {
   private final List<E> elements;
 
   public MemoryEfficientGenericSet() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   @Override
@@ -42,10 +42,7 @@ public class MemoryEfficientGenericSet<E> implements GenericSet<E> {
   public void addAll(E[] items) {
     // Keep track of all the elements that are known to belong to this set, storing them as a
     // HashSet, which supports efficient lookup.
-    final Set<E> knownElements = new HashSet<>();
-    // Note that this 'addAll' is invoking the method from the java.util.Set interface, not our
-    // new 'addAll' method.
-    knownElements.addAll(elements);
+    final Set<E> knownElements = new HashSet<>(elements);
     // Now go through all of the items to be added to our memory-efficient set.
     for (E item : items) {
       // Efficiently check whether we know this element already exists.  If it does,

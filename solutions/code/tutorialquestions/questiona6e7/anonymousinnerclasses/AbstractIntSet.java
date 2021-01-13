@@ -35,7 +35,7 @@ public abstract class AbstractIntSet implements IntSet {
 
   @Override
   public String toString() {
-    StringBuilder result = new StringBuilder();
+    final StringBuilder result = new StringBuilder();
     result.append("[");
 
     for (IntSetIterator it = iterator(); it.hasNext(); ) {

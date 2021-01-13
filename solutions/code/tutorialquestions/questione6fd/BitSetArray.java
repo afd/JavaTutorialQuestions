@@ -58,16 +58,16 @@ public class BitSetArray implements BitSet {
 
   @Override
   public String toString() {
-    String result = "{ ";
+    final StringBuilder result = new StringBuilder("{ ");
     boolean first = true;
     for (int x = 0; inRange(x); x++) {
       if (contains(x)) {
         if (first) {
           first = false;
         } else {
-          result += ", ";
+          result.append(", ");
         }
-        result += x;
+        result.append(x);
       }
     }
     return result + " }";

@@ -48,11 +48,9 @@ public class Clock {
 
     int ss = secondsSinceMidnight % SECONDS_IN_A_MINUTE;
 
-    String result = padding(hh) + hh + ":"
+    return padding(hh) + hh + ":"
         + padding(mm) + mm + ":"
         + padding(ss) + ss;
-
-    return result;
   }
 
 

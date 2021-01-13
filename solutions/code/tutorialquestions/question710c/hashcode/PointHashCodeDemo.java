@@ -17,7 +17,7 @@ public class PointHashCodeDemo {
     final Point firstColoured = new ColouredPoint(1.2, 2.3, 3.4, Colour.RED);
     final Point secondColoured = new ColouredPoint(1.2, 2.3, 3.4, Colour.RED);
 
-    Set<Point> pointSet = new HashSet<Point>();
+    Set<Point> pointSet = new HashSet<>();
 
     pointSet.add(first);
 

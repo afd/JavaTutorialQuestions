@@ -6,11 +6,11 @@ public class TreeNodeTest2 {
 
   public static void main(String[] args) {
 
-    TreeNode<String> n3 = new TreeNode<String>(2);
+    TreeNode<String> n3 = new TreeNode<>(2);
     n3.setKey("C");
-    TreeNode<String> n4 = new TreeNode<String>(1);
+    TreeNode<String> n4 = new TreeNode<>(1);
     n4.setKey("D");
-    TreeNode<String> n5 = new TreeNode<String>(0);
+    TreeNode<String> n5 = new TreeNode<>(0);
     n5.setKey("E");
     n3.setChild(0, n4);
     n3.setChild(1, n5);

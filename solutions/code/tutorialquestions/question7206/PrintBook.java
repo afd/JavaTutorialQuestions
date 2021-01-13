@@ -7,7 +7,7 @@ public class PrintBook {
 
   public static void main(String[] args) {
 
-    Set<Book> set = new HashSet<Book>();
+    Set<Book> set = new HashSet<>();
 
     Book book = new Book(1, "C++");
 

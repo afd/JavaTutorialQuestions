@@ -8,7 +8,7 @@ public class MemoryEfficientGenericSet<E> implements GenericSet<E> {
   private final List<E> elements;
 
   public MemoryEfficientGenericSet() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   @Override

@@ -16,18 +16,18 @@ public abstract class AbstractTreeNode<E> implements TreeNode<E> {
 
   @Override
   public final String toString() {
-    String result = key.toString();
+    final StringBuilder result = new StringBuilder(key.toString());
     if (getNumberOfChildren() > 0) {
-      result += "(";
+      result.append("(");
       for (int i = 0; i < getNumberOfChildren(); i++) {
-        result += getChild(i);
+        result.append(getChild(i));
         if (i < getNumberOfChildren() - 1) {
-          result += ", ";
+          result.append(", ");
         }
       }
-      result += ")";
+      result.append(")");
     }
-    return result;
+    return result.toString();
   }
 
 }

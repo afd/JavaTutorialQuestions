@@ -26,7 +26,7 @@ public class Example {
             .stream()
             .filter(item -> item.length() > 0)
             .filter(item -> Character.isDigit(item.charAt(0)))
-            .map(item -> new Integer(item.substring(0, 1)))
+            .map(item -> Integer.valueOf(item.substring(0, 1)))
             .map(Math::sqrt)
             .collect(Collectors.toList());
   }
@@ -35,7 +35,7 @@ public class Example {
     return input
             .stream()
             .filter(item -> item.length() > 0 && Character.isDigit(item.charAt(0)))
-            .map(item -> Math.sqrt(new Integer(item.substring(0, 1))))
+            .map(item -> Math.sqrt(Integer.parseInt(item.substring(0, 1))))
             .collect(Collectors.toList());
   }
 

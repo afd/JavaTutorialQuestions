@@ -2,11 +2,11 @@ package tutorialquestions.question8f65;
 
 public class Fighter {
 
-  protected String name;
+  protected final String name;
 
-  protected String type;
+  protected final String type;
 
-  protected int skill;
+  protected final int skill;
 
   protected int stamina;
 

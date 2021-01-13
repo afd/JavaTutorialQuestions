@@ -7,9 +7,10 @@ public class HeapExhaustion {
 
   public static void main(String[] args) {
 
-    final List<Integer> infiniteList = new ArrayList<Integer>();
+    final List<Integer> infiniteList = new ArrayList<>();
 
     try {
+      //noinspection InfiniteLoopStatement
       while (true) {
         infiniteList.add(0);
       }

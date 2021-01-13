@@ -49,8 +49,8 @@ public class Point {
   @Override
   public int hashCode() {
 
-    return new Double(coordX).hashCode() ^ new Double(coordY).hashCode()
-        ^ new Double(coordZ).hashCode();
+    return Double.valueOf(coordX).hashCode() ^ Double.valueOf(coordY).hashCode()
+        ^ Double.valueOf(coordZ).hashCode();
 
   }
 

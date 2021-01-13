@@ -24,7 +24,7 @@ public class Demo {
 
     final StringInspector lineTooLongInspector =
             (item -> item.length() > MAX_LINE_SIZE
-                    ? Optional.of(new ImmutablePair<LogLevel, String>(
+                    ? Optional.of(new ImmutablePair<>(
                             LogLevel.ERROR, "Line too long: " + item))
                     : Optional.empty());
 

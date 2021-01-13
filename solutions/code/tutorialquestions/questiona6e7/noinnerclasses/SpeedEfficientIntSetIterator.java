@@ -5,7 +5,7 @@ import java.util.Iterator;
 // Note package level visibility
 class SpeedEfficientIntSetIterator implements IntSetIterator {
 
-  Iterator<Integer> iterator;
+  final Iterator<Integer> iterator;
 
   SpeedEfficientIntSetIterator(Iterator<Integer> iterator) {
     this.iterator = iterator;

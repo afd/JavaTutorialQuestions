@@ -21,12 +21,12 @@ public class Name {
   }
 
   public String getInitials() {
-    String result = "";
+    final StringBuilder result = new StringBuilder();
     StringTokenizer strTok = new StringTokenizer(forenames);
     while (strTok.hasMoreTokens()) {
-      result += strTok.nextToken().charAt(0);
+      result.append(strTok.nextToken().charAt(0));
     }
-    return result + surname.charAt(0);
+    return result.toString() + surname.charAt(0);
   }
 
   @Override

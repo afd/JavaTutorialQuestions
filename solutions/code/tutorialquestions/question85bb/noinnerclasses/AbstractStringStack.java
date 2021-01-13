@@ -4,15 +4,15 @@ public abstract class AbstractStringStack implements StringStack {
 
   @Override
   public String toString() {
-    String result = "[";
+    final StringBuilder result = new StringBuilder("[");
     for (StringStackIterator it = iterator(); it.hasNext(); ) {
-      result += it.next();
+      result.append(it.next());
       if (it.hasNext()) {
-        result += ", ";
+        result.append(", ");
       }
     }
-    result += "]";
-    return result;
+    result.append("]");
+    return result.toString();
   }
 
 }

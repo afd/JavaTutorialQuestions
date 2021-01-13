@@ -11,7 +11,7 @@ public class PointHashCodeDemo {
     Point first = new Point(1.2, 2.3, 3.4);
     Point second = new Point(1.2, 2.3, 3.4);
 
-    Set<Point> pointSet = new HashSet<Point>();
+    Set<Point> pointSet = new HashSet<>();
 
     pointSet.add(first);
 

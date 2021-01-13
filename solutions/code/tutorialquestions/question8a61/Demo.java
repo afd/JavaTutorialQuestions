@@ -18,7 +18,7 @@ public class Demo {
 
     for (int i = 0; i < numIntegers; i++) {
       System.out.println("Please enter an int:");
-      result.add(new Integer(br.readLine()));
+      result.add(Integer.parseInt(br.readLine()));
     }
 
     return result;
@@ -26,7 +26,7 @@ public class Demo {
 
   public static void main(String[] args) throws IOException {
 
-    IntSet integers = readIntegers(new Integer(args[0]));
+    IntSet integers = readIntegers(Integer.parseInt(args[0]));
 
     System.out.println("Set is: " + integers.getClass());
 
@@ -39,8 +39,8 @@ public class Demo {
         System.out.println("Goodbye!");
         break;
       }
-      System.out.println("Set contains " + new Integer(line) + ": "
-          + integers.contains(new Integer(line)));
+      System.out.println("Set contains " + Integer.valueOf(line) + ": "
+          + integers.contains(Integer.parseInt(line)));
 
     }
 

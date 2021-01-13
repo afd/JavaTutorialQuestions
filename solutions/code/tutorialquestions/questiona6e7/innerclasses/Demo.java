@@ -18,7 +18,7 @@ public class Demo {
 
     for (int i = 0; i < numIntegers; i++) {
       System.out.println("Please enter an int:");
-      result.add(new Integer(br.readLine()));
+      result.add(Integer.parseInt(br.readLine()));
     }
 
     return result;
@@ -26,8 +26,8 @@ public class Demo {
 
   public static void main(String[] args) throws IOException {
 
-    final int firstSize = new Integer(args[0]);
-    final int secondSize = new Integer(args[1]);
+    final int firstSize = Integer.parseInt(args[0]);
+    final int secondSize = Integer.parseInt(args[1]);
 
     System.out.println("Reading first set, of size " + firstSize + ":");
 

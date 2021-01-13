@@ -13,7 +13,7 @@ public class GraphNode<E> implements Cloneable {
   private List<GraphNode<E>> successors;
 
   public GraphNode() {
-    successors = new ArrayList<GraphNode<E>>();
+    successors = new ArrayList<>();
   }
 
   public int getNumberOfSuccessors() {
@@ -39,9 +39,9 @@ public class GraphNode<E> implements Cloneable {
   @Override
   public GraphNode<E> clone() {
 
-    Map<GraphNode<E>, GraphNode<E>> oldToNew = new HashMap<GraphNode<E>, GraphNode<E>>();
+    Map<GraphNode<E>, GraphNode<E>> oldToNew = new HashMap<>();
 
-    Deque<GraphNode<E>> stack = new ArrayDeque<GraphNode<E>>();
+    Deque<GraphNode<E>> stack = new ArrayDeque<>();
 
     stack.push(this);
 
@@ -70,7 +70,7 @@ public class GraphNode<E> implements Cloneable {
   private GraphNode<E> internalClone() {
     try {
       GraphNode<E> result = (GraphNode<E>) super.clone();
-      result.successors = new ArrayList<GraphNode<E>>();
+      result.successors = new ArrayList<>();
       return result;
     } catch (CloneNotSupportedException ex) {
       // This should never be thrown, because

@@ -8,7 +8,7 @@ public class SpeedEfficientIntSet extends AbstractIntSet {
   private final Set<Integer> elements;
 
   public SpeedEfficientIntSet() {
-    elements = new HashSet<Integer>();
+    elements = new HashSet<>();
   }
 
   @Override

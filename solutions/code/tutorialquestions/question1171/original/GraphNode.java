@@ -9,7 +9,7 @@ public class GraphNode<E> {
   private final List<GraphNode<E>> successors;
 
   public GraphNode() {
-    successors = new ArrayList<GraphNode<E>>();
+    successors = new ArrayList<>();
   }
 
   public int getNumberOfSuccessors() {

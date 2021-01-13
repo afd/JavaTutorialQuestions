@@ -9,7 +9,7 @@ public class MemoryEfficientIntSet extends AbstractIntSet {
   private final List<Integer> elements;
 
   public MemoryEfficientIntSet() {
-    elements = new ArrayList<Integer>();
+    elements = new ArrayList<>();
   }
 
   @Override

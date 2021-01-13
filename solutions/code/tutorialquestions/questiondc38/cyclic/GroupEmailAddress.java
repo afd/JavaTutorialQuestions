@@ -9,7 +9,7 @@ public class GroupEmailAddress extends EmailAddress {
 
   public GroupEmailAddress(String identifier) {
     super(identifier);
-    members = new HashSet<EmailAddress>();
+    members = new HashSet<>();
   }
 
   public void addEmailAddress(EmailAddress emailAddress) {

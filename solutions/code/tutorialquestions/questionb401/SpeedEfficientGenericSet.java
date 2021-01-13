@@ -8,7 +8,7 @@ public class SpeedEfficientGenericSet<E> implements GenericSet<E> {
   private final Set<E> elements;
 
   public SpeedEfficientGenericSet() {
-    elements = new HashSet<E>();
+    elements = new HashSet<>();
   }
 
   @Override

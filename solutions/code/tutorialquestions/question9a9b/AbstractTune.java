@@ -9,17 +9,17 @@ public abstract class AbstractTune implements Tune {
 
   @Override
   public String toString() {
-    String result = "";
+    final StringBuilder result = new StringBuilder();
     boolean first = true;
     for (TuneElement t : this) {
       if (first) {
         first = false;
       } else {
-        result += " ";
+        result.append(" ");
       }
-      result += t;
+      result.append(t);
     }
-    return result;
+    return result.toString();
   }
 
 }

@@ -18,11 +18,11 @@ public class Demo {
     List<GraphNode<Integer>> bigTreeNodes = buildBinaryTree(BIG_TREE_DEPTH);
     List<GraphNode<Integer>> smallTreeNodes = buildBinaryTree(SMALL_TREE_DEPTH);
 
-    Set<GraphNode<Integer>> heapObjects = new HashSet<GraphNode<Integer>>();
+    Set<GraphNode<Integer>> heapObjects = new HashSet<>();
     heapObjects.addAll(bigTreeNodes);
     heapObjects.addAll(smallTreeNodes);
 
-    Set<GraphNode<Integer>> activeObjectRoots = new HashSet<GraphNode<Integer>>();
+    Set<GraphNode<Integer>> activeObjectRoots = new HashSet<>();
     activeObjectRoots.add(bigTreeNodes.get(0));
 
     System.out.println("Before garbage collection:");
@@ -59,9 +59,9 @@ public class Demo {
 
   private static List<GraphNode<Integer>> buildBinaryTree(int depth) {
 
-    List<GraphNode<Integer>> result = new ArrayList<GraphNode<Integer>>();
+    List<GraphNode<Integer>> result = new ArrayList<>();
 
-    result.add(new GraphNode<Integer>());
+    result.add(new GraphNode<>());
     result.get(0).setKey(getNextId());
 
     if (depth > 1) {

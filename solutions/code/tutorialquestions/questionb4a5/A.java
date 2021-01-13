@@ -12,7 +12,7 @@ public class A {
 
   // This example is used to explore garbage collector behaviour via 'finalize', so we suppress
   // Checkstyle's generally sound advice to avoid using 'finalize' here.
-  @SuppressWarnings("checkstyle:nofinalizer")
+  @SuppressWarnings({"checkstyle:nofinalizer", "deprecation"})
   @Override
   public void finalize() {
     System.out.println("Instance " + id + " collected");

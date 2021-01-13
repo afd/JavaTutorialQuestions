@@ -47,7 +47,7 @@ public class TreeNode<E> {
   }
 
   public TreeNode<E> clone() {
-    TreeNode<E> result = new TreeNode<E>(getNumberOfChildren());
+    TreeNode<E> result = new TreeNode<>(getNumberOfChildren());
     for (int i = 0; i < getNumberOfChildren(); i++) {
       result.setChild(i, getChild(i).clone());
     }

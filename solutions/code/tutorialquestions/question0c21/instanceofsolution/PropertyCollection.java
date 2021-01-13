@@ -9,7 +9,7 @@ public class PropertyCollection {
   private final Set<Property> properties;
 
   public PropertyCollection() {
-    properties = new HashSet<Property>();
+    properties = new HashSet<>();
   }
 
   public void addProperty(Property property) {
@@ -17,7 +17,7 @@ public class PropertyCollection {
   }
 
   public Set<House> getHouses() {
-    Set<House> result = new HashSet<House>();
+    Set<House> result = new HashSet<>();
     for (Property p : properties) {
       if (p instanceof House) {
         result.add((House) p);
@@ -27,7 +27,7 @@ public class PropertyCollection {
   }
 
   public Set<Bungalow> getBungalows() {
-    Set<Bungalow> result = new HashSet<Bungalow>();
+    Set<Bungalow> result = new HashSet<>();
     for (Property p : properties) {
       if (p instanceof Bungalow) {
         result.add((Bungalow) p);
@@ -37,7 +37,7 @@ public class PropertyCollection {
   }
 
   public Set<Flat> getFlats() {
-    Set<Flat> result = new HashSet<Flat>();
+    Set<Flat> result = new HashSet<>();
     for (Property p : properties) {
       if (p instanceof Flat) {
         result.add((Flat) p);
@@ -47,7 +47,7 @@ public class PropertyCollection {
   }
 
   public Set<Maisonette> getMaisonettes() {
-    Set<Maisonette> result = new HashSet<Maisonette>();
+    Set<Maisonette> result = new HashSet<>();
     for (Property p : properties) {
       if (p instanceof Maisonette) {
         result.add((Maisonette) p);
@@ -57,7 +57,7 @@ public class PropertyCollection {
   }
 
   public Set<TerracedHouse> getTerracedHouses() {
-    Set<TerracedHouse> result = new HashSet<TerracedHouse>();
+    Set<TerracedHouse> result = new HashSet<>();
     for (Property p : properties) {
       if (p instanceof TerracedHouse) {
         result.add((TerracedHouse) p);

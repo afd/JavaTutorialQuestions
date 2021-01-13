@@ -9,7 +9,7 @@ public class GroupEmailAddress extends EmailAddress {
 
   public GroupEmailAddress(String identifier) throws DuplicateEmailAddressException {
     super(identifier);
-    members = new HashSet<EmailAddress>();
+    members = new HashSet<>();
   }
 
   public void addEmailAddress(EmailAddress emailAddress) {
@@ -19,7 +19,7 @@ public class GroupEmailAddress extends EmailAddress {
   @Override
   public Set<EmailAddress> getTargets() {
 
-    Set<EmailAddress> result = new HashSet<EmailAddress>();
+    Set<EmailAddress> result = new HashSet<>();
 
     for (EmailAddress e : members) {
       result.addAll(e.getTargets());

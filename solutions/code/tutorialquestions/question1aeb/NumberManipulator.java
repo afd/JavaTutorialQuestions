@@ -12,7 +12,7 @@ public class NumberManipulator {
   public static <T extends Number> Set<T> readNumbers(int count, NumberParser<T> parser)
       throws IOException {
 
-    Set<T> result = new HashSet<T>();
+    Set<T> result = new HashSet<>();
 
     BufferedReader br = new BufferedReader(
         new InputStreamReader(

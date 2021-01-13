@@ -7,7 +7,7 @@ public class Demo {
 
   public static void main(String[] args) {
 
-    List<Point> pointList = new ArrayList<Point>();
+    List<Point> pointList = new ArrayList<>();
 
     for (int i = 0; i < 10; i++) {
       pointList.add(new Point(0, 0, 0));

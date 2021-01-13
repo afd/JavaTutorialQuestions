@@ -9,7 +9,7 @@ public class GenericStackList<E> implements GenericStack<E> {
   private final List<E> elements;
 
   public GenericStackList() {
-    elements = new ArrayList<E>();
+    elements = new ArrayList<>();
   }
 
   public void push(E item) {

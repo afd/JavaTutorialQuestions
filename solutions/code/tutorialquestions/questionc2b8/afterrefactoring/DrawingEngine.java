@@ -8,7 +8,7 @@ public class DrawingEngine {
   private final Set<Rectangle> rectangles;
 
   public DrawingEngine() {
-    rectangles = new HashSet<Rectangle>();
+    rectangles = new HashSet<>();
   }
 
   public void addRectangle(Rectangle rectangle) {
@@ -28,11 +28,11 @@ public class DrawingEngine {
   @Override
   public String toString() {
 
-    String result = "Drawing engine is looking after these rectangles:";
+    final StringBuilder result = new StringBuilder("Drawing engine is looking after these rectangles:");
     for (Rectangle r : rectangles) {
-      result += "\n   " + r;
+      result.append("\n   ").append(r);
     }
-    return result;
+    return result.toString();
 
   }
 

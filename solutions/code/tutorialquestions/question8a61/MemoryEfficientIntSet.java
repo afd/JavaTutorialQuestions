@@ -8,7 +8,7 @@ public class MemoryEfficientIntSet implements IntSet {
   private final List<Integer> elements;
 
   public MemoryEfficientIntSet() {
-    elements = new ArrayList<Integer>();
+    elements = new ArrayList<>();
   }
 
   @Override
@@ -34,7 +34,7 @@ public class MemoryEfficientIntSet implements IntSet {
     // Note that
     //    elements.remove(item);
     // would mean something different!
-    return elements.remove(new Integer(item));
+    return elements.remove(Integer.valueOf(item));
   }
 
 }

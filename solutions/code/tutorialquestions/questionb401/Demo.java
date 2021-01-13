@@ -9,8 +9,8 @@ public class Demo {
 
   public static GenericSet<Integer> readIntegers(int numIntegers) throws IOException {
 
-    GenericSet<Integer> result = (numIntegers > 10 ? new MemoryEfficientGenericSet<Integer>()
-        : new SpeedEfficientGenericSet<Integer>());
+    GenericSet<Integer> result = (numIntegers > 10 ? new MemoryEfficientGenericSet<>()
+        : new SpeedEfficientGenericSet<>());
 
     BufferedReader br = new BufferedReader(
         new InputStreamReader(
@@ -20,7 +20,7 @@ public class Demo {
 
     for (int i = 0; i < numIntegers; i++) {
       System.out.println("Please enter an int:");
-      result.add(new Integer(br.readLine()));
+      result.add(Integer.valueOf(br.readLine()));
     }
 
     return result;
@@ -30,7 +30,7 @@ public class Demo {
 
     // Testing the generic set on a couple of types
 
-    GenericSet<String> stringSet = new MemoryEfficientGenericSet<String>();
+    GenericSet<String> stringSet = new MemoryEfficientGenericSet<>();
 
     stringSet.add("Hello");
 
@@ -44,7 +44,7 @@ public class Demo {
 
     assert !stringSet.contains("Cat");
 
-    GenericSet<PrintStream> printStreamSet = new SpeedEfficientGenericSet<PrintStream>();
+    GenericSet<PrintStream> printStreamSet = new SpeedEfficientGenericSet<>();
 
     printStreamSet.add(System.out);
 
@@ -58,7 +58,7 @@ public class Demo {
 
     // Now doing the "readIntegers" part
 
-    GenericSet<Integer> integers = readIntegers(new Integer(args[0]));
+    GenericSet<Integer> integers = readIntegers(Integer.parseInt(args[0]));
 
     System.out.println("Set is: " + integers.getClass());
 
@@ -71,8 +71,8 @@ public class Demo {
         System.out.println("Goodbye!");
         break;
       }
-      System.out.println("Set contains " + new Integer(line) + ": "
-          + integers.contains(new Integer(line)));
+      System.out.println("Set contains " + Integer.valueOf(line) + ": "
+          + integers.contains(Integer.valueOf(line)));
 
     }
 

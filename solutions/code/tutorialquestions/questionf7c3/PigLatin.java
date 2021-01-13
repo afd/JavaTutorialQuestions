@@ -28,18 +28,18 @@ public class PigLatin {
 
   private static String translateLineToPigLatin(String line) {
 
-    StringBuilder builder = new StringBuilder();
+    final StringBuilder builder = new StringBuilder();
 
-    String word = "";
+    StringBuilder word = new StringBuilder();
 
     for (int i = 0; i < line.length(); i++) {
 
       if (Character.isLetterOrDigit(line.charAt(i))) {
-        word += line.charAt(i);
+        word.append(line.charAt(i));
       } else {
         if (word.length() > 0) {
-          builder.append(translateToPigLatin(word));
-          word = "";
+          builder.append(translateToPigLatin(word.toString()));
+          word = new StringBuilder();
         }
         builder.append(line.charAt(i));
       }

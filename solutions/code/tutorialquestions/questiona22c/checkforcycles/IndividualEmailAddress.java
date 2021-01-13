@@ -11,7 +11,7 @@ public class IndividualEmailAddress extends EmailAddress {
 
   @Override
   public Set<EmailAddress> getTargets() {
-    Set<EmailAddress> result = new HashSet<EmailAddress>();
+    Set<EmailAddress> result = new HashSet<>();
     result.add(this);
     return result;
   }

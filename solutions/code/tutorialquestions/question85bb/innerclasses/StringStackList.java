@@ -9,7 +9,7 @@ public class StringStackList extends AbstractStringStack {
   private final List<String> elements;
 
   public StringStackList() {
-    elements = new ArrayList<String>();
+    elements = new ArrayList<>();
   }
 
   public void push(String string) {
