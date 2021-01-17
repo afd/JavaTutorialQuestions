@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [dd4c](../questions/dd4c): *Clocks*
+## Solution to [dd4c](../questions/dd4c.md): *Clocks*
 
 See code at `solutions/code/tutorialquestions/questiondd4c`
 

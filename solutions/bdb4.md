@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [bdb4](../questions/bdb4): *Flawed house*
+## Solution to [bdb4](../questions/bdb4.md): *Flawed house*
 
 See code at `solutions/code/tutorialquestions/questionbdb4`
 
