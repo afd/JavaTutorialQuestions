@@ -1,12 +1,13 @@
 package ic.doc;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class OneFourTwoOneTest {
 
-    @Test
-    public void templateTest() {
+    // main prints to the command line, hence cannot test
 
-    }
 }
