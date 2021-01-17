@@ -1,8 +1,4 @@
-package ic.doc;
-
-import org.junit.Test;
-
-import java.util.Arrays;
+package package98e3;
 
 import static org.junit.Assert.assertEquals;
 
