@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [1aeb](../questions/1aeb): *Generic number manipulation*
+## Solution to [1aeb](../questions/1aeb.md): *Generic number manipulation*
 
 See code at `solutions/code/tutorialquestions/question1aeb`
 

@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [bec2](../questions/bec2): *Music collection*
+## Solution to [bec2](../questions/bec2.md): *Music collection*
 
 See code at `solutions/code/tutorialquestions/questionbec2`
 
