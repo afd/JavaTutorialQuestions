@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [2ffc](../questions/2ffc): *Generic stacks*
+## Solution to [2ffc](../questions/2ffc.md): *Generic stacks*
 
 See code at `solutions/code/tutorialquestions/question2ffc`
 

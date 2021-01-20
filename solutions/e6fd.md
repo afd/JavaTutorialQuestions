@@ -1,6 +1,6 @@
 [Back to questions](../README.md)
 
-## Solution to [e6fd](../questions/e6fd): *Bit sets*
+## Solution to [e6fd](../questions/e6fd.md): *Bit sets*
 
 See code at `solutions/code/tutorialquestions/questione6fd`
 
