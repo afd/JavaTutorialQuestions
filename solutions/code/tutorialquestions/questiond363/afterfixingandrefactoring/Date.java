@@ -14,14 +14,14 @@ public class Date {
 
   public boolean isValid() {
 
-    if (year < 0) {
+    if (year < 0 || day < 1) {
       return false;
     }
-
+    
     return switch (month) {
-      case 2                     -> !(day < 1 || day > (isLeapYear() ? 29 : 28));
-      case 4, 6, 9, 11           -> !(day < 1 || day > 30);
-      case 1, 3, 5, 7, 8, 10, 12 -> !(day < 1 || day > 31);
+      case 2                     -> day <= (isLeapYear() ? 29 : 28);
+      case 4, 6, 9, 11           -> day <= 30;
+      case 1, 3, 5, 7, 8, 10, 12 -> day <= 31;
       default                    -> false;
     };
   }
