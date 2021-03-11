@@ -2,70 +2,39 @@ package tutorialquestions.questiond363.afterfixingandrefactoring;
 
 public class Date {
 
-  private final int dayOfBirth;
-  private final int monthOfBirth;
-  private final int yearOfBirth;
+  private final int day;
+  private final int month;
+  private final int year;
 
-  public Date(int dayOfBirth, int monthOfBirth, int yearOfBirth) {
-    this.dayOfBirth = dayOfBirth;
-    this.monthOfBirth = monthOfBirth;
-    this.yearOfBirth = yearOfBirth;
+  public Date(int day, int month, int year) {
+    this.day = day;
+    this.month = month;
+    this.year = year;
   }
 
   public boolean isValid() {
 
-    if (yearOfBirth < 0) {
+    if (year < 0 || day < 1) {
       return false;
     }
-
-    if (monthOfBirth < 1 || yearOfBirth > 12) {
-      return false;
-    }
-
-    if (dayOfBirth < 1) {
-      return false;
-    }
-
-    switch (monthOfBirth) {
-      case 1:
-      case 3:
-      case 5:
-      case 7:
-      case 8:
-      case 10:
-      case 12:
-        if (dayOfBirth > 31) {
-          return false;
-        }
-        break;
-      case 4:
-      case 6:
-      case 9:
-      case 11:
-        if (dayOfBirth > 30) {
-          return false;
-        }
-        // fall through
-      default:
-        assert monthOfBirth == 2;
-        if (dayOfBirth > (isLeapYear() ? 29 : 28)) {
-          return false;
-        }
-    }
-
-    return true;
-
+    
+    return switch (month) {
+      case 2                     -> day <= (isLeapYear() ? 29 : 28);
+      case 4, 6, 9, 11           -> day <= 30;
+      case 1, 3, 5, 7, 8, 10, 12 -> day <= 31;
+      default                    -> false;
+    };
   }
 
   private boolean isLeapYear() {
     // Deliberately simplified version of
     // leap year calculation
-    return (yearOfBirth % 4 == 0);
+    return (year % 4 == 0);
   }
 
   @Override
   public String toString() {
-    return dayOfBirth + "/" + monthOfBirth + "/" + yearOfBirth;
+    return day + "/" + month + "/" + year;
   }
 
 }
