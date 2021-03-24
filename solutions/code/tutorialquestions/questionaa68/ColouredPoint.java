@@ -30,10 +30,8 @@ public class ColouredPoint extends Point {
 
     ColouredPoint thatPoint = (ColouredPoint) that;
 
-    if (!thatPoint.canEqual(this)) {
-      return false;
-    }
-
+    // Note: thatPoint.canEqual(this) will be checked as part of
+    // super.equals(thatPoint).
     return super.equals(thatPoint) && colour == thatPoint.colour;
 
   }
