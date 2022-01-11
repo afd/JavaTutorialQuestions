@@ -1,4 +1,4 @@
-# Programming 2: Ally's Tutorial Questions
+# Java Programming: Ally's Tutorial Questions
 
 The best way to learn a programming language and the concepts that underlie the language's design is to do *lots* of programming.
 
