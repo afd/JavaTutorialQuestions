@@ -10,10 +10,10 @@ public class Lottery {
 
   private static boolean numberAlreadyChosen(int[] numbers,
       int numChosenSoFar, int candidate) {
+    
+    assert numChosenSoFar < numbers.length;
 
     for (int i = 0; i < numChosenSoFar; i++) {
-
-      assert numChosenSoFar < numbers.length;
 
       if (numbers[i] == candidate) {
 
